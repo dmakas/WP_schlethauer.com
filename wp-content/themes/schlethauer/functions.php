@@ -1,4 +1,12 @@
 <?php
+
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+
+function true_full_unset_image_sizes( $sizes ) {
+    return array();
+}
+
+add_filter( 'intermediate_image_sizes_advanced', 'true_full_unset_image_sizes' );
 /**
  * Schlethauer functions and definitions
  *
@@ -122,9 +130,20 @@ add_action( 'widgets_init', 'schlethauer_widgets_init' );
 function schlethauer_scripts() {
 	wp_enqueue_style( 'schlethauer-style', get_stylesheet_uri() );
 
+	wp_register_style( 'schlethauer-theme-style', get_template_directory_uri() . '/css/theme.css' );
 	wp_enqueue_style( 'schlethauer-theme-style', get_template_directory_uri() . '/css/theme.css' );
 
+	wp_register_style( 'schlethauer-bootstrap-style', get_template_directory_uri() . '/css/bootstrap.css' );
+	wp_enqueue_style( 'schlethauer-bootstrap-style', get_template_directory_uri() . '/css/bootstrap.css' );
+
+	wp_enqueue_style( 'schlethauer-bootstrap-theme-style', get_template_directory_uri() . '/css/bootstrap-theme.css' );
+	wp_enqueue_style( 'schlethauer-bootstrap-theme-style', get_template_directory_uri() . '/css/bootstrap-theme.css' );
+
 	wp_enqueue_script( 'schlethauer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'schlethauer-bootstrap', get_template_directory_uri() . '/js/bootstrap.js' );
+
+	// wp_enqueue_script( 'schlethauer-npm', get_template_directory_uri() . '/js/npm.js' );
 
 	wp_enqueue_script( 'schlethauer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -165,3 +184,25 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * TGM Plugin WP.
  */
 require get_template_directory() . '/tgm/schlethauer.php';
+
+/* Add your own class to the menu */
+
+add_filter( 'nav_menu_submenu_css_class', 'filter_function_name_8769', 10, 3 );
+
+function filter_function_name_8769( $classes, $args, $depth ){
+    $classes[] = 'dropdown-menu';
+    return $classes;
+}
+
+/* Custom logo class */
+
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+    // $html = str_replace( 'custom-logo', 'your-custom-class', $html );
+    $html = str_replace( 'custom-logo-link', 'navbar-brand', $html );
+
+    return $html;
+}

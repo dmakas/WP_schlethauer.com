@@ -1,27 +1,2090 @@
 /* Extra small devices (phones) */
 @media (max-width: 782px) {
 
-  
+  .top-menu-h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 20px !important;
+  }
+
+  .top-menu-p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 0px !important;
+    line-height: normal !important;
+    text-align: center;
+    /* margin-top: 20px; */
+  }
+
+  .top-menu-a {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #464646;
+    padding: 10px !important;
+    line-height: normal !important;
+    text-align: center;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    background-color: #f7eb68 !important;
+    border-radius: 22px !important;
+    height: 54px;
+  }
+
+  .top-menu-h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 20px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  input[type=text] {
+    border: 0 !important;
+    border-radius: 22px !important;
+    width: 100% !important;
+    font-family: 'Teko', sans-serif !important;
+    font-size: 26px !important;
+    color: #464646 !important;
+    padding: 10px !important;
+    height: auto !important;
+    margin-top: 30px !important;
+    line-height: normal !important;
+    outline: none !important;
+  }
+
+  .top-section-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    /* background-attachment: fixed !important; */
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 1060px;
+  }
+
+  /* Icon box */
+
+  .top-section-ib .fw-iconbox-image {
+    width: 100% !important;
+    font-size: 8em !important;
+    text-align: center !important;
+    line-height: normal !important;
+    border-radius: 0px !important;
+  }
+
+  .top-section-ib h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 2em !important;
+    color: #464646;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .top-section-ib table {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #464646;
+    padding-top: 10px !important;
+    line-height: normal !important;
+    text-align: left;
+  }
+
+  /* Spanndecken Varianten */
+
+  .spanndecken-varianten-class {
+    background-color: #ececec;
+    /* background-attachment: fixed !important; */
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  .spanndecken-varianten-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2.4em;
+    color: #464646;
+    padding-top: 50px !important;
+  }
+
+  .spanndecken-varianten-class h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #464646;
+  }
+
+  .spanndecken-varianten-class img {
+    border: 0px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .spanndecken-varianten-class i {
+    font-size: 2em !important;
+    padding-bottom: 5px;
+  }
+
+  .tbl-desc {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #464646;
+    line-height: normal !important;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  .tbl-sale {
+    background-color: #2EA8FF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    font-family: 'Teko', sans-serif !important;
+  	font-size: 1.6em !important;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .tbl-garant {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1;
+  }
+
+  /* Why we */
+
+  .why-we-section-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2.4em;
+    color: #464646;
+    padding-top: 20px !important;
+  }
+
+  /* Action 1 */
+
+  .action1-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action1-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 110px !important;
+  }
+
+  .action1-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Action 2 */
+
+  .action2-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action2-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 110px !important;
+  }
+
+  .action2-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+
+    /* Scheme */
+
+    .scheme-class p {
+      font-family: 'Teko', sans-serif;
+      font-weight: 200;
+      font-size: 1.8em;
+      color: #464646;
+      text-transform: uppercase;
+      line-height: 1;
+      text-align: center;
+      /* padding-top: 50px !important; */
+    }
+
+    .scheme-class h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 200;
+      font-size: 2.4em;
+      color: #464646;
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+
+    /* Footer */
+
+    .footer-class a {
+      font-family: 'Teko', sans-serif;
+      font-weight: 200;
+      font-size: 1.2em;
+      color: #bababa;
+      text-transform: uppercase;
+      line-height: 1;
+      text-decoration: none;
+      outline: none;
+    }
+
+    .footer-class .footer-menu {
+      text-align: center !important;
+      padding: 0px;
+    }
+
+    /* Partnerschaft */
+
+    .partnerschaft-action-class {
+      background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+      background-position: right center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      /* background-attachment: fixed !important; */
+      height: 650px;
+      margin-top: 0px;
+      /* padding-top: 150px; */
+    }
+
+    .partnerschaft-action-class h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 200;
+      font-size: 2.5em;
+      color: #fff;
+      padding-top: 100px !important;
+    }
+
+    .partnerschaft-action-class p {
+      font-family: 'Teko', sans-serif;
+      font-size: 1.8em;
+      color: #fff;
+      font-weight: 200;
+      padding-top: 30px !important;
+      line-height: 1 !important;
+      text-align: left;
+    }
+
+    /* Terassen */
+
+    .terrassen-action-class {
+      background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+      background-position: right center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      /* background-attachment: fixed !important; */
+      height: 650px;
+      margin-top: 20px;
+      /* padding-top: 150px; */
+    }
+
+    .terrassen-action-class h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 200;
+      font-size: 2em;
+      color: #fff;
+      padding-top: 120px !important;
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    .terrassen-action-class p {
+      font-family: 'Teko', sans-serif;
+      font-size: 1.8em;
+      color: #fff;
+      font-weight: 200;
+      padding-top: 10px !important;
+      line-height: 1 !important;
+      text-align: left;
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    /* Beleuchtung */
+
+    .beleuchtung-class {
+      background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+      background-position: right center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      /* background-attachment: fixed !important; */
+      height: 650px;
+      margin-top: 20px;
+      /* padding-top: 150px; */
+    }
+
+    .beleuchtung-class h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 200;
+      font-size: 2em;
+      color: #fff;
+      padding-top: 120px !important;
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    .beleuchtung-class p {
+      font-family: 'Teko', sans-serif;
+      font-size: 1.8em;
+      color: #fff;
+      font-weight: 200;
+      padding-top: 10px !important;
+      line-height: 1 !important;
+      text-align: left;
+      text-shadow: 2px 2px 2px #000;
+    }
 
  }
 
 /* Small devices (tablets) */
-@media (min-width: 783px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 900px) {
 
+  .top-menu-h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 20px !important;
+  }
 
+  .top-menu-p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.7em;
+    color: #fff;
+    padding-top: 10px !important;
+    line-height: normal !important;
+    text-align: left;
+    /* margin-top: 20px; */
+  }
+
+  .top-menu-a {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.7em;
+    color: #464646;
+    padding: 12px !important;
+    line-height: normal !important;
+    text-align: center;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    background-color: #f7eb68 !important;
+    border-radius: 22px !important;
+  }
+
+  .top-menu-h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 20px !important;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  input[type=text] {
+    border: 0 !important;
+    border-radius: 22px !important;
+    width: 100% !important;
+    font-family: 'Teko', sans-serif !important;
+    font-size: 26px !important;
+    color: #464646 !important;
+    padding: 10px !important;
+    height: auto !important;
+    margin-top: 30px !important;
+    line-height: normal !important;
+    outline: none !important;
+  }
+
+  .top-section-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+    /* background-attachment: fixed !important; */
+    padding-top: 20px;
+    padding-bottom: 60px;
+    height: auto;
+  }
+
+  /* Icon box */
+
+  .top-section-ib .fw-iconbox-image {
+    width: 100% !important;
+    font-size: 5em !important;
+    text-align: center !important;
+    line-height: normal !important;
+    border-radius: 0px !important;
+  }
+
+  .top-section-ib h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em !important;
+    color: #464646;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .top-section-ib table {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    color: #464646;
+    padding-top: 10px !important;
+    line-height: normal !important;
+    text-align: left;
+  }
+
+  /* Spanndecken Varianten */
+
+  .spanndecken-varianten-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 1200px;
+    padding-top: 90px;
+  }
+
+  .spanndecken-varianten-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #464646;
+    padding-top: 50px !important;
+  }
+
+  .spanndecken-varianten-class h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #464646;
+  }
+
+  .spanndecken-varianten-class img {
+    border: 0px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .spanndecken-varianten-class i {
+    font-size: 2em !important;
+    padding-bottom: 5px;
+  }
+
+  .tbl-desc {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #464646;
+    line-height: normal !important;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  .tbl-sale {
+    background-color: #2EA8FF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    font-family: 'Teko', sans-serif !important;
+  	font-size: 1.2em !important;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .tbl-garant {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  /* Why we */
+
+  .why-we-section-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #464646;
+    /* padding-top: 50px !important; */
+  }
+
+  /* Action 1 */
+
+  .action1-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action1-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 120px !important;
+  }
+
+  .action1-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Action 2 */
+
+  .action2-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action2-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 120px !important;
+  }
+
+  .action2-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Scheme */
+
+  .scheme-class p {
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    color: #464646;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+    /* padding-top: 50px !important; */
+  }
+
+  .scheme-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2.4em;
+    color: #464646;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Footer */
+
+  .footer-class a {
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    color: #bababa;
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .footer-class .footer-menu {
+    text-align: left !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  /* Partnerschaft */
+
+  .partnerschaft-action-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 0px;
+    /* padding-top: 150px; */
+  }
+
+  .partnerschaft-action-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 100px !important;
+  }
+
+  .partnerschaft-action-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 30px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Terassen */
+
+  .terrassen-action-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 20px;
+    /* padding-top: 150px; */
+  }
+
+  .terrassen-action-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 120px !important;
+  }
+
+  .terrassen-action-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Beleuchtung */
+
+  .beleuchtung-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 20px;
+    /* padding-top: 150px; */
+  }
+
+  .beleuchtung-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 120px !important;
+  }
+
+  .beleuchtung-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
 
  }
 
 /* Medium devices (desktops) */
 @media (min-width: 901px) and (max-width: 1199px) {
 
+  .top-menu-h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 4em;
+    color: #fff;
+    padding-top: 50px !important;
+  }
 
+  .top-menu-p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 10px !important;
+    line-height: normal !important;
+    text-align: left;
+    /* margin-top: 20px; */
+  }
+
+  .top-menu-a {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #464646;
+    padding: 10px !important;
+    line-height: normal !important;
+    text-align: center;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    background-color: #f7eb68 !important;
+    border-radius: 22px !important;
+    height: 54px;
+  }
+
+  .top-menu-h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 20px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  input[type=text] {
+    border: 0 !important;
+    border-radius: 22px !important;
+    width: 100% !important;
+    font-family: 'Teko', sans-serif !important;
+    font-size: 26px !important;
+    color: #464646 !important;
+    padding: 10px !important;
+    height: auto !important;
+    margin-top: 30px !important;
+    line-height: normal !important;
+    outline: none !important;
+  }
+
+  .top-section-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-position: bottom center !important;
+    background-repeat: no-repeat !important;
+    /* background-attachment: fixed !important; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 850px;
+  }
+
+  /* Spanndecken Varianten */
+
+  .spanndecken-varianten-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 1500px;
+    padding-top: 150px;
+  }
+
+  .spanndecken-varianten-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #464646;
+    padding-top: 50px !important;
+  }
+
+  .spanndecken-varianten-class h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #464646;
+  }
+
+  .spanndecken-varianten-class img {
+    border: 0px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .spanndecken-varianten-class i {
+    font-size: 3em !important;
+    padding-bottom: 5px;
+  }
+
+  .tbl-desc {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #464646;
+    line-height: normal !important;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  .tbl-sale {
+    background-color: #2EA8FF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    font-family: 'Teko', sans-serif !important;
+  	font-size: 2em !important;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .tbl-garant {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1;
+  }
+
+  /* Icon box */
+
+  .top-section-ib .fw-iconbox-image {
+    width: 100% !important;
+    font-size: 8em !important;
+    text-align: center !important;
+    line-height: normal !important;
+    border-radius: 0px !important;
+  }
+
+  .top-section-ib h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em !important;
+    color: #464646;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .top-section-ib table {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #464646;
+    padding-top: 10px !important;
+    line-height: normal !important;
+    text-align: left;
+  }
+
+  /* Why we */
+
+  .why-we-section-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #464646;
+    /* padding-top: 50px !important; */
+  }
+
+  /* Action 1 */
+
+  .action1-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action1-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .action1-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Action 2 */
+
+  .action2-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action2-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .action2-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Scheme */
+
+  .scheme-class p {
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+    font-size: 1.6em;
+    color: #464646;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+    /* padding-top: 50px !important; */
+  }
+
+  .scheme-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2.4em;
+    color: #464646;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Footer */
+
+  .footer-class a {
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    color: #bababa;
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .footer-class .footer-menu {
+    text-align: right !important;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  /* Partnerschaft */
+
+  .partnerschaft-action-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 0px;
+    /* padding-top: 150px; */
+  }
+
+  .partnerschaft-action-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 80px !important;
+  }
+
+  .partnerschaft-action-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 30px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Terassen */
+
+  .terrassen-action-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 0px;
+    /* padding-top: 150px; */
+  }
+
+  .terrassen-action-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .terrassen-action-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Beleuchtung */
+
+  .beleuchtung-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 0px;
+    /* padding-top: 150px; */
+  }
+
+  .beleuchtung-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .beleuchtung-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
 
  }
 
 /* Large devices (large desktops) */
 @media (min-width: 1200px) {
 
+  .top-menu-h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 4em;
+    color: #fff;
+    padding-top: 50px !important;
+  }
 
+  .top-menu-p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 10px !important;
+    line-height: normal !important;
+    text-align: left;
+    /* margin-top: 20px; */
+  }
+
+  .top-menu-a {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #464646;
+    padding: 10px !important;
+    line-height: normal !important;
+    text-align: center;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    background-color: #f7eb68 !important;
+    border-radius: 22px !important;
+    height: 55px;
+  }
+
+  .top-menu-h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 20px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  input[type=text] {
+    border: 0 !important;
+    border-radius: 22px !important;
+    width: 100% !important;
+    font-family: 'Teko', sans-serif !important;
+    font-size: 26px !important;
+    color: #464646 !important;
+    padding: 10px !important;
+    height: auto !important;
+    margin-top: 30px !important;
+    line-height: normal !important;
+    outline: none !important;
+  }
+
+  .top-section-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-position: bottom center !important;
+    background-repeat: no-repeat !important;
+    /* background-attachment: fixed !important; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 850px;
+  }
+
+  /* Icon box */
+
+  .top-section-ib .fw-iconbox-image {
+    width: 100% !important;
+    font-size: 8em !important;
+    text-align: center !important;
+    line-height: normal !important;
+    border-radius: 0px !important;
+  }
+
+  .top-section-ib h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em !important;
+    color: #464646;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .top-section-ib table {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #464646;
+    padding-top: 10px !important;
+    line-height: normal !important;
+    text-align: left;
+  }
+
+  /* Spanndecken Varianten */
+
+  .spanndecken-varianten-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    /* background-size: cover !important; */
+    /* background-attachment: fixed !important; */
+    height: 1600px;
+    padding-top: 150px;
+  }
+
+  .spanndecken-varianten-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #464646;
+    padding-top: 50px !important;
+  }
+
+  .spanndecken-varianten-class h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #464646;
+  }
+
+  .spanndecken-varianten-class img {
+    border: 0px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .spanndecken-varianten-class i {
+    font-size: 3em !important;
+    padding-bottom: 5px;
+  }
+
+  .tbl-desc {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #464646;
+    line-height: normal !important;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  .tbl-sale {
+    background-color: #2EA8FF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    font-family: 'Teko', sans-serif !important;
+  	font-size: 2em !important;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .tbl-garant {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1;
+  }
+
+  /* Why we */
+
+  .why-we-section-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #464646;
+    /* padding-top: 50px !important; */
+  }
+
+  /* Action 1 */
+
+  .action1-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action1-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .action1-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Action 2 */
+
+  .action2-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 80px;
+    /* padding-top: 150px; */
+  }
+
+  .action2-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .action2-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Scheme */
+
+  .scheme-class p {
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+    font-size: 1.8em;
+    color: #464646;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+    /* padding-top: 50px !important; */
+  }
+
+  .scheme-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2.4em;
+    color: #464646;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Footer */
+
+  .footer-class a {
+    font-family: 'Teko', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    color: #bababa;
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .footer-class .footer-menu {
+    text-align: right !important;
+    padding-left: 50px;
+    padding-right: 0px;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+  }
+
+  /* Partnerschaft */
+
+  .partnerschaft-action-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 0px;
+    /* padding-top: 150px; */
+  }
+
+  .partnerschaft-action-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .partnerschaft-action-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 30px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Terassen */
+
+  .terrassen-action-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 20px;
+    /* padding-top: 150px; */
+  }
+
+  .terrassen-action-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .terrassen-action-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
+
+  /* Beleuchtung */
+
+  .beleuchtung-class {
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* background-attachment: fixed !important; */
+    height: 650px;
+    margin-top: 20px;
+    /* padding-top: 150px; */
+  }
+
+  .beleuchtung-class h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    color: #fff;
+    padding-top: 90px !important;
+  }
+
+  .beleuchtung-class p {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px !important;
+    line-height: 1 !important;
+    text-align: left;
+  }
 
  }
+
+/* Menu */
+
+.nav-menu li > a:after {
+  color: #888;
+  font-family: FontAwesome;
+  content: ' \f107';
+}
+
+.nav-menu li > a:hover:after {
+  color: #444;
+  font-family: FontAwesome;
+  content: ' \f107';
+}
+
+.nav-menu li > a:only-child:after {
+  content: '';
+}
+
+/* Top section classes */
+
+.top-section-class .fw-col-sm-6 {
+  width: 100% !important;
+}
+
+.action1-class .fw-col-sm-6 {
+  width: 100% !important;
+}
+
+.action2-class .fw-col-sm-6 {
+  width: 100% !important;
+}
+
+.terrassen-action-class .fw-col-sm-6 {
+  width: 100% !important;
+}
+
+.beleuchtung-class .fw-col-sm-6 {
+  width: 100% !important;
+}
+
+/* Buttons */
+
+.fw-btn-1 {
+  width: 100%;
+  background-color: #f7eb68 !important;
+	border-radius: 22px !important;
+	display: inline-block !important;
+	cursor: pointer !important;
+	color: #464646 !important;
+	font-family: 'Teko', sans-serif !important;
+	font-size: 2em !important;
+	text-decoration: none !important;
+  text-transform: uppercase;
+  border: 0 !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding: 10px !important;
+  height: 55px;
+}
+
+.fw-btn-2 {
+  width: 100%;
+  background-color: #2EA8FF !important;
+	border-radius: 22px !important;
+	display: inline-block !important;
+	cursor: pointer !important;
+	color: #fff !important;
+	font-family: 'Teko', sans-serif !important;
+	font-size: 2em !important;
+	text-decoration: none !important;
+  text-transform: uppercase;
+  border: 0 !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding: 10px !important;
+  height: 55px;
+}
+
+.wpcf7 .wpcf7-submit {
+  width: 100% !important ;
+  background-color: #f7eb68 !important;
+	border-radius: 22px !important;
+	display: inline-block !important;
+	cursor: pointer !important;
+	color: #464646 !important;
+	font-family: 'Teko', sans-serif !important;
+	font-size: 26px !important;
+	text-decoration: none !important;
+  text-transform: uppercase;
+  border: 0 !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding: 10px !important;
+  height: 55px !important;
+  outline: none !important;
+}
+
+/* Icon box */
+
+.icon-box-section-class {
+  margin-top: 80px;
+}
+
+.top-section-ib {
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.top-section-ib td {
+  padding: 5px;
+}
+
+.top-section-ib .fas {
+  color: #2EA8FF !important;
+}
+
+.top-section-ib .fa {
+  color: #2EA8FF !important;
+}
+
+.top-section-ib i {
+  color: #2EA8FF !important;
+}
+
+/* Spanndecken Varianten */
+
+.spanndecken-varianten-class .fw-col-sm-4 {
+  background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg.png) !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.spanndecken-varianten-class li {
+  font-size: 14px !important;
+  padding: 0;
+}
+
+.spanndecken-varianten-class ul {
+  margin: 0 !important;
+}
+
+.spanndecken-varianten-class p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #464646;
+  line-height: normal !important;
+  text-align: left;
+}
+
+/* Why we */
+
+.why-we-section-class p {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+  color: #464646;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  /* padding-top: 50px !important; */
+}
+
+/* Other */
+
+.on-top-button {
+  position: fixed;
+  z-index: 9999 !important;
+  bottom: 10px;
+  right: 20px;
+  opacity: .4
+}
+
+.on-top-button a {
+  font-size: 50px;
+  color: #2EA8FF;
+  text-decoration: none;
+  outline: none;
+}
+
+.on-top-button a:hover {
+  font-size: 50px;
+  color: #2EA8FF;
+  text-decoration: none;
+  outline: none;
+}
+
+.on-top-button a:active {
+  font-size: 50px;
+  color: #2EA8FF;
+  text-decoration: none;
+  outline: none;
+}
+
+.on-top-button a:visited {
+  font-size: 50px;
+  color: #2EA8FF;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+a:active {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+a:link {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+button {
+  outline: none !important;
+}
+
+.navbar-brand {
+  height: auto !important;
+  padding: 2px !important;
+}
+
+.navbar-brand img {
+  padding: 10px;
+  background-color: #fff;
+  width: 120px;
+}
+
+.top-menu-p {
+  padding-top: 21px !important;
+}
+
+.top-section-class img {
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 200px !important;
+}
+
+.widget-title {
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: #464646;
+}
+
+.page {
+  margin: 0 !important;
+}
+
+.scheme-class {
+  padding-bottom: 50px !important;
+}
+
+.footer-class {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.top-menu-a a:visited {
+  color: #464646;
+}
+
+.top-menu-a a:hover {
+  color: #464646;
+  text-decoration: none;
+}
+
+.top-menu-a a:active {
+  color: #464646;
+  text-decoration: none;
+}
+
+::placeholder {
+  font-size: 26px !important;
+  padding: 5px !important;
+  height: auto !important;
+  margin: 0 !important;
+  line-height: normal !important;
+  outline: none !important;
+  font-style: normal !important;
+}
+
+.entry-title {
+  display: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Examples */
+
+.examples-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.examples-class {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.examples-class h1 {
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: #464646;
+  /* padding-top: 50px !important; */
+}
+
+/* Fragen */
+
+.fragen-class h1 {
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: #464646;
+  /* padding-top: 50px !important; */
+}
+
+.fragen-class .fragen-antwort {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  font-size: 1.4em;
+  color: #464646;
+  text-transform: uppercase;
+  line-height: 1;
+  /* padding-top: 50px !important; */
+}
+
+.fragen-class .author-name {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200 !important;
+  font-size: 1.8em;
+  color: #464646;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.fragen-class .fw-testimonials-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-size: 1.4em;
+  font-style: normal !important;
+  color: #464646;
+}
+
+/* Navbar */
+
+.navbar-default {
+  background-color: #fff !important;
+  border: 0 !important;
+  border-radius: 0px !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  box-shadow: none !important;
+  color: #000 !important;
+  font-family: 'Teko', sans-serif;
+  font-weight: 200 !important;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 1.1em !important;
+  text-shadow: none !important;
+}
+
+.navbar-default .navbar-toggle {
+  border: 0 !important;
+}
+
+.navbar-toggle {
+  margin-top: 15px !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: 0 !important;
+}
+
+/* Footer */
+
+.footer-class a:hover {
+  color: #bababa !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.footer-class a:visited {
+  color: #bababa !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.footer-class a:active {
+  color: #bababa;
+  text-decoration: none;
+  outline: none;
+}
+
+.footer-class .links {
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 200 !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  color: #bababa;
+}
+
+.footer-class .links i {
+  font-size: 10px !important;
+  text-align: center !important;
+  color: #bababa !important;
+}
+
+footer {
+  background: #464646 !important;
+  bottom: 0px !important;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /* padding-bottom: 10px;
+  padding-top: 20px; */
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 200 !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  color: #bababa;
+  margin-top: -50px !important;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+  outline: none;
+}
+
+footer a:visited {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+footer a:active {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+.footer-icon {
+  font-size: 30px !important;
+  padding-right: 10px;
+}
+
+/* Partnershaft */
+
+.partnerschaft-class p, li {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-size: 1.4em;
+  font-style: normal !important;
+  color: #464646;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.partnerschaft-class {
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+
+.partnerschaft-class h1 {
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: #464646;
+}
+
+/* Tabs */
+
+.fw-tabs-container .fw-tabs ul li {
+  border: 2px solid #2EA8FF !important;
+  border-radius: 20px !important;
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
+  background: none repeat scroll 0 0 #fff !important;
+}
+
+.fw-tabs-container .fw-tabs ul li.ui-state-active {
+  background: #2EA8FF !important;
+}
+
+.fw-tabs-container .fw-tabs ul li.ui-state-hover {
+  background: #2EA8FF !important;
+}
+
+.fw-tabs-container .fw-tabs ul li a {
+  font-family: 'Teko', sans-serif;
+  font-weight: 200;
+  font-size: 1.2em !important;
+  /* color: #464646 !important; */
+  text-transform: uppercase;
+  line-height: 1 !important;
+  padding: 10px 25px 7px 25px !important;
+}
+
+.ui-tabs-active a {
+  color: #fff !important;
+}
+
+.fw-tabs-container .fw-tab-content {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.examples-class .fw-col-xs-12 .fw-col-sm-4 {
+  padding-left: 0 !important;
+  padding-right: 10px !important;
+}
+
+.top-section-class a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class p {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  padding-top: 0px !important;
+  line-height: normal !important;
+}
+
+
+
+/* font-family: 'Six Caps', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Teko', sans-serif;
+font-family: 'Quicksand', sans-serif;*/

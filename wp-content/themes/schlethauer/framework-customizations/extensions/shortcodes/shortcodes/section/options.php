@@ -29,4 +29,9 @@ $options = array(
 		'desc'  => __('Insert custom class to your section', 'fw'),
 		'type'  => 'text',
 	),
+	'custom_id' => array(
+		'label' => __('Custom id', 'fw'),
+		'desc'  => __('Insert custom id to your section', 'fw'),
+		'type'  => 'text',
+	),
 );

@@ -1,7 +1,7 @@
 === Schlethauer ===
 
 Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: This is a privat theme, not for public use.
 
 Requires at least: 4.5
 Tested up to: 4.8
@@ -13,7 +13,7 @@ A starter theme called Schlethauer.
 
 == Description ==
 
-Description
+This is a privat theme, not for public use. Author in footer.
 
 == Installation ==
 
