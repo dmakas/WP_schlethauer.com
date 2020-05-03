@@ -28,7 +28,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'schlethauer' ), 'schlethauer', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 			<br>
-			Theme design by <a href="mailto: d.makas@icloud.com">Denis Wulfert</a>
+			Theme design by <a href="https://www.facebook.com/denis.a.makas" target=_blank>Denis Wulfert</a>
 			<br>
 			<br>
 			Kontankt: Telefon: +49 152 34585018 / Telefon: +49 234 87936648 / E-Mail: info@schlethauer.com

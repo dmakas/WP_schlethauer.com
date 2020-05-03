@@ -46,10 +46,10 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="on-top-body">
 
 <div class="on-top-button" id="ontop-id">
-	<a href="#top-section-id"><i class="fas fa-arrow-circle-up"></i></a>
+	<a href="#on-top-body"><i class="fas fa-arrow-circle-up"></i></a>
 </div>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
@@ -67,7 +67,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#"><img src="http://localhost/wp-content/uploads/2020/04/Schlethauer-Logo.jpg" width="150" height="auto"></a>
+						<a class="navbar-brand" href="#"><img src="http://schlethauer.com/landing/wp-content/uploads/2020/05/slnew.jpg" width="150" height="auto"></a>
 						<?php
 							// the_custom_logo();
 						?>

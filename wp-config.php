@@ -1,4 +1,5 @@
 <?php
+define('WP_CACHE', true); // WP-Optimize Cache
 /**
  * Grundeinstellungen für WordPress
  *
@@ -21,43 +22,35 @@
  *
  * @package WordPress
  */
-
 // ** MySQL-Einstellungen ** //
 /**   Diese Zugangsdaten bekommst du von deinem Webhoster. **/
-
 /**
  * Ersetze datenbankname_hier_einfuegen
  * mit dem Namen der Datenbank, die du verwenden möchtest.
  */
-define( 'DB_NAME', 'WP_Schlethauer.com' );
-
+define( 'DB_NAME', 'k80754_schlethauer_db' );
 /**
  * Ersetze benutzername_hier_einfuegen
  * mit deinem MySQL-Datenbank-Benutzernamen.
  */
-define( 'DB_USER', 'Schlethauer.com' );
-
+define( 'DB_USER', 'k80754_1234567' );
 /**
  * Ersetze passwort_hier_einfuegen mit deinem MySQL-Passwort.
  */
-define( 'DB_PASSWORD', 'GhS6BT5kHVYYnl2x' );
-
+define( 'DB_PASSWORD', 'b97k5Gn^' );
 /**
  * Ersetze localhost mit der MySQL-Serveradresse.
  */
-define( 'DB_HOST', 'localhost' );
-
+define( 'DB_HOST', '10.35.47.85' );
 /**
  * Der Datenbankzeichensatz, der beim Erstellen der
  * Datenbanktabellen verwendet werden soll
  */
 define( 'DB_CHARSET', 'utf8mb4' );
-
 /**
  * Der Collate-Type sollte nicht geändert werden.
  */
 define('DB_COLLATE', '');
-
 /**#@+
  * Sicherheitsschlüssel
  *
@@ -78,9 +71,7 @@ define( 'AUTH_SALT',        '%!rhtj6WPh~]@CC|Ql`dI;L wga%,_mJ~2m4awKTIFA6HU~~%QU
 define( 'SECURE_AUTH_SALT', '2/{*C6m1(^4|1^iQLy{2GZ+3ctwgu-$L{+jK!8*Ja.(g<iJ9~PJ :*lCecR=b4@?' );
 define( 'LOGGED_IN_SALT',   'D{irl8Q&g+I$nLB[rl^J[iAjn@F|KWmErOZF|%BZJQo$,*T~9odB8v-B|^]WEAu_' );
 define( 'NONCE_SALT',       '@!jAt9V:7tZyWM>U}~}2r@L;&<_TpFD|C.bsd+,EA1Up^aE3@I%f&.:HlJK3iBDI' );
-
 /**#@-*/
-
 /**
  * WordPress Datenbanktabellen-Präfix
  *
@@ -89,7 +80,6 @@ define( 'NONCE_SALT',       '@!jAt9V:7tZyWM>U}~}2r@L;&<_TpFD|C.bsd+,EA1Up^aE3@I%
  * Bitte verwende nur Zahlen, Buchstaben und Unterstriche!
  */
 $table_prefix = 'wp_';
-
 /**
  * Für Entwickler: Der WordPress-Debug-Modus.
  *
@@ -103,14 +93,11 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
-
 /* Das war’s, Schluss mit dem Bearbeiten! Viel Spaß. */
 /* That's all, stop editing! Happy publishing. */
-
 /** Der absolute Pfad zum WordPress-Verzeichnis. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }
-
 /** Definiert WordPress-Variablen und fügt Dateien ein.  */
 require_once( ABSPATH . 'wp-settings.php' );

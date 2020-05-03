@@ -59,7 +59,7 @@
   }
 
   .top-section-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
     background-position: bottom left !important;
     background-repeat: no-repeat !important;
     background-size: cover;
@@ -178,7 +178,7 @@
   /* Action 1 */
 
   .action1-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
     background-position: right center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -201,7 +201,7 @@
     font-size: 1.8em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -209,7 +209,7 @@
   /* Action 2 */
 
   .action2-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
     background-position: right center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -232,7 +232,7 @@
     font-size: 1.8em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -281,7 +281,7 @@
     /* Partnerschaft */
 
     .partnerschaft-action-class {
-      background-image: url(http://localhost/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+      background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
       background-position: right center !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
@@ -312,7 +312,7 @@
     /* Terassen */
 
     .terrassen-action-class {
-      background-image: url(http://localhost/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+      background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
       background-position: right center !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
@@ -336,7 +336,7 @@
       font-size: 1.8em;
       color: #fff;
       font-weight: 200;
-      padding-top: 30px !important;
+      padding-top: 10px !important;
       line-height: 1 !important;
       text-align: left;
       text-shadow: 2px 2px 2px #000;
@@ -345,7 +345,7 @@
     /* Beleuchtung */
 
     .beleuchtung-class {
-      background-image: url(http://localhost/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+      background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
       background-position: right center !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
@@ -369,7 +369,7 @@
       font-size: 1.8em;
       color: #fff;
       font-weight: 200;
-      padding-top: 30px !important;
+      padding-top: 10px !important;
       line-height: 1 !important;
       text-align: left;
       text-shadow: 2px 2px 2px #000;
@@ -437,7 +437,7 @@
   }
 
   .top-section-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
     background-position: bottom left !important;
     background-repeat: no-repeat !important;
     /* background-attachment: fixed !important; */
@@ -478,7 +478,7 @@
   /* Spanndecken Varianten */
 
   .spanndecken-varianten-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -557,7 +557,7 @@
   /* Action 1 */
 
   .action1-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -580,7 +580,7 @@
     font-size: 1.8em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -588,7 +588,7 @@
   /* Action 2 */
 
   .action2-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -611,7 +611,7 @@
     font-size: 1.8em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -662,7 +662,7 @@
   /* Partnerschaft */
 
   .partnerschaft-action-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -693,7 +693,7 @@
   /* Terassen */
 
   .terrassen-action-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -716,7 +716,7 @@
     font-size: 1.8em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -724,7 +724,7 @@
   /* Beleuchtung */
 
   .beleuchtung-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -747,7 +747,7 @@
     font-size: 1.8em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -815,7 +815,7 @@
   }
 
   .top-section-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
     background-position: bottom center !important;
     background-repeat: no-repeat !important;
     /* background-attachment: fixed !important; */
@@ -827,7 +827,7 @@
   /* Spanndecken Varianten */
 
   .spanndecken-varianten-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -935,7 +935,7 @@
   /* Action 1 */
 
   .action1-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -958,7 +958,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -966,7 +966,7 @@
   /* Action 2 */
 
   .action2-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -989,7 +989,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -1040,7 +1040,7 @@
   /* Partnerschaft */
 
   .partnerschaft-action-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1071,7 +1071,7 @@
   /* Terassen */
 
   .terrassen-action-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1094,7 +1094,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -1102,7 +1102,7 @@
   /* Beleuchtung */
 
   .beleuchtung-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1125,7 +1125,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -1193,7 +1193,7 @@
   }
 
   .top-section-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/top-background.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/top-background.jpg) !important;
     background-position: bottom center !important;
     background-repeat: no-repeat !important;
     /* background-attachment: fixed !important; */
@@ -1234,7 +1234,7 @@
   /* Spanndecken Varianten */
 
   .spanndecken-varianten-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg-main.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     /* background-size: cover !important; */
@@ -1313,7 +1313,7 @@
   /* Action 1 */
 
   .action1-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-1.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1336,7 +1336,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -1344,7 +1344,7 @@
   /* Action 2 */
 
   .action2-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/action-bg-2.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1367,7 +1367,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -1418,7 +1418,7 @@
   /* Partnerschaft */
 
   .partnerschaft-action-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/partnerschaft-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1449,7 +1449,7 @@
   /* Terassen */
 
   .terrassen-action-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/terassen-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1472,7 +1472,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -1480,7 +1480,7 @@
   /* Beleuchtung */
 
   .beleuchtung-class {
-    background-image: url(http://localhost/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
+    background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/beleuchtung-bg.jpg) !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1503,7 +1503,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 200;
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     line-height: 1 !important;
     text-align: left;
   }
@@ -1588,6 +1588,25 @@
   height: 55px;
 }
 
+.wpcf7 .wpcf7-submit {
+  width: 100% !important ;
+  background-color: #f7eb68 !important;
+	border-radius: 22px !important;
+	display: inline-block !important;
+	cursor: pointer !important;
+	color: #464646 !important;
+	font-family: 'Teko', sans-serif !important;
+	font-size: 26px !important;
+	text-decoration: none !important;
+  text-transform: uppercase;
+  border: 0 !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding: 10px !important;
+  height: 55px !important;
+  outline: none !important;
+}
+
 /* Icon box */
 
 .icon-box-section-class {
@@ -1609,13 +1628,17 @@
 }
 
 .top-section-ib .fa {
-  color: #464646 !important;
+  color: #2EA8FF !important;
+}
+
+.top-section-ib i {
+  color: #2EA8FF !important;
 }
 
 /* Spanndecken Varianten */
 
 .spanndecken-varianten-class .fw-col-sm-4 {
-  background-image: url(http://localhost/wp-content/themes/schlethauer/images/sv-bg.png) !important;
+  background-image: url(http://schlethauer.com/landing/wp-content/themes/schlethauer/images/sv-bg.png) !important;
   background-position: top !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
@@ -2029,6 +2052,34 @@ footer a:active {
 .examples-class .fw-col-xs-12 .fw-col-sm-4 {
   padding-left: 0 !important;
   padding-right: 10px !important;
+}
+
+.top-section-class a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-section-class p {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  padding-top: 0px !important;
+  line-height: normal !important;
 }
 
 
