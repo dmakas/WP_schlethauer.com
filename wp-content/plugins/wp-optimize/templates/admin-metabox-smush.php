@@ -13,12 +13,12 @@
 		<label for="enable_lossy_compression">
 			<input type="radio" id="enable_lossy_compression" name="compression_level" class="smush-options compression_level" <?php checked($smush_options['image_quality'], 90); ?>> 
 			<?php _e('Prioritize maximum compression', 'wp-optimize');?>
-			<b data-tooltip="<?php _e('Potentially uses lossy compression to ensure maximum savings per image, the resulting images are of a slightly lower quality', 'wp-optimize');?>"><span class="dashicons dashicons-editor-help"></span> </b>
+			<span tabindex="0" data-tooltip="<?php _e('Potentially uses lossy compression to ensure maximum savings per image, the resulting images are of a slightly lower quality', 'wp-optimize');?>"><span class="dashicons dashicons-editor-help"></span> </span>
 		</label>
 		<label for="enable_lossless_compression">
 			<input type="radio" id="enable_lossless_compression" name="compression_level" class="smush-options compression_level" <?php checked($smush_options['image_quality'], 100); ?>> 
 			<?php _e('Prioritize retention of detail', 'wp-optimize');?>
-			<b data-tooltip="<?php _e('Uses lossless compression, which results in much better image quality but lower filesize savings per image', 'wp-optimize');?>"><span class="dashicons dashicons-editor-help"></span> </b>
+			<span tabindex="0" data-tooltip="<?php _e('Uses lossless compression, which results in much better image quality but lower filesize savings per image', 'wp-optimize');?>"><span class="dashicons dashicons-editor-help"></span> </span>
 		</label>
 		<label for="enable_custom_compression">
 			<input id="enable_custom_compression" type="radio" name="compression_level" class="smush-options compression_level" <?php checked($custom); ?>> 
@@ -45,10 +45,6 @@
 				<input type="radio" id="resmushit" name="compression_server_<?php echo $post_id; ?>" value="resmushit" <?php checked($smush_options['compression_server'], 'resmushit'); ?>>
 				<a href="http://resmush.it" target="_blank"><?php _e('reSmush.it', 'wp-optimize');?></a>
 			</label>
-			<label for="nitrosmush">
-				<input type="radio" id="nitrosmush" name="compression_server_<?php echo $post_id; ?>" value="nitrosmush" <?php checked($smush_options['compression_server'], 'nitrosmush'); ?>>
-				<a href="http://nitrosmush.com" target="_blank"><?php _e('NitroSmush', 'wp-optimize');?></a>
-			</label>
 		</fieldset>
 		<h4><?php _e('Other options', 'wp-optimize');?></h4>			
 		<fieldset class="other_options">
@@ -62,6 +58,10 @@
 			</label>
 		</fieldset>
    </div>
+
+	<?php if ($compressed_by_another_plugin) { ?>
+		<p><b><?php _e('Note: This image is already compressed by another plugin', 'wp-optimize'); ?></b></p>
+	<?php } ?>
 
 	<div class='wpo_smush_single_image action_button' <?php echo $smush_display; ?> >
 		<input type='button' data-blog='<?php echo get_current_blog_id(); ?>' data-id="<?php echo $post_id; ?>" id='smush_compress_<?php echo $post_id; ?>' class='button-primary button' value='<?php _e('Compress', 'wp-optimize'); ?>'/>

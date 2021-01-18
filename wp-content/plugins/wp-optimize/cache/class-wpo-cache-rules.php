@@ -45,13 +45,14 @@ class WPO_Cache_Rules {
 		add_action('edit_terms', array($this, 'purge_related_elements_on_term_updated'), 10, 2);
 		add_action('set_object_terms', array($this, 'purge_related_elements_on_post_terms_change'), 10, 6);
 		add_action('wpo_cache_config_updated', array($this, 'cache_config_updated'), 10, 1);
+		add_action('wp_insert_comment', array($this, 'comment_inserted'), 10, 2);
 
 		/**
 		 * List of hooks for which when executed, the cache will be purged
 		 *
 		 * @param array $actions The actions
 		 */
-		$purge_on_action = apply_filters('wpo_purge_cache_hooks', array('after_switch_theme', 'wp_update_nav_menu', 'customize_save_after', array('wp_ajax_save-widget', 0), array('wp_ajax_update-widget', 0), 'autoptimize_action_cachepurged'));
+		$purge_on_action = apply_filters('wpo_purge_cache_hooks', array('after_switch_theme', 'wp_update_nav_menu', 'customize_save_after', array('wp_ajax_save-widget', 0), array('wp_ajax_update-widget', 0), 'autoptimize_action_cachepurged', 'upgrader_overwrote_package', 'wpo_active_plugin_or_theme_updated'));
 		foreach ($purge_on_action as $action) {
 			if (is_array($action)) {
 				add_action($action[0], array($this, 'purge_cache'), $action[1]);
@@ -93,6 +94,32 @@ class WPO_Cache_Rules {
 	}
 
 	/**
+	 * Action when a comment is inserted
+	 *
+	 * @param integer            $comment_id - The comment ID
+	 * @param boolean|WP_Comment $comment    - The comment object (from WP 4.4)
+	 * @return void
+	 */
+	public function comment_inserted($comment_id, $comment = false) {
+		if ($comment && is_a($comment, 'WP_Comment')) {
+			/**
+			 * Filters whether to add a cookie when a comment is posted, in order to exclude the page from caching.
+			 * Regular comments have the property comment_type set to ''  or 'comment'. So by default, only add the cookie in those cases.
+			 *
+			 * @param boolean    $add_cookie
+			 * @param WP_Comment $comment
+			 * @return boolean
+			 */
+			$add_cookie = apply_filters('wpo_add_commented_post_cookie', '' == $comment->comment_type || 'comment' == $comment->comment_type, $comment);
+			if (!$add_cookie) return;
+
+			$url = get_permalink($comment->comment_post_ID);
+			$url_info = parse_url($url);
+			setcookie('wpo_commented_post', 1, time() + WEEK_IN_SECONDS, isset($url_info['path']) ? $url_info['path'] : '/');
+		}
+	}
+
+	/**
 	 * Automatically purge all file based page cache on post changes
 	 * We want the whole cache purged here as different parts
 	 * of the site could potentially change on post updates
@@ -101,8 +128,9 @@ class WPO_Cache_Rules {
 	 */
 	public function purge_post_on_update($post_id) {
 		$post_type = get_post_type($post_id);
+		$post_type_object = get_post_type_object($post_type);
 
-		if ((defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) || 'revision' === $post_type) {
+		if ((defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) || 'revision' === $post_type || !$post_type_object->public) {
 			return;
 		}
 
@@ -209,9 +237,24 @@ class WPO_Cache_Rules {
 
 		$post_type = get_post_type($object_id);
 
-		if ((defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) || 'revision' === $post_type) {
+		if ((defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) || 'revision' === $post_type || 'product_type' === $taxonomy || 'action-group' === $taxonomy) {
 			return;
 		}
+
+		/**
+		 * Adds a way to exit the purge of terms permalink using the provided parameters.
+		 *
+		 * @param bool   $purge      The value filtered, whether or not to purge the related elements
+		 * @param int    $object_id  Object ID.
+		 * @param array  $terms      An array of object terms.
+		 * @param array  $tt_ids     An array of term taxonomy IDs.
+		 * @param string $taxonomy   Taxonomy slug.
+		 * @param bool   $append     Whether to append new terms to the old terms.
+		 * @param array  $old_tt_ids Old array of term taxonomy IDs.
+		 * @default true
+		 * @return boolean
+		 */
+		if (!apply_filters('wpo_cache_purge_related_elements_on_post_terms_change', true, $object_id, $terms, $tt_ids, $taxonomy, $append, $old_tt_ids)) return;
 
 		// get all affected terms.
 		$affected_terms_ids = array_unique(array_merge($tt_ids, $old_tt_ids));
@@ -224,6 +267,9 @@ class WPO_Cache_Rules {
 
 				$term_permalink = get_term_link($term['term_id']);
 				if (!is_wp_error($term_permalink)) {
+					$url = parse_url($term_permalink);
+					// Check if the permalink contains a valid path, to avoid deleting the whole cache.
+					if (!isset($url['path']) || '/' === $url['path']) return;
 					WPO_Page_Cache::delete_cache_by_url($term_permalink, true);
 				}
 			}

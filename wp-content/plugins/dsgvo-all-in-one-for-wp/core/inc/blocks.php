@@ -44,13 +44,14 @@ function gutenberg_examples_dynamic_render_callback_linkedin(  ) {
 }
  
 function gutenberg_examples_dynamic() {
-
-	wp_enqueue_script('dsgvoaio-block-script', plugins_url( '../../assets/js/blocks.js', __FILE__ ), array('wp-block-editor', 'wp-editor', 'wp-blocks', 'wp-components', 'wp-element', 'wp-i18n', 'wp-polyfill'));
-	wp_localize_script('dsgvoaio-block-script', 'dsgvoaio_blockparms', array(
-			'dsgvoaio_imgdir' => plugins_url( '../../assets/img/', __FILE__ )
-		)
-	);
-
+	if (is_admin()) {
+		wp_enqueue_script('dsgvoaio-block-script', plugins_url( '../../assets/js/blocks.js', __FILE__ ), array('wp-block-editor', 'wp-editor', 'wp-blocks', 'wp-components', 'wp-element', 'wp-i18n', 'wp-polyfill'));
+		wp_localize_script('dsgvoaio-block-script', 'dsgvoaio_blockparms', array(
+				'dsgvoaio_imgdir' => plugins_url( '../../assets/img/', __FILE__ )
+			)
+		);
+	}
+	
     register_block_type( 'dsgvo-all-in-one-for-wp/opt-in-out', array(
         'editor_script' => 'dsgvoaio-block-script',
         'render_callback' => 'gutenberg_examples_dynamic_render_callback_opt_in_out'

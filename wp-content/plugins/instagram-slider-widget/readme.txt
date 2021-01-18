@@ -2,12 +2,12 @@
 Contributors: creativemotion
 Tags: instagram, instagram feed, instagram gallery, instagram photos, Instagram widget
 Requires at least: 4.8
-Tested up to: 5.3.0
-Requires PHP: 5.4
+Tested up to: 5.6
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Social Slider Widget is a responsive slider widget that shows 20 latest images from a public instagram user or a hashtag.
+Social Slider Widget is a responsive "instagram slider widget" that shows latest images from a public instagram user or a hashtag.
 
 == Description ==
 = Display Instagram feeds in widgets, posts, pages, or anywhere else using shortcodes. =
@@ -46,7 +46,7 @@ In the Pro version, you can:
 * **authorize several accounts and display multiple feeds simultaneously (fully compatible with Instagram December 11, 2018, API changes);**
 * **display how many likes and comments each post has;**
 * **create carousels of posts;**
-* **use Masonry or Highlight for feeds;**
+* **use Masonry or Highlight for feeds;**
 * **display captions for images and videos;**
 * **View the photos and videos from your feed in a beautiful pop-up lightbox which allows users to experience your content without leaving your site;**
 Learn more about the [Pro version](https://cm-wp.com/instagram-slider-widget) or watch the [demo](https://cm-wp.com/instagram-slider-widget/#demos).
@@ -71,11 +71,6 @@ Our goal is to create a simple yet powerful plugin – customized and multifunct
 2. Activate the plugin through the \'Plugins\' menu in WordPress
 3. Go to Appearance > Widgets and drag \'Social Slider Widget\' to your sidebar
 4. Update the settings in the widget: Instagram Username, Images Layout, Number of Images to show, Check for new images hours
-
-= Requirements =
-* PHP 5.4.0 or later
-* Wordpress 4.8 or later
-* WordPress Cron must be enabled
 
 == Frequently Asked Questions ==
 
@@ -103,6 +98,56 @@ If you don't use an account in the widget, go to the plugin settings and add an 
 10. Highlight
 
 == Changelog ==
+= 1.8.4 =
+* Fixed: Errors on Components page
+
+
+= 1.8.3 =
+* Fixed: script and styles loading on pages
+* Fixed: display in the mobile version
+
+= 1.8.2 =
+* Fixed: script and styles loading on pages where is no widget
+* Minor bug fixes
+
+= 1.8.1 =
+* Minor bug fixes
+
+= 1.8.0 =
+* Added: separate settings for Desktop and Mobile versions
+* Minor bug fixes
+
+= 1.7.13 =
+* Fixed: Unable to save widget settings
+
+= 1.7.12 =
+* Added the Components page
+* Added the Shopifeed component (PRO) (https://cm-wp.com/instagram-slider-widget/shopifeed)
+* Added 'Allow list' to widget settings
+
+= 1.7.11 =
+* Hot Fix
+
+= 1.7.10 =
+* Added 'alt', 'rel' HTML attributes to images
+* Minor bug fixes
+* Fixed issue with disabled premium widget (PRO)
+* Added new setting to 'Slick slider' (PRO)
+
+= 1.7.9 =
+* Fix a problem with a long page load with a widget (Mandatory update!)
+
+= 1.7.8 =
+* Redesign Widgets plugin page
+* Add ability to create demo widgets
+
+= 1.7.7 =
+* Fixed '50 years ago'
+* Added a message about missing widgets
+
+= 1.7.6 =
+* Minor fixes
+
 = 1.7.5 =
 * Fixed delete empty account
 * Compatible with PHP 7.4
@@ -188,7 +233,7 @@ If you don't use an account in the widget, go to the plugin settings and add an 
 * Added Limit for number of words to appear in caption
 * Fixed 500 server error that accured when loading 15+ images
 * Fixed css for some themes
- 
+
 = 1.2.3 =
 * Added Links for Instagram Hashtags
 * Updtated flexislider to 2.5.0
@@ -237,17 +282,17 @@ If you don't use an account in the widget, go to the plugin settings and add an 
 * Fixed error caused by missing json_last_error() function ( php older than 5.3 only )
 
 = 1.0.3 =
-* Added Option to link images to User Profile or Image Url 
+* Added Option to link images to User Profile or Image Url
 * Code Cleanup
 
 = 1.0.2 =
-* Compatibility for php older than 5.3  
+* Compatibility for php older than 5.3
 * Stlying fix for thumbnail layout
-* Added Option to Randomise Images 
+* Added Option to Randomise Images
 
 = 1.0.1 =
-* Removed preg_match 
-* Using exact array index 
+* Removed preg_match
+* Using exact array index
 * Bug Fixes
 
 = 1.0 =

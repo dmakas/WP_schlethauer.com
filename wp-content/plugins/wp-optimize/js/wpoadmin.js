@@ -1,8 +1,41 @@
-jQuery(document).ready(function ($) {
+jQuery(function ($) {
 	WP_Optimize = WP_Optimize();
 	if ('undefined' != typeof WP_Optimize_Cache) WP_Optimize_Cache = WP_Optimize_Cache();
 	if ('undefined' != typeof wp_optimize.minify) WP_Optimize_Minify = wp_optimize.minify.init();
 });
+
+(function($) {
+	/**
+	 * Form errors store
+	 */
+	var errors = [];
+	$.fn.form_errors = function() {
+		return this;
+	}
+	$.fn.form_errors.add = function(type, message) {
+		if (false !== this.has_error((type))) return;
+		errors.push({type: type, message: message});
+	};
+	$.fn.form_errors.remove = function(type) {
+		var found_error = this.has_error(type);
+		if (found_error !== false) {
+			errors.splice(found_error, 1);
+		}
+	};
+	$.fn.form_errors.has_error = function(type) {
+		var has_error = false;
+		$.each(errors, function(index, error) {
+			console.log(index, error)
+			if (type == error.type) {
+				has_error = index;
+			}
+		}.bind(this));
+		return has_error;
+	};
+	$.fn.form_errors.has_errors = function() {
+		return errors.length > 0;
+	}
+})(jQuery);
 
 /**
  * Main WP_Optimize - Function for sending communications.
@@ -14,6 +47,7 @@ var WP_Optimize = function () {
 	var queue = new Updraft_Queue();
 	var send_command = wp_optimize.send_command;
 	var optimization_force = false;
+	var optimization_logged_warnings = false;
 	var force_single_table_optimization = false;
 
 	/**
@@ -40,7 +74,7 @@ var WP_Optimize = function () {
 
 	enable_or_disable_schedule_options();
 
-	$('#enable-schedule').change(function () {
+	$('#enable-schedule').on('change', function () {
 		enable_or_disable_schedule_options();
 	});
 
@@ -204,19 +238,19 @@ var WP_Optimize = function () {
 		});
 	}
 	
-	$('#wp-optimize-disable-enable-trackbacks-enable').click(function () {
+	$('#wp-optimize-disable-enable-trackbacks-enable').on('click', function () {
 		enable_or_disable_feature('trackbacks', true);
 	});
 	
-	$('#wp-optimize-disable-enable-trackbacks-disable').click(function () {
+	$('#wp-optimize-disable-enable-trackbacks-disable').on('click', function () {
 		enable_or_disable_feature('trackbacks', false);
 	});
 	
-	$('#wp-optimize-disable-enable-comments-enable').click(function () {
+	$('#wp-optimize-disable-enable-comments-enable').on('click', function () {
 		enable_or_disable_feature('comments', true);
 	});
 	
-	$('#wp-optimize-disable-enable-comments-disable').click(function () {
+	$('#wp-optimize-disable-enable-comments-disable').on('click', function () {
 		enable_or_disable_feature('comments', false);
 	});
 
@@ -248,7 +282,6 @@ var WP_Optimize = function () {
 		var active_tab = $('.wpo-page[data-whichpage='+params.page+']').find('.nav-tab-wrapper .nav-tab-active');
 		$('#wp-optimize-wrap').trigger('tab-change', { page: params.page, tab: active_tab.data('tab') });
 		$('#wp-optimize-wrap').trigger('tab-change/'+params.page+'/'+active_tab.data('tab'), { content: $('#' + active_tab.attr('id') + '-contents')});
-
 	});
 
 	// set a time out, as needs to be done once the rest is loaded
@@ -258,7 +291,7 @@ var WP_Optimize = function () {
 	}, 500);
 
 	// Tabs menu
-	$('.nav-tab-wrapper .nav-tab').click(function (e) {
+	$('.nav-tab-wrapper .nav-tab').on('click', function (e) {
 
 		e.preventDefault();
 
@@ -290,6 +323,26 @@ var WP_Optimize = function () {
 	$('#wp-optimize-nav-page-menu').on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('opened');
+	});
+
+	/**
+	 * Setup a simple cross-pages/tabs navigation.
+	 *
+	 * Basic example: <button class="js--wpo-goto" data-page="wpo_minify" data-tab="status">Go to the minify page, status tab</button>
+	 */
+	$('#wp-optimize-wrap').on('click', '.js--wpo-goto', function(e) {
+		e.preventDefault();
+		// get the page and tab
+		var page = $(this).data('page');
+		var tab = $(this).data('tab');
+		if (page) {
+			// Trigger a page change
+			$('.wpo-pages-menu a[data-menuslug="' + page + '"]').trigger('click');
+		}
+		if (tab) {
+			// Change tab change
+			$('.wpo-page.active .nav-tab-wrapper a[data-tab="' + tab + '"]').trigger('click');
+		}
 	});
 
 	/**
@@ -394,6 +447,8 @@ var WP_Optimize = function () {
 	 */
 	function process_done() {
 		send_command('optimizations_done', {}, function () {});
+		// Reset the warning flag
+		optimization_logged_warnings = false;
 	}
 	
 	/**
@@ -437,6 +492,38 @@ var WP_Optimize = function () {
 
 		$(document).trigger(['do_optimization_', id, '_start'].join(''));
 
+		if ('optimizetables' === id) {
+			// Display the table name being optimized
+			$('#optimization_info_' + id).html(wpoptimize.optimizing_table + ' ' + data.optimization_table);
+
+			// Set extra options for the request
+			var timeout = parseInt(wpoptimize.table_optimization_timeout) ? parseInt(wpoptimize.table_optimization_timeout) : 120000;
+			var request_options = {
+				timeout: timeout,
+				error: function(error, type) {
+
+					optimization_logged_warnings = true;
+					if ('timeout' === type) {
+						console.warn('The request to optimize the table ' + data.optimization_table + ' timed out after ' + (timeout / 1000) + ' seconds');
+					} else {
+						console.warn('There was an error when running the optimization "' + id + '".', type, error, data);
+					}
+					if (queue.is_empty()) {
+						$('#optimization_spinner_' + id).hide();
+						$('#optimization_checkbox_' + id).show();
+						$('.optimization_button_' + id).prop('disabled', false);
+						$('#optimization_info_' + id).html(wpoptimize.optimization_complete + ' ' + wpoptimize.with_warnings);
+					}
+
+					setTimeout(function () {
+						queue.unlock(); process_queue();
+					}, 500);
+				}
+			}
+		} else {
+			var request_options = {};
+		}
+
 		send_command('do_optimization', { optimization_id: id, data: data }, function (response) {
 
 			$('#optimization_spinner_' + id).hide();
@@ -473,7 +560,8 @@ var WP_Optimize = function () {
 						$('#optimization_spinner_' + id).hide();
 						$('#optimization_checkbox_' + id).show();
 						$('.optimization_button_' + id).prop('disabled', false);
-						$('#optimization_info_' + id).html(wpoptimize.optimization_complete);
+
+						$('#optimization_info_' + id).html(wpoptimize.optimization_complete + (optimization_logged_warnings ? (' ' + wpoptimize.with_warnings) : ''));
 					} else {
 						$('#optimization_checkbox_' + id).hide();
 						$('#optimization_spinner_' + id).show();
@@ -494,8 +582,8 @@ var WP_Optimize = function () {
 			}
 			setTimeout(function () {
 				queue.unlock(); process_queue();
-			}, 10);
-		});
+			}, 500);
+		}, true, request_options);
 	}
 	
 	/**
@@ -919,29 +1007,49 @@ var WP_Optimize = function () {
 		update_single_table_optimization_buttons(force_single_table_optimization);
 	}
 
-	$('#wp_optimize_table_list_refresh').click(function (e) {
+	$('#wp_optimize_table_list_refresh').on('click', function (e) {
 		
 		e.preventDefault();
 		var shade = $(this).closest('.wpo-tab-postbox').find('.wpo_shade');
 		shade.removeClass('hidden');
 		$('#wpoptimize_table_list tbody').css('opacity', '0.5');
-		send_command('get_table_list', false, update_tables_list).always(function() {
+		send_command('get_table_list', {refresh_plugin_json: true}, update_tables_list).always(function() {
 			shade.addClass('hidden');
 		});
 	});
-	
+
 	$('#database_settings_form, #settings_form').on('click', '.wpo-save-settings', function (e) {
 
 		e.preventDefault();
 		var form = $(this).closest('form');
 		var spinner = form.find('.wpo-saving-settings');
+		var form_data = gather_settings();
+
+		form.trigger('wpo-saving-form-data');
+
+		if (form.form_errors.has_errors()) return;
+
 		spinner.show();
 
-		var form_data = gather_settings();
+		// when optimizations list in the document - send information about selected optimizations.
+		if ($('#optimizations_list').length) {
+			$('#optimizations_list .optimization_checkbox:checked').each(function() {
+				var optimization_id = $(this).closest('.wp-optimize-settings').data('optimization_id');
+				if (optimization_id) {
+					form_data += '&optimization-options['+optimization_id+'][active]=1';
+				}
+			});
+		}
+
+		if ($('#purge_cache_permissions').length) {
+			if (!$('#purge_cache_permissions').val()) {
+				form_data += '&purge_cache_permissions[]';
+			}
+		}
 
 		send_command('save_settings', form_data, function (resp) {
 
-			form.closest('form').find('.save-done').show().delay(5000).fadeOut();
+			spinner.closest('div').find('.save-done').show().delay(5000).fadeOut();
 
 			if (resp && resp.hasOwnProperty('save_results') && resp.save_results && resp.save_results.hasOwnProperty('errors')) {
 				for (var i = 0, len = resp.save_results.errors.length; i < len; i++) {
@@ -957,6 +1065,7 @@ var WP_Optimize = function () {
 					}
 				});
 			}
+
 			if (resp && resp.hasOwnProperty('optimizations_table')) {
 				$('#optimizations_list').replaceWith(resp.optimizations_table);
 			}
@@ -968,6 +1077,24 @@ var WP_Optimize = function () {
 		}).always(function() {
 			spinner.hide();
 		});
+	});
+
+	/**
+	 * Handle Wipe Settings click.
+	 */
+	$('#settings_form').on('click', '.wpo-wipe-settings', function() {
+		var spinner = $(this).parent().find('.wpo_spinner');
+
+		spinner.show();
+
+		send_command('wipe_settings', {}, function() {
+			spinner.next().removeClass('display-none').delay(5000).fadeOut();
+			alert(wpoptimize.settings_have_been_deleted_successfully);
+			location.replace(wpoptimize.settings_page_url);
+		}).always(function() {
+			spinner.hide();
+		});
+
 	});
 
 	$('#wp-optimize-wrap').on('click', '#wp_optimize_status_box_refresh', function (e) {
@@ -1243,13 +1370,14 @@ var WP_Optimize = function () {
 				message = (resp && resp.result && resp.result.output) ? resp.result.output.join('<br>') : '...';
 
 			// trigger event about optimization get info in process.
-			$(document).trigger(['optimization_get_info_', optimization_id].join(''), message);
+			$(document).trigger(['optimization_get_info_', optimization_id].join(''), [message, meta]);
 			// update status message in optimizations list.
 			optimization_info_container.html(message);
 
 			if (!meta.finished) {
 				setTimeout(function() {
-					optimization_get_info(optimization_info_container, optimization_id, meta)
+					var xhr = optimization_get_info(optimization_info_container, optimization_id, meta);
+					$(document).trigger(['optimization_get_info_xhr_', optimization_id].join(''), [xhr, meta]);
 				}, 1);
 			} else {
 				// trigger event about optimization get info action done.
@@ -1263,7 +1391,7 @@ var WP_Optimize = function () {
 	 *
 	 * @return void
 	 */
-	$(document).ready(function() {
+	jQuery(function() {
 		$('.wp-optimize-optimization-info-ajax').each(function () {
 			var optimization_info = $(this),
 				optimization_info_container = optimization_info.parent(),
@@ -1342,18 +1470,52 @@ var WP_Optimize = function () {
 		});
 	});
 
+	var table_to_remove_btn;
 	// Handle delete table click
 	$('#wpoptimize_table_list').on('click', '.run-single-table-delete', function () {
-		if (!confirm(wpoptimize.are_you_sure_you_want_to_remove_this_table)) return false;
-
+		table_to_remove_btn = $(this);
 		var take_backup_checkbox = $('#enable-auto-backup-1');
+		wp_optimize.modal.open({
+			className: 'wpo-confirm',
+			events: {
+				'click .wpo-modal--bg': 'close',
+				'click .delete-table': 'deleteTable',
+				'change #confirm_deletion_without_backup': 'changeConfirm',
+				'change #confirm_table_deletion': 'changeConfirm'
+			},
+			content: function() {
+				var content_template = wp.template('wpo-table-delete');
+				// Get the plugins list
+				var plugins_list = table_to_remove_btn.closest('tr').find('.table-plugins').html();
+				return content_template({
+					no_backup: !take_backup_checkbox.is(':checked'),
+					plugins_list: plugins_list,
+					table_name: table_to_remove_btn.data('table')
+				});
+			},
+			changeConfirm: function() {
+				var enable_button = true;
+				var backup_input = this.$('#confirm_deletion_without_backup');
+				var confirm_input = this.$('#confirm_table_deletion');
+				if (backup_input.length && !backup_input.is(':checked')) {
+					enable_button = false;
+				}
+				if (!confirm_input.is(':checked')) {
+					enable_button = false;
+				}
+				this.$('.delete-table').prop('disabled', !enable_button);
+			},
+			deleteTable: function() {
+				// check if backup checkbox is checked for db tables
+				if (take_backup_checkbox.is(':checked')) {
+					take_a_backup_with_updraftplus(remove_single_db_table);
+				} else {
+					remove_single_db_table();
+				}
+				this.close();
 
-		// check if backup checkbox is checked for db tables
-		if (take_backup_checkbox.is(':checked')) {
-			take_a_backup_with_updraftplus(remove_single_db_table($(this)));
-		} else {
-			remove_single_db_table($(this));
-		}
+			}
+		});
 	});
 
 	/**
@@ -1363,11 +1525,10 @@ var WP_Optimize = function () {
 	 *
 	 * @return void
 	 */
-	function remove_single_db_table(btn) {
-
-		var spinner = btn.next(),
+	function remove_single_db_table() {
+		var spinner = table_to_remove_btn.next(),
 			action_done_icon = spinner.next(),
-			table_name = btn.data('table'),
+			table_name = table_to_remove_btn.data('table'),
 			data = {
 				optimization_id: 'orphanedtables',
 				optimization_table: table_name
@@ -1377,7 +1538,7 @@ var WP_Optimize = function () {
 
 		send_command('do_optimization', { optimization_id: 'orphanedtables', data: data }, function (response) {
 			if (response.result.meta.success) {
-				var row = btn.closest('tr');
+				var row = table_to_remove_btn.closest('tr');
 
 				action_done_icon.show().removeClass('visibility-hidden');
 
@@ -1399,7 +1560,7 @@ var WP_Optimize = function () {
 				alert(message);
 			}
 		}).always(function() {
-			btn.prop('disabled', false);
+			table_to_remove_btn.prop('disabled', false);
 			spinner.addClass('visibility-hidden');
 		});
 	}
@@ -1438,12 +1599,11 @@ var WP_Optimize = function () {
 	}
 
 	/**
-	 * Validate loggers settings.
-	 *
-	 * @return {boolean}
+	 * Validate general settings (loggers).
 	 */
-	function validate_logger_settings() {
+	$('#wp-optimize-general-settings').on('wpo-saving-form-data', function() {
 		var valid = true;
+		var $form = $(this);
 
 		$('.wpo_logger_addition_option, .wpo_logger_type').each(function() {
 			if (!validate_field($(this), true)) {
@@ -1455,6 +1615,7 @@ var WP_Optimize = function () {
 		});
 
 		if (!valid) {
+			$form.form_errors.add('missing-fields', '');
 			$('#wp-optimize-settings-save-results')
 				.show()
 				.addClass('wpo_alert_notice')
@@ -1464,11 +1625,11 @@ var WP_Optimize = function () {
 					$(this).removeClass('wpo_alert_notice');
 				});
 		} else {
+			$form.form_errors.remove('missing-fields');
 			$('#wp-optimize-logger-settings .save_settings_reminder').slideUp();
 		}
 
-		return valid;
-	}
+	});
 
 	/**
 	 * Validate import field with data-validate attribute.
@@ -1551,7 +1712,7 @@ var WP_Optimize = function () {
 	}
 }; // END function WP_Optimize()
 
-jQuery(document).ready(function ($) {
+jQuery(function ($) {
 	/**
 	 * Show additional options section if optimization enabled
 	 *
@@ -1769,7 +1930,7 @@ jQuery(document).ready(function ($) {
 		for (i in options) {
 			if (!options.hasOwnProperty(i)) continue;
 
-			if ($.isArray(options[i])) {
+			if (Array.isArray(options[i])) {
 				placeholder = $.trim(options[i][0]);
 				validate = $.trim(options[i][1]);
 			} else {

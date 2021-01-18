@@ -61,5 +61,9 @@ tarteaucitron.lang = {
     "other": {
         "title": "Altro",
         "details": "Servizi per visualizzare contenuti web."
-    }
+    },
+    "essenziell": {
+        "title": "Essenziale",
+        "details": "Si tratta di cookie tecnicamente necessari."
+    }	
 };

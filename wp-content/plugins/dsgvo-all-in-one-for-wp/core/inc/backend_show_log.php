@@ -1,7 +1,7 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 <div class='wrap'>
-        <h2><?php echo __("Opt-in / Opt-out Logbuch", "dsgvo-all-in-one-for-wp"); ?></h2>
-		<p><?php echo __("Nachfolgend finden Sie eine Übersicht die auch als Beleg genutzt werden kann über die Zustimmungen bzw. Ablehnungen der Dienste.", "dsgvo-all-in-one-for-wp"); ?></p>
+        <h2><?php echo __("Opt-in / Opt-out Logbook", "dsgvo-all-in-one-for-wp"); ?></h2>
+		<p><?php echo __("In the following you will find an overview which can also be used as proof of the acceptance or rejection of the services.", "dsgvo-all-in-one-for-wp"); ?></p>
 		
 <?php
 	$log_datas = get_option('dsgvoaio_log');
@@ -11,11 +11,11 @@
 		<thead>
             <tr>
                 <th><?php echo __("ID", "dsgvo-all-in-one-for-wp"); ?></th>
-                <th><?php echo __("UID", "dsgvo-all-in-one-for-wp"); ?><span  class="dsgvoaio_tooltip tooltip" title="<?php echo __("Eindeutige ID um den Nutzer zu identifizieren.", "dsgvo-all-in-one-for-wp"); ?>" ><span class="dashicons dashicons-editor-help"></span></span></th>
-                <th><?php echo __("Dienst / Bezeichnung", "dsgvo-all-in-one-for-wp"); ?></th>
-				<th><?php echo __("Status", "dsgvo-all-in-one-for-wp"); ?><span  class="dsgvoaio_tooltip tooltip" title="<?php echo __("Status ob der jeweilige Dienst zugelassen oder abgelehnt wurde (Opt-in / Opt-out).", "dsgvo-all-in-one-for-wp"); ?>" ><span class="dashicons dashicons-editor-help"></span></span></th>
-                <th><?php echo __("IP Adresse", "dsgvo-all-in-one-for-wp"); ?></th>
-                <th><?php echo __("Zeitpunkt", "dsgvo-all-in-one-for-wp"); ?></th>
+                <th><?php echo __("UID", "dsgvo-all-in-one-for-wp"); ?><span  class="dsgvoaio_tooltip tooltip" title="<?php echo __("Unique ID to identify the user.", "dsgvo-all-in-one-for-wp"); ?>" ><span class="dashicons dashicons-editor-help"></span></span></th>
+                <th><?php echo __("Service / Name", "dsgvo-all-in-one-for-wp"); ?></th>
+				<th><?php echo __("Status", "dsgvo-all-in-one-for-wp"); ?><span  class="dsgvoaio_tooltip tooltip" title="<?php echo __("Status whether the respective service was approved or rejected (Opt-in / Opt-out).", "dsgvo-all-in-one-for-wp"); ?>" ><span class="dashicons dashicons-editor-help"></span></span></th>
+                <th><?php echo __("IP Adress", "dsgvo-all-in-one-for-wp"); ?></th>
+                <th><?php echo __("Date / Time", "dsgvo-all-in-one-for-wp"); ?></th>
             </tr>
         </thead>
         <tbody>	
@@ -23,9 +23,9 @@
 		
 		foreach ($log_datas as $log_entry_key => $log_entry_value) {
 			if ($log_entry_value['state'] == "true") {
-				$stateval = __("Zugelassen", "dsgvo-all-in-one-for-wp");
+				$stateval = __("Approved", "dsgvo-all-in-one-for-wp");
 			} else {
-				$stateval = __("Abgelehnt", "dsgvo-all-in-one-for-wp");
+				$stateval = __("Rejected", "dsgvo-all-in-one-for-wp");
 			}
 		?>
 				<tr>
@@ -54,29 +54,29 @@
 	
 	<div class="dsgvoaio_delete_log_form" style="display: none;">
 	<form action="#">
-	<a href="#" class="button button-primary dsgvoaio_delete_full_log"><?php echo __("Kompletten Log löschen", "dsgvo-all-in-one-for-wp"); ?></a>
+	<a href="#" class="button button-primary dsgvoaio_delete_full_log"><?php echo __("Delete complete Log", "dsgvo-all-in-one-for-wp"); ?></a>
 	</form>
-	<button type="button" class="notice-dismiss dsgvoaio_dismissdeleteform"><span class="screen-reader-text">Dismiss this notice.</span> </button>
+	<button type="button" class="notice-dismiss dsgvoaio_dismissdeleteform"><span class="screen-reader-text"><?php echo __("Dismiss this notice", "dsgvo-all-in-one-for-wp"); ?>.</span></button>
 	</div>	
 	
 	<div class="dsgvoaio_export_log_uid_form" style="display: none;">
 	<form action="#">
 	<input type="text" name="dsgvoaio_export_log_uid_val" class="dsgvoaio_export_log_uid_val" placeholder="UID eingeben..."/>
-	<a href="#" class="button button-primary dsgvoaio_export_log_uid"><?php echo __("Log exportieren", "dsgvo-all-in-one-for-wp"); ?></a>
-	<span class="button button-primary dsgvoaio_export_log_uid_loader" style="display: none;"><?php echo __("Wird generiert... Bitte warten...", "dsgvo-all-in-one-for-wp"); ?></span>
+	<a href="#" class="button button-primary dsgvoaio_export_log_uid"><?php echo __("Export Log", "dsgvo-all-in-one-for-wp"); ?></a>
+	<span class="button button-primary dsgvoaio_export_log_uid_loader" style="display: none;"><?php echo __("Generating... Please wait...", "dsgvo-all-in-one-for-wp"); ?></span>
 	
 	</form>
-	<button type="button" class="notice-dismiss dsgvoaio_dismissloguid"><span class="screen-reader-text">Dismiss this notice.</span> </button>
+	<button type="button" class="notice-dismiss dsgvoaio_dismissloguid"><span class="screen-reader-text"><?php echo __("Dismiss this notice", "dsgvo-all-in-one-for-wp"); ?>.</span> </button>
 	</div>
 	
-	<a href="#" class="button button-primary dsgvoaio_export_log"><?php echo __("Logbuch als PDF Datei exportieren", "dsgvo-all-in-one-for-wp"); ?><span class="dashicons dashicons-media-default"></span></a>
-	<span class="button button-primary dsgvoaio_export_log_loader" style="display: none;"><?php echo __("Wird generiert... Bitte warten...", "dsgvo-all-in-one-for-wp"); ?></span>
+	<a href="#" class="button button-primary dsgvoaio_export_log"><?php echo __("Export Log as PDF", "dsgvo-all-in-one-for-wp"); ?><span class="dashicons dashicons-media-default"></span></a>
+	<span class="button button-primary dsgvoaio_export_log_loader" style="display: none;"><?php echo __("Generating... Please wait...", "dsgvo-all-in-one-for-wp"); ?></span>
 	
-	<a href="#" class="button button-primary dsgvoaio_export_log_uid_show_form"><?php echo __("Log anhand einer UID exportieren", "dsgvo-all-in-one-for-wp"); ?><span class="dashicons dashicons-media-default"></span></a>
+	<a href="#" class="button button-primary dsgvoaio_export_log_uid_show_form"><?php echo __("Export log using a UID", "dsgvo-all-in-one-for-wp"); ?><span class="dashicons dashicons-media-default"></span></a>
 	
-	<a href="#" class="button button-primary dsgvoaio_delete_log_show_form"><?php echo __("Log leeren/löschen", "dsgvo-all-in-one-for-wp"); ?><span class="dashicons dashicons-dismiss"></span></a>		
+	<a href="#" class="button button-primary dsgvoaio_delete_log_show_form"><?php echo __("Clear/Delete Log", "dsgvo-all-in-one-for-wp"); ?><span class="dashicons dashicons-dismiss"></span></a>		
 	<?php } else { ?>
-	<p><b>Info:</b>&nbsp;<?php echo __("Es sind noch keine Einträge vorhanden...", "dsgvo-all-in-one-for-wp"); ?></p>
+	<p><b>Info:</b>&nbsp;<?php echo __("There are no entries available yet...", "dsgvo-all-in-one-for-wp"); ?></p>
 	<?php } ?>
 
 
@@ -100,7 +100,7 @@ jQuery(document).ready(function() {
 	});
 	
 	jQuery(".dsgvoaio_delete_full_log").click(function(event) {
-		if (confirm('<?php echo __("Sollen wirklich ALLE Einträge im Logbuch unwiderruflich gelöscht werden?", "dsgvo-all-in-one-for-wp"); ?>')) {
+		if (confirm('<?php echo __("Should really ALL entries in the logbook be irrevocably deleted?", "dsgvo-all-in-one-for-wp"); ?>')) {
 			jQuery.ajax({
 				type: 'POST',
 				url: '<?php echo admin_url('admin-ajax.php'); ?>',
@@ -108,11 +108,11 @@ jQuery(document).ready(function() {
 					'nonce': '<?php echo wp_create_nonce( 'dsgvoaio-delete-log-full-nonce' )?>',
 					'action': 'dsgvoaiofree_delete_log_full'
 					}, success: function (result) {
-						alert('<?php  echo __("Alle Einträge wurden erfolgreich gelöscht!", "dsgvo-all-in-one-for-wp"); ?>');
+						alert('<?php  echo __("All entries were successfully deleted!", "dsgvo-all-in-one-for-wp"); ?>');
 						location.reload();
 					},
 					error: function () {
-						alert("<?php  echo __("Es ist ein Fehler aufgetreten. Bitte wenden Sie sich an den Support.", "dsgvo-all-in-one-for-wp"); ?>");
+						alert("<?php  echo __("An error has occurred. Please contact the support.", "dsgvo-all-in-one-for-wp"); ?>");
 					}
 			});
 		}
@@ -140,7 +140,7 @@ jQuery(document).ready(function() {
 						jQuery('.dsgvoaio_export_log_uid').show();
 					},
 					error: function () {
-						alert("<?php  echo __("Es ist ein Fehler aufgetreten. Bitte wenden Sie sich an den Support.", "dsgvo-all-in-one-for-wp"); ?>");
+						alert("<?php  echo __("An error has occurred. Please contact the support.", "dsgvo-all-in-one-for-wp"); ?>");
 						jQuery('.dsgvoaio_export_log').show();
 						jQuery('.dsgvoaio_export_log_uid_loader').hide();
 						jQuery('.dsgvoaio_export_log_uid').show();
@@ -148,14 +148,14 @@ jQuery(document).ready(function() {
 			});	
 		
 		} else {
-			alert("<?php  echo __("Es ist ein Fehler aufgetreten. Bitte geben Sie eine UID ein.", "dsgvo-all-in-one-for-wp"); ?>");			
+			alert("<?php  echo __("An error has occurred. Please enter a UID.", "dsgvo-all-in-one-for-wp"); ?>");			
 		}
 		event.preventDefault();
 	});	
 
 
 	jQuery(".dsgvoaio_export_log").click(function(event) {
-		if (confirm('<?php  echo __("Wollen Sie das Logbuch als PDF Datei exportieren?", "dsgvo-all-in-one-for-wp"); ?>')) {
+		if (confirm('<?php  echo __("Do you want to export the logbook as PDF file?", "dsgvo-all-in-one-for-wp"); ?>')) {
 			jQuery('.dsgvoaio_export_log_output').hide();
 			jQuery('.dsgvoaio_export_log').hide();
 			jQuery('.dsgvoaio_export_log_loader').show();
@@ -174,7 +174,7 @@ jQuery(document).ready(function() {
 					},
 					error: function () {
 						//jQuery('.iframeitm'+id).show();
-						alert("<?php  echo __("Es ist ein Fehler aufgetreten. Bitte wenden Sie sich an den Support.", "dsgvo-all-in-one-for-wp"); ?>");
+						alert("<?php  echo __("An error has occurred. Please contact the support.", "dsgvo-all-in-one-for-wp"); ?>");
 						jQuery('.dsgvoaio_export_log').show();
 						jQuery('.dsgvoaio_export_log_loader').hide();
 					}

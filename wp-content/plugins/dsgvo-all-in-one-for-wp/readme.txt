@@ -3,148 +3,142 @@ Contributors: mlfactory
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJHKYWR5M5V3N
 Tags: DSGVO, Cookie Notice, cookie, GDPR, Datenschutz
 Requires at least: 4
-Tested up to: 5.4
+Tested up to: 5.5.1
 Requires PHP: 5.2.4 or higher
-Stable tag: 3.2
+Stable tag: 3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
  
-Ein All in One DSGVO Plugin f&uuml;r alles! Cookie Notice - externe Dienste konform einbinden - DSGVO / Datenschutzgrundverordnung konform.
+An All in One GDPR Plugin for everything! Responsive Cookie Notice - Imprint & Privacy Policy Generator - integrate external Services GDPR compliant (2 Click Solution)
  
 == Description ==
 
-Bring Wordpress auf den aktuellsten Stand der Datenschutzverordnung DSGVO.
+Bring Wordpress up to date according to the General Data Protection Regulation GDPR.
 
-**Die echte All in One Lösung im Bereich DSGVO seit 2017.**
+Responsive Cookie Notice - Imprint + Privacy Policy Generator - 2 click solution for external Services
 
-Bindet viele externe Dienste DSGVO konform ein.
-
-Für eine bessere Übersicht der Funktionen besuchen Sie unsere Webseite <a href="http://dsgvo-for-wp.com" target="blank">www.dsgvo-for-wp.com</a>
-
+For a better overview of the functions please visit our website <a href="http://dsgvo-for-wp.com" target="blank">www.dsgvo-for-wp.com</a>
 
 **DE - AT - CH**
-**E-Privacy Ready**
-**Unterstützt Polylang - TranslatePress & WPML (DE & EN)**
+**Supports Polylang - TranslatePress - qTranslate X & WPML (DE - EN - IT)**
 
-Einfach installieren und die noetigen Einstellungen t&auml;tigen - schon ist es geschafft.
+**In the Pro Version you have some more features...**
 
-**In der Pro Version haben Sie einige mehr M&ouml;glichkeiten...**
+All colors & texts easily changeable.
 
-Alle Farben & Texte bequem änderbar.
+**The Pro version supports more than 70 external services:** such as Google Adsense, Google Fonts, Font Library, Amazon Ads, Google Maps, reCAPTCHA, OpenStreetMap, AddThis, AddToAny, YouTube, Dailymotion, Vimeo, Soundcloud und viele weitere.
 
-**Die Pro Version unterst&uuml;tzt mehr als 70 externe Dienste:** wie z.B. Google Adsense, Google Fonts, Amazon Ads, Google Maps, reCAPTCHA, OpenStreetMap, AddThis, AddToAny, YouTube, Dailymotion, Vimeo, Soundcloud und viele weitere.
+**Makes the following plugins GDPR compliant:** Contact Form 7, Gravity Forms, WooCommerce, Slimstat Analytics, OneSignal, LeafLetMap, Analytify, MonsterInsights.
 
-**Macht folgende Plugins DSGVO konform:** Contact Form 7, Gravity Forms, WooCommerce, Slimstat Analytics, OneSignal, LeafLetMap, Analytify, MonsterInsights.
-
-**Unterstützt alle bekannten Pagebuilder** wie z.B. Elementor, WPBakery, Visual Composer, Fusion Builder, Divi Builder 
+**Supports all popular Pagebuilders** such as Elementor, WPBakery, Visual Composer, Fusion Builder, Divi Builder
 
 
-= Features Free Version =
+<h3>🆓 Features Free Version</h3>
 
 * **Cookie Notice**
-Responsive - selektiver Opt-In & Opt-Out - mit Animation
-Zwischen 2 Farbschemas wählbar (hell & dunkelgrau).
-Zwischen 3 Layouts wählbar (Sticky am unteren Bildschirmrand / Popup / Popup + Datenschutzbedingungen).
-Die wichtigsten Texte und Links k&ouml;nnen angepasst werden - Cookie Lebendauer auch &auml;nderbar.
+Responsive - selective Opt-In & Opt-Out - with animation
+Selectable between 2 color schemes (light & dark gray).
+Selectable between 3 layouts (sticky at the bottom of the screen / popup / popup + privacy policy).
+The most important texts can be changed by you.
 
-* **Service Kontrolle**
-&Uuml;bersicht der akzeptieren Cookies und Services.
-Gibt dem Benutzer nach der Zustimmung / Ablehung der Cookies / Dienste Auskunft über den aktuellen Status der Dienste.
-Auch auf jeder beliebigen Seite via Shortcode nutzbar.
+* **Service Control**
+Overview of accepted cookies and external services.
+Provides the user with information about the current status of the services after acceptance / rejection of cookies / services.
+Can also be used on any page via shortcode.
  
-* **Automatisch generierte Datenschutzbestimmungen / Texte**
-Immer aktuell - auch für die verwendeten externen Dienste (Inklusive Auflistung der Cookies sowie deren Details).
-Je nach gewählter externer Dienste werden auch für diese Dienste die Datenschutzbedingungen automatisch generiert.
+* **Automatically generated Privacy Policy**
+Always up-to-date - also for the external services used (including listing of cookies and their details)
+Depending on the selected external services and used WordPress Plugins, the Privacy Policy are automatically generated for these services.
 
-* **Unterstützt Polylang / TranslatePress & WPML (DE & EN)**
-Alle Datenschutztexte beider Sprachen inklusive.
+* **Imprint Generator**
+The Imprint Generator automatically creates a legally compliant Imprint including disclaimer and copyright passage.
 
-* **Bindet folgende Dienste DSGVO konform ein (Opt In & Opt Out)**
-Google Analytics, Google Tag Manager, VG Wort, Matomo , Facebook Pixel, Facebook Kommentare, Facebook "Gef&auml;llt mir Button", Shareaholic, Twitter "Tweet Button", LinkendIn Button.
-Der Benutzer kann die Nutzung der Dienste ablehnen oder akzeptieren (Opt in - Opt Out). Er kann auch einzelne Dienste erlauben oder ablehnen.
-Wenn nicht zugestimmt werden die Dienste geblockt und die Inhalte der Dienste werden durch eine farbliche Box ersetzt mit der Option den jeweiligen Dienst zuzulassen.
+* **Supports Polylang / TranslatePress & WPML (DE - EN & IT)**
+All Texts of the three languages included.
 
-* **Unterstützt folgende Plugins**
-Google Analytics Dashboard Plugin for WordPress by Analytify, Google Analytics Dashboard Plugin for WordPress by MonsterInsights
+* **Integrates the following services according to DSGVO (Opt In & Opt Out - 2 Click Solution)**
+YouTube - via Shortcode (NEW),Google Analytics, Google Tag Manager, VG Wort, Matomo (Piwik) , Facebook Pixel, Facebook Comments, Facebook "Like Button", Shareaholic, Twitter "Tweet Button", LinkendIn Button.
+The user can refuse or accept the use of the Services (Opt in - Opt out). He can also allow or deny individual services.
+If not agreed, the services will be blocked and the content of the services will be replaced by a colored box with the option to allow the respective service.
 
-* **Auskunft/Auszug der Benutzerdaten / PDF Export**
-Gibt dem Benutzer alle Daten aus die &uuml;ber Ihn gespeichert sind. Export per PDF m&ouml;glich!
+* **Supports the following plugins**
+Google Analytics Dashboard Plugin for WordPress by Analytify, Google Analytics Dashboard Plugin for WordPress by MonsterInsights, Worthy (VG Wort)
 
-* **L&ouml;schung der Benutzerdaten**
-Der Benutzer kann selbst &uuml;ber ein Formular seinen kompletten Datensatz l&ouml;schen.
+* **Information/Extract of user data / PDF export**
+Shows the user all data stored about him. Export via PDF possible!
 
-* **Logbuch** mit Export Funktion
-Speichert ob ein Nutzer Dienste abgelehnt oder zugelassen hat (Nachweispflicht).
-Es kann das gesamte Logbuch als PDF exportiert werden oder aber nur Einträge für eine bestimmte UID.
-Als Info: die UID umfasst 30 Ziffern - die letzten 5 Ziffern werden anonymisiert vor dem speichern.
+* **Deletion of user data**
+The user can delete his data himself using a form.
 
-* **Zustimmung der Datenschutzbedingungen beim posten eines Kommentares (Blog)**
+* **Logbook** with export function
+Saves whether a user has refused or allowed services (Duty of proof).
+The whole logbook can be exported as PDF or only entries for a certain UID.
+Info: the UID contains 30 digits - the last 5 digits are anonymized before saving.
 
-* PHP7 Kompatibel
+* **Acceptance of the Privacy Policy when posting a comment (Blog)**
 
-* Unterstützt DNT (DoNotTrack)
+* PHP7 compatible
+
+* Supports DNT (DoNotTrack)
 
 * Support & Updates
 
 
-= Features PRO Version =
+<h3>🆙 Features PRO Version</h3>
  
-* **alle Features der kostenlosen Version**
+* **all features of the free version**
 
-* **W&auml;hlbar zwischen 7 Cookie Notice Layouts**
-Overlay über ganze Seite, Overlay + Datenschutzbedingungen, Sticky am unteren Bildschirmrand, Block Layout (in einer der 4 Ecken der Webseite)
+* **Selectable between 7 Cookie Notice layouts**
+Full page overlay, overlay + privacy policy, sticky at the bottom of the screen, block layout (in one of the 4 corners of the website)
 
-* **Vordefinierte Datenschutztexte**
-Rechtlich sichere vordefiniere Datenschutztexte - automatisch generiert je nach genutzer externer Dienste.
- 
-* **Unterstützt folgende Plugins**
-Woocommerce, Contact Form 7 Gravity Forms, OneSignal, Slimstat Analytics, LeafLetMap
+* **Supports the following plugins**
+WooCommerce, Contact Form 7 Gravity Forms, OneSignal, Slimstat Analytics, LeafLetMap
 
-* **Unterstützt viele Pagebuilder**
-Unterstützt Elementor, WPBakery, Visual Composer, Fusion Builder, Divi Builder.
-Damit gemeint sind die Elemente der oben genannten Pagebuilder wie z.B. Youtube, Vimeo oder Google Maps.
-Die Elemente der Pagebuilder können durch das Plugin automatisch DSGVO konform ersetzt werden.
+* **Supports many Page Builders**
+Supports Elementor, WPBakery, Visual Composer, Fusion Builder, Divi Builder.
+This means the elements of the above mentioned pagebuilders like Youtube, Vimeo or Google Maps.
+The elements of the pagebuilders can be automatically replaced by the plugin in compliance with GDPR.
 
-* **Automatisches ersetzen vorhandener Einbindungen**
-Es können alle vorhandenen Einbindungen von Youtube, Vimeo, Dailymotion, Soundcloud, Google Maps automatisch DSGVO konform (2 Klick Lösung) ersetzt werden.
-Das funktioniert auch mit allen bekannten Pagebuildern.
+* **Automatic replacement of existing external integrations**
+Replace all existing integrations of Youtube, Vimeo, Dailymotion, Soundcloud, Google Maps, VG Wort, OpenStreetMap, reCAPTCHA, Soundcloud, Hearthis, Mixcloud automatically GDPR compliant (2 click solution).
+Works also with all known Page Builders.
 
-* **Automatisches Thumbnail**
-Aktuell kann für Youtube & Vimeo das Thumbnail automatisch auf Ihren Webspace/Server gespeichert werden.
-Das Thumbnail wird anstatt des Video Elements dem Nutzer angezeigt sowie die Option den jeweiligen Dienst zuzulassen.
-Da das Thumbnail lokal gespeichert wird ist diese Lösung DSGVO konform.
+* **Automated Thumbnail**
+Currently for Youtube & Vimeo the Thumbnail can be automatically saved to your webspace/server.
+The thumbnail is shown to the user instead of the video element and the option to allow the respective service.
+Since the thumbnail is stored locally, this solution is GDPR compliant.
 
-* **Unterstützt Polylang / TranslatePress & WPML (DE & EN)**
-Alle Datenschutztexte beider Sprachen inklusive. Alle Texte beider Sprachen bequem über die Plugin Einstellungen änderbar.
+* **Supported external services / Integrates the following services according to GDPR:**
+Google Adsense, Google Fonts, Font Library, Font Awesome, Matomo (Piwik), Komoot, Amazon Ads, Adform, Clicmanager, Google Partner Badge, Google Maps, reCAPTCHA, Statcounter, Facebook Pixel, Facebook Like, Instagram Feed, Alexa, AddThis, AddToAny share&feed, Shareaholic, Printerest, ShareThis, YouTube, YouTube Playlist, Dailymotion, Vimeo, SlideShare, Soundcloud, Mixcloud, Instagram and many more...
 
-* **Unterst&uuml;tzte externe Dienste / Bindet folgende Dienste DSGVO konform ein:**
-Google Adsense, Google Fonts, Matomo (Piwik), Komoot, Amazon Ads, Adform, Clicmanager, Google Partner Badge, Google Maps, reCAPTCHA, Statcounter, Facebook Pixel, Facebook Like, Instagram Feed, Alexa, AddThis, AddToAny share&feed, Shareaholic, Printerest, ShareThis, YouTube, YouTube Playlist, Dailymotion, Vimeo, SlideShare, Soundcloud und viele weiter...
+* **Google Fonts** GDPR compliant use. All used Google fonts are automatically saved on your webspace/server and at the same time the loading of the fonts from the Google servers is suppressed.
+From now on the used fonts are loaded locally and not from the Google servers.
+Supports all Google Fonts embedding types i.e. also used Google Fonts by plugins are recognized.
 
-* **Google Fonts** DSGVO konform nutzen. Alle verwendeten Google Fonts werden automatisch auf Ihren Webspace/Server gespeichert und gleichzeitig das laden der Fonts von den Google Servern unterdr&uuml;ckt.
-Es werden die genutzen Fonts daher von nun an lokal geladen und nicht mehr von den Google Servern.
-Unterstützt alle Google Fonts Einbindungsarten sprich auch verwendete Google Fonts von Plugins werden erkannt.
+* **Font Library** GDPR compliant use. All used fonts from Font Library are automatically saved to your webspace/server and at the same time the loading of fonts from the Font Library servers is suppressed.
+The used fonts are now loaded locally and not from the font library servers.
 
-* **ALLES einfach änderbar**
-Alle Texte & Farben frei &auml;nderbar - bequem &uuml;ber das Backend
+* **ALL easily changeable**
+All texts & colors freely changeable - comfortable via the backend
 
-* **Custom/Zus&auml;tzliche Services/Dienste** DSGVO konform einbinden. Sie k&ouml;nnen mit dieser Funktion bis zu 5 zus&auml;tzliche Services/Dienste DSGVO konform einbinden die &uuml;ber einen JS Code eingebunden werden.
-Als Beispiel: Hotjar, SUMO, Adroll.
+* **Custom/Additional services** GDPR compliant integration. With this function you can integrate up to 5 additional services in compliance with GDPR which are integrated via a JS code.
+For example: Hotjar, SUMO, Adroll.
 
-* Einrichtunghilfe durch einen unserer Mitarbeiter
+* Setup assistance by one of our employees
 
-* Premium Support & Premium Updates f&uuml;r immer
+* Premium Support & Premium Updates
 
-Einmalige Kosten &euro;24,99,- inkl. Steuern / Lizenz f&uuml;r eine Domain inklusive 1 Jahr Premium Support & Updates.
-Die Plugin Lizenz selbst ist ein Leben lang gültig.
-Die Jahresgebühr für Support & Updates - anfallend das erste mal nach einem Jahr - dient der stätigen Weiterentwicklung der Pro Version.
+One-time costs &euro;24,99,- incl. taxes / license for one domain including 1 year premium support & updates.
+The plugin license itself is valid for a lifetime.
+The annual fee for Support & Updates - due the first time after one year - serves the continuous development of the Pro Version.
 
-Der Verkauf erfolgt via <a href="http://dsgvo-for-wp.com" target="blank">www.dsgvo-for-wp.com</a>.
+The sale is made via <a href="http://dsgvo-for-wp.com" target="blank">www.dsgvo-for-wp.com</a>.
     
-Eine kleine Demo der Pro Version finden Sie <a href="https://dsgvo-for-wp.com/pro-version-demo/" target="blank">hier</a>.
+A small demo of the Pro Version can be found <a href="https://dsgvo-for-wp.com/pro-version-demo/" target="blank">hier</a>.
 	
 = Gutenberg Blocks =
-Seit V3.2 unterstützt die Free Version Gutenberg Blocks (Pro Version ab V 4.7.3).
-Mehr dazu siehe weiter unten unter "Blocks"
+Since V3.2 the Free Version supports Gutenberg Blocks (Pro Version since V 4.7.3).
+See below under "Blocks" for more information
 
 	
 == Installation ==
@@ -153,21 +147,38 @@ Mehr dazu siehe weiter unten unter "Blocks"
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Configure the Plugin by clicking on the menu point in wordpress admin called "DSGVO All in one"
 4. Customize the Settings and ave the Form.
-5. Notice: After the first install you must save the settings under "DSGVO All in one". This is important!
+5. Notice: After the first install you must save the settings under "DSGVO All in one". This is important! 
  
 == Frequently Asked Questions ==
 
-= Saving settings downloads admin.php - 503 error =
-If your Hoster is Strato please follow this steps https://www.strato.de/faq/hosting/fehler-503-error-service-unavailable-bei-der-verwendung-von-post-requests/
+
+= Zum EuGH Urteil 16.07.2020 / C-311/18 =
+Entspricht das Plugin dem EuGH Urteil C-311/18 vom 16.07.2020 (<a href="http://curia.europa.eu/juris/liste.jsf?language=de&td=ALL&num=C-311/18" target="blank">http://curia.europa.eu/juris/liste.jsf?language=de&td=ALL&num=C-311/18</a>)?
+Wenn Sie das Plugin (besonders die von Ihnen genutzen externen Dienste) korrekt einrichten dann eindeutig ja.
+Seit es DSGVO All in One gibt nutzen wir für externe Dienste eine sogenannte 2 Klick Lösung.
+Sprich ohne aktive Zustimmung des Nutzers werden keinerlei Daten an den jeweiligen Anbieter übertragen und somit auch keine Cookies etc. gesetzt.
+Achten Sie aber besonders auf Google Fonts - diese sollen Sie nicht von den Google Servern laden.
+In der PRO Version gibt es eine Funktion die es Ihnen erlaubt weiterhin Google Fonts konform zu nutzen.
+
+= Zum BGH Urteil 28.5.2020 / Nr. 067/2020 =
+Entspricht das Plugin dem BGH Urteil vom 28.8.2020 (<a href="https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2020/2020067.html?nn=10690868" target="blank">https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2020/2020067.html?nn=10690868</a>)?
+Wenn Sie das Plugin (besonders die von Ihnen genutzen externen Dienste) korrekt einrichten dann eindeutig ja.
+Seit es DSGVO All in One gibt nutzen wir für externe Dienste eine sogenannte 2 Klick Lösung.
+Sprich ohne aktive Zustimmung des Nutzers werden keinerlei Daten an den jeweiligen Anbieter übertragen und somit auch keine Cookies etc. gesetzt.
+
 
 = Works with cache / minify plugins?=
 Yes but you have to add a exclude rule for the plugin directory.
+For a tutorial follow this url https://dsgvo-for-wp.com/dokumentation/
+
+= Saving settings downloads admin.php - 503 error (Strato) =
+If your Hoster is Strato please follow this steps https://www.strato.de/faq/hosting/fehler-503-error-service-unavailable-bei-der-verwendung-von-post-requests/
+
 
 = Works with Autoptimize/ Funktioniert mit Autoptimize ? =
 
-Yes, BUT: if you use Autoptimize under v2.5 and/or DSGVO all in one for for WP under V2.1 you have to add a exclude rule.
-Do do this go to Autoptimize Settings -> Enable Advanced Options -> Exclude scripts from Autoptimize -> ADD: plugins/dsgvo-all-in-one-for-wp, jquery.js 
-If you use Autoptimize over v2.5 and DSGVO all in one for for WP over V2.2 you have to do nothing.
+Yes but you have to add a exclude rule for the plugin directory.
+For a tutorial follow this url https://dsgvo-for-wp.com/dokumentation/
 
 = Handles DoNotTrack DNT Request =
 
@@ -243,14 +254,14 @@ Da das Thumbnail lokal gespeichert wird ist diese Lösung DSGVO konform.
 **Unterstützt alle bekannten Pagebuilder**
 Elementor, WPBakery, Visual Composer, Fusion Builder, Divi Builder
 
-**Polylang & TranslatePress (DE & EN)** 
-Polylang & TranslatePress wird unterstützt.
-Da wir aber die Abmahnbarkeit und Fehler durch den Seiteninhaber möglichst verhindern wollen werden nur 2 Sprachen aktuell unterstützt - Deutsch und Englisch.
+**Polylang - TranslatePress - WPML - qTranslate X (DE - EN & IT)** 
+Polylang - TranslatePress - WPML - qTranslate X werden unterstützt.
+Da wir aber die Abmahnbarkeit und Fehler durch den Seiteninhaber möglichst verhindern wollen werden aktuell nur drei Sprachen unterstützt - Deutsch, Englisch und Italienisch.
 
 **Alle Texte vordefiniert und DSGVO konform**
 Texte wie die Datenschutzbedingungen und die Datenschutzbedingungen der von Ihnen genutzen Services werden automatisch generiert.
 Sie können diese natürlich noch bearbeiten bevor Sie diese verwenden.
-Die Texte sind in beiden Sprache (DE & EN) vordefiniert.
+Die Texte sind in allen drei Sprache (DE - EN & IT) vordefiniert.
 
 **Woocommerce**
 Unterstützt Woocommerce und sorgt dafür das Sie Ihren Shop DSGVO konform betreiben können.
@@ -339,3 +350,28 @@ Update wegen Bugfix - Notice wird bei manchen Nutzern auch nach der Aktion noch 
 Neue Funktionen: Cookie Notice Animation hinzugefügt - Dauer frei wählbar, MonsterInsights integriert (Google Analytics), Analytify integriert (Google Analytics), Import / Export Funktion integriert, Log - löschen Funktion integriert. Bugfixes: Cookie Notice - HTML Bug behoben beim speichern, Datenauszug via PDF - Funktion / PHP Code erneuert.
 = 3.2 =
 Neue Funktionen: Gutenberg Blocks integriert - auffindbar unter Seite bearbeiten - Block hinzufügen - Suchbegriff = DSGVO, Impressum Generator integriert, Spamschutz - Email Adresse im Quellcode verschlüsselt, Cookie Notice Design/Layout 3 - Sprachumschalter (bei Mehrsprachigkeit) + schließen Funktion hinzugefügt. Bugfixes: Facebook Kommentare - Bug behoben
+= 3.3 =
+Bugfixes: Ladegeschwindigkeit erheblich verbessert - Dateien aus js/dist - für Gutenberg Block wird nicht mehr im Frontend geladen, Impressum - Apotheker hinzugefügt, Text "Wird unter Impressum definiert" entfernt, JS Dateien komprimiert, Bug Cookie Notice Mobil - scrollen behoben. Neue Funktionen: Da einige Wünsche von Pluginnutzern eingingen bezüglich neuer Funktionen wird Anfang übernächster Woche noch ein weiters Update erscheinen.<br />Ich bitte Sie um Geduld. Dieses Update mit den Bugfixes war dringend nötig - daher sind die neuen Funktionen in diesem Update noch nicht vorhanden.
+= 3.4 =
+Bugfixes: MonsterInsights Bug behoben, Facebook Pixel Events überarbeitet (PageView, Purchase, AddToCart, InitiateCheckout), Gutenberg Blocks werden nicht mehr geladen wenn Wordpress unter V5.0 installiert ist
+= 3.5 =
+Bugfixes: MonsterInsights + Analytify Code verbessert, PDF Datenauszug Umlaute überarbeitet, Notices/Warnings entfernt, Impressum überarbeitet. Neue Funktionen: Notice für ausgehende Links hinzugefügt, Koko Analytics hinzugefügt.
+= 3.6 =
+Bugfixes: Cookie Notice - kleine Bugfixes bzgl. Design | Neue Funktionen: Sprache Italienisch hinzugefügt, Impressum - Spamschutz - Grafik oder Text nun wählbar, Schließen Button (X) in der Cookie Notice kann nun deaktiviert und aktiviert werden
+= 3.7 =
+Bugfixes: Impressum - Eigene Texte - Bug behoben, Übersetzung / Localization überarbeitet
+= 3.8 =
+New Features: YouTube - added to the Free Version (Shortcode only), Inline Privacy Policy texts added (VG Wort, YouTube, Shareaholic, LinkedIn), Function added - Close Personalize Popup after approval or rejection of all services | Bugfixes: Imprint - Umlauts Bugfix, Imprint - imagecreate PHP Warning fixed, Imprint - Layout revised (br tags removed), German translation improved, VG Wort - Auto replace function bugfix
+
+== Upgrade Notice ==
+
+= 3.4 =
+Bugfixes: MonsterInsights Bug behoben, Facebook Pixel Events überarbeitet (PageView, Purchase, AddToCart, InitiateCheckout), Gutenberg Blocks werden nicht mehr geladen wenn Wordpress unter V5.0 installiert ist
+= 3.5 =
+Bugfixes: MonsterInsights + Analytify Code verbessert, PDF Datenauszug Umlaute überarbeitet, Notices/Warnings entfernt, Impressum überarbeitet. Neue Funktionen: Notice für ausgehende Links hinzugefügt, Koko Analytics hinzugefügt.
+= 3.6 =
+Bugfixes: Cookie Notice - kleine Bugfixes bzgl. Design | Neue Funktionen: Sprache Italienisch hinzugefügt, Impressum - Spamschutz - Grafik oder Text nun wählbar, Schließen Button (X) in der Cookie Notice kann nun deaktiviert und aktiviert werden
+= 3.7 =
+Bugfixes: Impressum - Eigene Texte - Bug behoben, Übersetzung / Localization überarbeitet
+= 3.8 =
+New Features: YouTube - added to the Free Version (Shortcode only), Inline Privacy Policy texts added (VG Wort, YouTube, Shareaholic, LinkedIn), Function added - Close Personalize Popup after approval or rejection of all services | Bugfixes: Imprint - Umlauts Bugfix, Imprint - imagecreate PHP Warning fixed, Imprint - Layout revised (br tags removed), German translation improved, VG Wort - Auto replace function bugfix

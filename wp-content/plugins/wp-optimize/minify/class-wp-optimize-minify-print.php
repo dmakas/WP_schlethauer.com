@@ -1,6 +1,10 @@
 <?php
 if (!defined('ABSPATH')) die('No direct access allowed');
 
+if (!class_exists('WP_Optimize_Minify_Functions')) {
+	include WP_OPTIMIZE_MINIFY_DIR.'/class-wp-optimize-minify-functions.php';
+}
+
 class WP_Optimize_Minify_Print {
 
 	/**
@@ -126,12 +130,14 @@ class WP_Optimize_Minify_Print {
 	public static function write_combined_asset($file, $code, $log) {
 		file_put_contents($file.'.json', json_encode($log));
 		file_put_contents($file, $code);
-		file_put_contents($file.'.gz', gzencode(file_get_contents($file), 9));
-		
 		// permissions
 		WP_Optimize_Minify_Cache_Functions::fix_permission_bits($file.'.json');
 		WP_Optimize_Minify_Cache_Functions::fix_permission_bits($file);
-		WP_Optimize_Minify_Cache_Functions::fix_permission_bits($file.'.gz');
+
+		if (function_exists('gzencode')) {
+			file_put_contents($file.'.gz', gzencode(file_get_contents($file), 9));
+			WP_Optimize_Minify_Cache_Functions::fix_permission_bits($file.'.gz');
+		}
 		
 		// brotli static support
 		if (function_exists('brotli_compress')) {

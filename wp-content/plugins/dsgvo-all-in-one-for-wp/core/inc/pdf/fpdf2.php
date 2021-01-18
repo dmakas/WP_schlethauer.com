@@ -16,7 +16,7 @@ function Header()
     // Move to the right
     //$this->Cell(80);
     // Title
-    $this->Cell(195,10,__( 'Logbuch OptIn/OptOut', 'dsgvo-all-in-one-for-wp-pro' ),0,0,'C');
+    $this->Cell(195,10,__( 'Log OptIn/OptOut', 'dsgvo-all-in-one-for-wp-pro' ),0,0,'C');
 	$this->Ln(8);
 	$this->SetFont('Arial','',10);
 	$this->Cell(195,10,get_bloginfo('name').' - '.get_bloginfo('url'),0,0,'C');
@@ -34,8 +34,8 @@ function Footer()
     // Page number
 	$date = current_time('d.m.Y');
 	$time = current_time('H:i:s');
-    $this->Cell(100,10,__( 'Generiert am', 'dsgvo-all-in-one-for-wp-pro' ).' '.$date.' '.__( 'um', 'dsgvo-all-in-one-for-wp-pro' ).' '.$time,0,0,'L');
-	$this->Cell(100,10,__( 'Seite', 'dsgvo-all-in-one-for-wp-pro' ).' '.$this->PageNo().'/{nb}',0,0,'R');
+    $this->Cell(100,10,__( 'Generated on', 'dsgvo-all-in-one-for-wp-pro' ).' '.$date.' '.__( 'at', 'dsgvo-all-in-one-for-wp-pro' ).' '.$time,0,0,'L');
+	$this->Cell(100,10,__( 'Page', 'dsgvo-all-in-one-for-wp-pro' ).' '.$this->PageNo().'/{nb}',0,0,'R');
 }
 
 // variable to store widths and aligns of cells, and line height

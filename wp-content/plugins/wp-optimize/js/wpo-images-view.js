@@ -27,6 +27,7 @@ WP_Optimize_Images_View = function(settings) {
 			 */
 			row_action_buttons: [],
 			label_class: 'wpo_unused_image_thumb_label',
+			loader_additional_html: '',
 			action_btn_text: 'Remove',
 			action_btn_class: 'button button-primary wpo_unused_images_remove_single',
 			checkbox_class: 'wpo_unused_image__input',
@@ -55,6 +56,7 @@ WP_Optimize_Images_View = function(settings) {
 	 */
 	images_view_container.on('scroll mousewheel', function() {
 		load_next_page_if_need();
+		update_loader_position();
 	});
 
 	/**
@@ -178,15 +180,17 @@ WP_Optimize_Images_View = function(settings) {
 	 */
 	function hide_when_empty_elements() {
 		if (options.hide_when_empty) {
-			var images_count = $(['.', options.image_container_class].join(''), images_view_container).length;
+			var images_count = $(['.', options.image_container_class,':visible'].join(''), images_view_container).length;
 
 			if (0 === images_count) {
 				// show message - no images found.
 				if (0 == $('.wpo-images-view-empty', images_view_container).length) {
-					images_view_container.html($('<div class="wpo-images-view-empty wpo-fieldgroup" />').text(options.no_images_found_message));
+					images_view_container.append($('<div class="wpo-images-view-empty wpo-fieldgroup" />').text(options.no_images_found_message));
 				}
+
+				$('.wpo-images-view-empty', images_view_container).show();
 			} else {
-				$('.wpo-images-view-empty', images_view_container).remove();
+				$('.wpo-images-view-empty', images_view_container).hide();
 			}
 
 			$.each(options.hide_when_empty, function(i, el) {
@@ -286,6 +290,7 @@ WP_Optimize_Images_View = function(settings) {
 	function filter_by_site(blog_id) {
 		$(image_container_selector, images_view_container).hide();
 		$(['.',options.image_container_blog_class_prefix, blog_id].join(''), images_view_container).show();
+		update_view();
 	}
 
 	/**
@@ -331,12 +336,22 @@ WP_Optimize_Images_View = function(settings) {
 		// if no any selected images then exit.
 		if (0 == $('input[type="checkbox"]', images_view_container).length) return selected_images;
 
-		// build selected images list.
-		$('input:checked', images_view_container).each(function() {
+		// build list of visible selected images .
+		$(['.',options.image_container_class,':visible input:checked'].join(''), images_view_container).each(function() {
 			selected_images.push($(this).val());
 		});
 
 		return selected_images;
+	}
+
+	/**
+	 * Remove selected images.
+	 */
+	function remove_selected_images() {
+		var image_container_selector = ['.',options.image_container_class].join('');
+		$([image_container_selector,':visible input:checked'].join(''), images_view_container).each(function() {
+			$(this).closest(image_container_selector).remove();
+		});
 	}
 
 	/**
@@ -372,6 +387,49 @@ WP_Optimize_Images_View = function(settings) {
 	 */
 	function is_visible() {
 		return images_view_container.is(':visible');
+	}
+
+	/**
+	 * Show loader.
+	 */
+	function show_loader() {
+		images_view_container.css({ 'min-height' : '220px' });
+		images_view_container.append([
+			'<div class="wpo_shade">',
+				'<div class="wpo_shade_inner">',
+					'<span class="dashicons dashicons-update-alt wpo-rotate"></span>',
+					'<h4>',wpoptimize.loading_data,'</h4>',
+					'<p class="wpo-shade-progress-message"></p>',
+					options.loader_additional_html,
+				'</div>',
+			'</div>',
+		].join(''));
+
+		update_loader_position();
+	}
+
+	/**
+	 * Hide loader.
+	 */
+	function hide_loader() {
+		images_view_container.css('min-height', 'initial');
+		$('.wpo_shade', images_view_container).remove();
+	}
+
+	/**
+	 * Update top property for shade div with loader.
+	 */
+	function update_loader_position() {
+		$('.wpo_shade', images_view_container).css('top', images_view_container.scrollTop() + 'px');
+	}
+
+	/**
+	 * Set message for under loader icon.
+	 *
+	 * @param {string} message
+	 */
+	function loader_message(message) {
+		$('.wpo-shade-progress-message', images_view_container).html(message);
 	}
 
 	/**
@@ -415,8 +473,12 @@ WP_Optimize_Images_View = function(settings) {
 		hide: hide,
 		clear: clear,
 		reload: reload,
+		show_loader: show_loader,
+		hide_loader: hide_loader,
+		loader_message: loader_message,
 		append_image: append_image,
 		get_selected_images: get_selected_images,
+		remove_selected_images: remove_selected_images,
 		get_images_count: get_images_count,
 		load_next_page_if_need: load_next_page_if_need,
 		filter_by_site: filter_by_site,

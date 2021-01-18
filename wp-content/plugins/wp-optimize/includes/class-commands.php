@@ -136,6 +136,15 @@ class WP_Optimize_Commands {
 	}
 
 	/**
+	 * Wipe settings command.
+	 *
+	 * @return bool|false|int
+	 */
+	public function wipe_settings() {
+		return $this->options->wipe_settings();
+	}
+
+	/**
 	 * Save lazy load settings.
 	 *
 	 * @param string $data
@@ -301,15 +310,17 @@ class WP_Optimize_Commands {
 	/**
 	 * Get the data for the tables tab
 	 *
+	 * @param array $data
 	 * @return array
 	 */
-	public function get_table_list() {
-		
-		list ($total_size, $part2) = $this->optimizer->get_current_db_size();
+	public function get_table_list($data = array()) {
+		if (isset($data['refresh_plugin_json']) && filter_var($data['refresh_plugin_json'], FILTER_VALIDATE_BOOLEAN)) WP_Optimize()->get_db_info()->update_plugin_json();
+
+		$size = $this->optimizer->get_current_db_size();
 	
 		return apply_filters('wpo_get_tables_data', array(
 			'table_list' => WP_Optimize()->include_template('database/tables-body.php', true, array('optimize_db' => false)),
-			'total_size' => $total_size
+			'total_size' => $size[0]
 		));
 	}
 
@@ -483,5 +494,47 @@ class WP_Optimize_Commands {
 		}
 
 		return $results;
+	}
+
+	/**
+	 * Power tweak handling
+	 *
+	 * @param array $params
+	 * @return mixed
+	 */
+	public function power_tweak($params) {
+		global $wp_optimize_premium;
+		if (!is_a($wp_optimize_premium, 'WP_Optimize_Premium') || !property_exists($wp_optimize_premium, 'power_tweaks') || !isset($params['sub_action'])) return array(
+			'errors' => array(__('No such command found', 'wp-optimize')),
+		);
+		
+		$action = $params['sub_action'];
+		$data = $params['data'] ? $params['data'] : array();
+		if (!isset($data['tweak'])) return array(
+			'errors' => array(__('No tweak provided', 'wp-optimize'))
+		);
+
+		$tweak = sanitize_title($data['tweak']);
+		$pt = $wp_optimize_premium->power_tweaks;
+		switch($action) {
+			case 'activate':
+				$result = $pt->activate($tweak);
+				break;
+			case 'deactivate':
+				$result = $pt->deactivate($tweak);
+				break;
+			case 'run':
+				$result = $pt->run($tweak);
+				break;
+		}
+		if ($result && !is_wp_error($result)) {
+			return is_array($result) ? array_merge(array('success' => true), $result) : array('success' => true, 'message' => $result);
+		} else {
+			$error_message = is_wp_error($result) ? $result->get_error_message() : sprintf(__('The command %s failed', 'wp-optimize'), $action);
+			return array(
+				'success' => false,
+				'errors' => array($error_message)
+			);
+		}
 	}
 }

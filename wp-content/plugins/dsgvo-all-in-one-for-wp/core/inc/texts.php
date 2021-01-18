@@ -294,7 +294,7 @@ $ga_policy_sample = '
   </tr>   
    <tr>
     <td>__utmb</td>
-    <td>Wird zur Unterscheidung zwischen neuen Sitzungen und Besuchen verwendet. Dieses Cookie wird gesetzt, wenn die GA.js Javascript-Bibliothek geladen wird und kein __utmb Cookie vorhanden ist. Das Cookie wird jedes Mal aktualisiert, wenn Daten an den Google Analtyics-Server gesendet werden.</td>
+    <td>Wird zur Unterscheidung zwischen neuen Sitzungen und Besuchen verwendet. Dieses Cookie wird gesetzt, wenn die GA.js Javascript-Bibliothek geladen wird und kein __utmb Cookie vorhanden ist. Das Cookie wird jedes Mal aktualisiert, wenn Daten an den Google Analytics-Server gesendet werden.</td>
     <td>30 Minuten</td>
   </tr>   
    <tr>
@@ -622,6 +622,26 @@ $vgwort_policy_sample = '
     <td>srp</td>
     <td>Das Cookie der VG Wort hilft die Kopierwahrscheinlichkeit unserer Texte zu ermitteln und stellt die Vergütung von gesetzlichen Ansprüchen von Autoren und Verlagen sicher. IP-Adressen werden nur in anonymisierter Form verarbeitet.</td>
     <td>Session</td>
+  </tr>
+</table>
+';
+
+$koko_policy_sample = '
+<h3>Koko Analyics</h3>
+<p>Wir setzen auf unserer Webseite zum Zählen der Besucher und Seitenaufrufe ein Plug-In ein – Koko-Analytics.<br>
+Beim Aufruf der Seite werden ausschließlich Seitenaufrufe gezählt.<br>
+Rechtsgrundlage ist das berechtigte Interesse nach Art. 6. Abs. 1 lit f DSGVO. Unsere berechtigtes Interesse besteht darin, dass wir unbeding wissen müssen, ob unser Seite besucht wird und ob das Plug-In richtig funktioniert.</p>
+<b>Cookies von Koko Analyics</b>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Zweck</th>
+    <th>Gültigkeit</th>
+  </tr>
+  <tr>
+    <td>_koko_analytics_pages_viewed</td>
+    <td>Dient dazu um die Seitenzahl der angesehenen Seiten zu ermitteln.</td>
+    <td>6 Stunden</td>
   </tr>
 </table>
 ';
@@ -1216,7 +1236,7 @@ $ga_policy_sample_en = '
   </tr>   
    <tr>
     <td>__utmb</td>
-    <td>Used to distinguish new sessions and visits. This cookie is set when the GA.js javascript library is loaded and there is no existing __utmb cookie. The cookie is updated every time data is sent to the Google Analtyics server.</td>
+    <td>Used to distinguish new sessions and visits. This cookie is set when the GA.js javascript library is loaded and there is no existing __utmb cookie. The cookie is updated every time data is sent to the Google Analytics server.</td>
     <td>30 Minutes</td>
   </tr>   
    <tr>
@@ -1684,6 +1704,26 @@ $shareaholic_policy_sample_en = '
 </table>
 ';
 
+$koko_policy_sample_en = '
+<h3>Koko Analyics</h3>
+<p>We use a plug-in on our website to count visitors and page views - Koko-Analytics.<br>
+When the page is called, only page calls are counted.<br>
+The legal basis is the legitimate interest under Art. 6(1)(f) DSGVO. Our legitimate interest is that we must know without fail whether our site is being visited and whether the plug-in is working properly.</p>
+<b>Cookies from Koko Analyics</b>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Purpose</th>
+    <th>Validity</th>
+  </tr>
+  <tr>
+    <td>_koko_analytics_pages_viewed</td>
+    <td>Used to determine the number of pages viewed.</td>
+    <td>6 Hours</td>
+  </tr>
+</table>
+';
+
 $linkedin_policy_sample_en = '
 <h3>LinkedIn</h3>
 <p>Functions and contents of LinkedIn can be integrated within our online offer, offered by LinkedIn AG, Dammtorstraße 29-32, 20354 Hamburg, Germany. This may include content such as images, videos, or text and buttons that users use to voice their favors about the content, or the content or our posts subscribe. If the users are members of the platform LinkedIn, LinkedIn can call the o.g. Assign contents and functions to the user profiles there. LinkedIn privacy statement: <a href="https://www.linkedin.com/legal/privacy-policy"> https://www.linkedin.com/legal/privacy-policy. </a>. LinkedIn is certified under the Privacy Shield Agreement and has a guarantee to comply with European privacy legislation (<a href="https://www.privacyshield.gov/participant?id=a2zt0000000L0UZAA0&amp;status=Active">https://www.privacyshield.gov/participant?id=a2zt0000000L0UZAA0&amp;status=Active</a>).<br /> Privacy Policy: <a href="https://twitter.com/privacy">https://twitter.com/privacy</a>, opt-out: <a href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out"> https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out </a>. </p>
@@ -1751,3 +1791,1237 @@ $linkedin_policy_sample_en = '
   </tr>     
 </table>
 ';
+
+
+
+$policy_demo_text_it = '
+<h2>Dichiarazione di protezione dei dati</h2>
+
+<p>Tempo: [dsgvo_save_date]</p>
+
+<p>Siamo molto soddisfatti del vostro interesse per la nostra azienda. L\'utilizzo delle pagine internet è fondamentalmente possibile senza indicazione di dati personali. Tuttavia, se una persona interessata desidera usufruire di servizi speciali della nostra azienda attraverso il nostro sito web, potrebbe essere necessario trattare i dati personali. Se il trattamento dei dati personali è necessario e non esiste una base legale per tale trattamento, in genere otteniamo il consenso dell\'interessato.</p>
+
+<p>Il trattamento dei dati personali, come ad esempio il nome, l\'indirizzo, l\'indirizzo e-mail o il numero di telefono di una persona interessata, viene sempre effettuato in conformità alla normativa di base sulla protezione dei dati e nel rispetto delle norme di protezione dei dati specifiche del paese in questione. Con la presente dichiarazione sulla protezione dei dati, la nostra azienda desidera informare il pubblico sul tipo, la portata e lo scopo dei dati personali da noi raccolti, utilizzati ed elaborati. Inoltre, la presente dichiarazione sulla protezione dei dati informa le persone interessate sui diritti di cui godono.</p>
+
+<p>In qualità di responsabili del trattamento dei dati, abbiamo implementato numerose misure tecniche e organizzative per garantire la più completa protezione possibile dei dati personali trattati attraverso questo sito web. Ciononostante, le trasmissioni di dati su Internet possono in genere presentare lacune di sicurezza, per cui non è possibile garantire una protezione assoluta. Per questo motivo, ogni persona interessata è libera di trasmetterci i suoi dati personali con mezzi alternativi, ad esempio per telefono.</p>
+
+<h4>Definizioni dei termini</h4>
+<p>La dichiarazione sulla privacy si basa sui termini utilizzati dal legislatore europeo per le direttive e i regolamenti al momento dell\'adozione del regolamento di base sulla protezione dei dati (DS-GVO). La nostra dichiarazione sulla protezione dei dati dovrebbe essere di facile lettura e comprensione sia per il pubblico che per i nostri clienti e partner commerciali. Per garantire ciò, vorremmo spiegare in anticipo i termini utilizzati.</p>
+
+<p>Nella presente informativa sulla privacy utilizziamo i seguenti termini, tra gli altri:</p>
+
+<ul>
+<li><h4>a) Dati personali</h4>
+<p>Dati personali: qualsiasi informazione relativa ad una persona fisica identificata o identificabile (di seguito "interessato"). Per persona fisica identificabile si intende una persona fisica che può essere identificata, direttamente o indirettamente, in particolare mediante riferimento ad un identificatore quale il nome, un numero di identificazione, un dato identificativo, un dato relativo all\'ubicazione, un identificatore online o uno o più elementi specifici caratteristici dell\'identità fisica, fisiologica, genetica, psichica, economica, culturale o sociale della persona fisica.</p>I dati personali sono qualsiasi informazione concernente una persona fisica identificata o identificabile, di seguito denominata "persona interessata".</p>
+</li>
+<li><h4>b) Persona interessata</h4>
+<p>Persona interessata è qualsiasi persona fisica identificata o identificabile i cui dati personali sono trattati dal titolare del trattamento.</p>
+</li>
+<li><h4>c) Elaborazione</h4>
+<p>Il trattamento è qualsiasi operazione o insieme di operazioni, compiute con o senza l\'ausilio di mezzi automatizzati, concernenti dati personali, come la raccolta, la registrazione, l\'organizzazione, l\'organizzazione, l\'archiviazione, la conservazione, l\'adattamento o la modifica, l\'estrazione, la consultazione, l\'uso, la diffusione, la trasmissione, la diffusione o la messa a disposizione in altro modo, l\'allineamento o l\'interconnessione, la restrizione, la cancellazione o la distruzione.</p>
+</li>
+<li><h4>d) Restrizione dell\'elaborazione</h4>
+<p>Restrizione del trattamento è la marcatura dei dati personali memorizzati al fine di limitarne il trattamento in futuro.</p>
+</li>
+<li><h4>e) Profilatura</h4>
+<p>Profiling è qualsiasi trattamento automatizzato di dati personali che consiste nell\'utilizzare tali dati personali per valutare determinati aspetti personali relativi a una persona fisica, in particolare per analizzare o prevedere aspetti relativi all\'esecuzione del lavoro, alla situazione economica, allo stato di salute, alle preferenze personali, agli interessi, all\'affidabilità, al comportamento, al luogo o ai movimenti di tale persona fisica.</p>
+</li>
+<li><h4>f) Pseudonimizzazione</h4>
+<p>Pseudonimizzazione è il trattamento dei dati personali in modo tale che i dati personali non possano più essere attribuiti a un determinato soggetto senza la necessità di informazioni supplementari, a condizione che tali informazioni supplementari siano conservate separatamente e siano soggette a misure tecniche e organizzative che garantiscano che i dati personali siano trattati in conformità agli scopi per i quali sono stati raccolti.</p>
+</li>
+<li><h4>d) Restrizione dell\'elaborazione</h4>
+<p>Restrizione del trattamento è la marcatura dei dati personali memorizzati al fine di limitarne il trattamento in futuro.</p>
+</li>
+<li><h4>e) Profilatura</h4>
+<p>Profiling è qualsiasi trattamento automatizzato di dati personali che consiste nell\'utilizzare tali dati personali per valutare determinati aspetti personali relativi a una persona fisica, in particolare per analizzare o prevedere aspetti relativi all\'esecuzione del lavoro, alla situazione economica, allo stato di salute, alle preferenze personali, agli interessi, all\'affidabilità, al comportamento, al luogo o ai movimenti di tale persona fisica.</p>
+</li>
+<li><h4>f) Pseudonimizzazione</h4>
+<p>Pseudonimizzazione è il trattamento dei dati personali in modo tale che i dati personali non possano più essere attribuiti a un determinato soggetto senza la necessità di informazioni supplementari, a condizione che tali informazioni supplementari siano conservate separatamente e siano soggette a misure tecniche e organizzative che garantiscano che i dati personali non siano attribuiti a una persona fisica identificata o identificabile.</p>
+</li>
+<li><h4>g) Controllore o responsabile del controllore</h4>
+<p>responsabile o responsabile del trattamento è la persona fisica o giuridica, l\'autorità pubblica, l\'ente o qualsiasi altro organismo che da solo o insieme ad altri determina le finalità e le modalità del trattamento dei dati personali Qualora le finalità e i mezzi di tale trattamento siano determinati dal diritto dell\'Unione o dalla legislazione degli Stati membri, il responsabile del trattamento o i criteri specifici per la sua designazione possono essere stabiliti dal diritto dell\'Unione o dalla legislazione degli Stati membri.</p>
+</li>
+<li><h4>h) Lavoratori a contratto</h4>
+<p>Il responsabile del trattamento è una persona fisica o giuridica, un\'autorità pubblica, un ente o un altro organismo che tratta dati personali per conto del responsabile del trattamento.</p>
+</li>
+<li><h4>i) Ricevitore</h4>
+<p>Il destinatario è una persona fisica o giuridica, un\'autorità pubblica, un ente o un altro organismo al quale vengono comunicati dati personali, indipendentemente dal fatto che si tratti o meno di terzi. Tuttavia, le autorità che possono ricevere dati personali nell\'ambito di un mandato d\'indagine specifico ai sensi del diritto dell\'Unione o nazionale non sono considerate come destinatari.</p>
+</li>
+<li><h4>j) Terzo</h4>
+<p>Terzo: qualsiasi persona fisica o giuridica, autorità pubblica, ente o organismo diverso dall\'interessato, dal responsabile del trattamento, dall\'incaricato del trattamento e dalle persone che, sotto la diretta autorità del responsabile del trattamento o dell\'incaricato del trattamento, sono autorizzate a trattare i dati personali.</p>
+</li>
+<li><h4>k) Consenso</h4>
+<p>Consenso significa qualsiasi espressione libera, specifica e consapevole della volontà dell\'interessato in modo informato e inequivocabile, sotto forma di dichiarazione o di qualsiasi altro atto positivo inequivocabile con il quale l\'interessato esprime il proprio consenso al trattamento dei dati personali che lo riguardano.</p>
+</li>
+</ul>
+
+
+<h4>Nome e indirizzo del controllore</h4>
+<p>La persona responsabile ai sensi del regolamento di base sulla protezione dei dati, di altre leggi sulla protezione dei dati applicabili negli Stati membri dell\'Unione europea e di altre disposizioni in materia di protezione dei dati è:</p>
+
+<p>[company]</p>
+<p>[owner]</p>
+<p>[adress]</p>
+<p>[zip] [city]</p>
+<p>[country]</p>
+<p>[phone]</p>
+<p>[mail]</p>
+<p>[ust]</p>
+
+
+<h4>Cookies / SessionStorage / LocalStorage</h4>
+<p>Le pagine internet utilizzano in parte i cosiddetti cookie, LocalStorage e SessionStorage. Questo serve a rendere la nostra offerta più facile da usare, efficace e sicura. Local Storage and SessionStorage è una tecnologia con la quale il vostro browser memorizza i dati sul vostro computer o dispositivo mobile. I cookie sono file di testo che vengono memorizzati e salvati su un sistema informatico tramite un browser internet. È possibile impedire l\'uso di cookie, LocalStorage e SessionStorage effettuando l\'impostazione appropriata nel proprio browser.</p>
+
+<p>Numerosi siti web e server utilizzano i cookie. Molti cookie contengono un cosiddetto cookie ID. L\'ID del cookie è un identificatore univoco del cookie. Si tratta di una stringa di caratteri che può essere utilizzata per assegnare le pagine Internet e i server al browser Internet specifico in cui è stato memorizzato il cookie. Ciò consente alle pagine Internet e ai server visitati di distinguere il singolo browser dell\'interessato da altri browser Internet che contengono altri cookie. Un determinato browser Internet può essere riconosciuto e identificato dal cookie ID.</p>
+
+<p>L\'uso dei cookies può fornire agli utenti di questo sito web servizi di più facile utilizzo, che non sarebbero possibili senza l\'impostazione dei cookies.</p>
+
+<p>Con un cookie, le informazioni e le offerte sul nostro sito web possono essere ottimizzate nell\'interesse dell\'utente. Come già detto, i cookies ci permettono di riconoscere gli utenti del nostro sito web. Lo scopo di questo riconoscimento è quello di facilitare l\'utilizzo del nostro sito web da parte degli utenti. Ad esempio, l\'utente di un sito web che utilizza i cookie non deve inserire i propri dati di accesso ogni volta che visita il sito web, perché ciò viene fatto dal sito web e dal cookie memorizzato nel sistema informatico dell\'utente. Un altro esempio è il cookie di un carrello della spesa nel negozio online. Il negozio online ricorda gli articoli che un cliente ha messo nel carrello virtuale tramite un cookie.</p>
+
+<p>L\'interessato può impedire in qualsiasi momento l\'impostazione dei cookie da parte del nostro sito web mediante una corrispondente impostazione del browser Internet utilizzato e quindi opporsi in modo permanente all\'impostazione dei cookie. Inoltre, i cookie già impostati possono essere cancellati in qualsiasi momento tramite un browser Internet o altri programmi software. Questo è possibile in tutti i comuni browser Internet. Se l\'interessato disattiva l\'impostazione dei cookie nel browser Internet utilizzato, è possibile che non tutte le funzioni del nostro sito web possano essere utilizzate appieno.</p>
+
+<h4>Registrazione di dati e informazioni generali</h4>
+<p>Il sito web raccoglie una serie di dati e informazioni generali ogni volta che un soggetto interessato o un sistema automatizzato accede al sito web. Questi dati e informazioni generali sono memorizzati nei file di log del server. I (1) tipi di browser e le versioni utilizzate, (2) il sistema operativo utilizzato dal sistema di accesso, (3) il sito web dal quale un sistema di accesso accede al nostro sito web (il cosiddetto referrer), (4) i sotto-siti web a cui si accede tramite un sistema di accesso sul nostro sito web, (5) la data e l\'ora di un accesso al sito Internet, (6) un indirizzo di protocollo Internet (indirizzo IP), (7) il fornitore di servizi Internet del sistema di accesso e (8) altri dati e informazioni simili che servono a prevenire pericoli in caso di attacchi ai nostri sistemi informatici. </p>
+
+<p>Quando si utilizzano questi dati e informazioni generali non si traggono conclusioni sulla persona interessata. Queste informazioni sono piuttosto necessarie per (1) fornire correttamente i contenuti del nostro sito web, (2) ottimizzare i contenuti del nostro sito web e la relativa pubblicità, (3) garantire la funzionalità permanente dei nostri sistemi informatici e della tecnologia del nostro sito web, nonché (4) fornire alle forze dell\'ordine in caso di attacco informatico le informazioni necessarie per il perseguimento penale. Questi dati e informazioni raccolte in forma anonima vengono quindi da noi valutati da un lato statisticamente e dall\'altro con l\'obiettivo di aumentare la protezione e la sicurezza dei dati nella nostra azienda per garantire, in ultima analisi, un livello di protezione ottimale dei dati personali da noi trattati. I dati anonimi dei file di log del server sono memorizzati separatamente da tutti i dati personali forniti dall\'interessato.</p>
+
+<h4>Registrazione sul nostro sito web</h4>
+<p>L\'interessato ha la possibilità di registrarsi sul sito web della società responsabile del trattamento.</p>
+
+
+<h4>Registrazione sul nostro sito web</h4>
+<p>L\'interessato ha la possibilità di registrarsi sul sito internet del titolare del trattamento fornendo i propri dati personali. I dati personali trasmessi al titolare del trattamento sono specificati nel modulo di registrazione. I dati personali inseriti dall\'interessato sono raccolti e conservati esclusivamente per uso interno del titolare del trattamento e per le proprie finalità. Il titolare del trattamento può provvedere al trasferimento ad uno o più incaricati del trattamento, come ad esempio un fornitore di servizi di inoltro pacchi, che utilizzerà i dati personali esclusivamente per uso interno imputabile al titolare.</p>
+
+<p>Con la registrazione sul sito web del titolare del trattamento, l\'indirizzo IP assegnato all\'interessato dall\'Internet Service Provider (ISP), vengono salvati anche la data e l\'ora della registrazione. La conservazione di questi dati viene effettuata in considerazione del fatto che questo è l\'unico modo per prevenire l\'uso improprio dei nostri servizi e, se necessario, per consentire il chiarimento dei reati commessi. In questo senso, la memorizzazione di questi dati è necessaria per proteggere il responsabile del trattamento. In linea di principio, questi dati non saranno trasmessi a terzi, a meno che non vi sia un obbligo legale in tal senso o che la trasmissione di tali dati non serva ai fini di un\'azione penale.</p>
+
+<p>La registrazione dell\'interessato in caso di comunicazione volontaria di dati personali ha lo scopo, da parte del titolare del trattamento, di offrire all\'interessato contenuti o servizi che, per loro stessa natura, possono essere offerti solo agli utenti registrati. Le persone registrate sono libere di modificare in qualsiasi momento i dati personali forniti in fase di registrazione o di farli cancellare completamente dal database del titolare del trattamento.</p>
+
+<p>Il responsabile del trattamento fornisce all\'interessato, su richiesta, informazioni sui dati personali che lo riguardano, in qualsiasi momento. Inoltre, il titolare del trattamento è tenuto a correggere o cancellare i dati personali su richiesta o comunicazione dell\'interessato, salvo diversa disposizione di legge. In questo contesto, l\'intero personale del titolare del trattamento è a disposizione dell\'interessato in qualità di referente.</p>
+
+<h4>Possibilità di contatto tramite il sito Internet</h4>
+<p>A causa delle disposizioni di legge, il sito Internet contiene informazioni che consentono un rapido contatto elettronico con la nostra azienda e una comunicazione diretta con noi, che include anche un indirizzo generale per la cosiddetta posta elettronica (indirizzo e-mail). Se un interessato contatta il titolare del trattamento per e-mail o tramite un modulo di contatto, i dati personali trasmessi dall\'interessato vengono automaticamente memorizzati. Tali dati personali trasmessi volontariamente dall\'interessato al titolare del trattamento sono conservati ai fini dell\'elaborazione o del contatto con l\'interessato. Questi dati personali non vengono comunicati a terzi.</p>
+
+<h4>Funzione di commento nel blog sul sito web</h4>
+<p>Offriamo agli utenti la possibilità di lasciare commenti individuali sui singoli post del blog su un blog che si trova sul sito web del titolare del trattamento. Un blog è un portale gestito su un sito Internet, di solito aperto al pubblico, dove una o più persone, chiamate blogger o web-blogger, possono pubblicare articoli o scrivere pensieri nei cosiddetti blog post. I blogposts possono essere commentati da terzi.</p>
+<p>Se una persona interessata lascia un commento nel blog pubblicato su questo sito web, le informazioni sull\'ora del commento e sul nome utente (pseudonimo) scelto dalla persona interessata saranno memorizzate e pubblicate in aggiunta ai commenti lasciati dalla persona interessata. Inoltre, viene registrato anche l\'indirizzo IP assegnato alla persona interessata dall\'Internet Service Provider (ISP). Questa memorizzazione dell\'indirizzo IP viene effettuata per motivi di sicurezza e nel caso in cui l\'interessato violi i diritti di terzi o pubblichi contenuti illegali inviando un commento. La conservazione di questi dati personali viene effettuata da.</p>
+
+<h4>Gravatar</h4>
+<p>Per i commenti viene utilizzato il servizio Gravatar di Auttomatic. Gravatar corrisponde al tuo indirizzo e-mail e - se sei registrato lì - visualizza la tua immagine dell\'avatar accanto al commento. Se non si è registrati, non verrà visualizzata alcuna immagine. Si prega di notare che tutti gli utenti WordPress registrati sono automaticamente registrati con Gravatar. Dettagli su Gravatar: <a href="https://de.gravatar.com" target="blank">https://de.gravatar.com</a></p>
+
+<h4>Routine di cancellazione e blocco dei dati personali</h4>
+<p>Il responsabile del trattamento tratta e memorizza i dati personali relativi all\'interessato solo per il tempo necessario a conseguire lo scopo per il quale i dati sono memorizzati o se previsto dalle direttive e dai regolamenti europei o da qualsiasi altra legge o regolamento cui è soggetto il responsabile del trattamento.</p> Il responsabile del trattamento tratta e memorizza i dati personali relativi all\'interessato solo per il tempo necessario a conseguire lo scopo per il quale i dati sono memorizzati o se previsto dalle direttive e dai regolamenti europei o da qualsiasi altra legge o regolamento cui è soggetto il responsabile del trattamento.</p> Il responsabile del trattamento tratta e memorizza i dati personali relativi all\'interessato solo per il tempo necessario a conseguire lo scopo per il quale i dati sono memorizzati o se previsto dalle direttive e dai regolamenti europei o da qualsiasi altra legge o regolamento cui sono soggetti i dati.</p> Il responsabile del trattamento tratta e memorizza i dati personali relativi all\'interessato solo per il tempo necessario.</p>
+
+<p>Se lo scopo della conservazione cessa di essere valido o se scade un periodo di conservazione prescritto dalla Direttiva Europea e dal Regolamento Giver o da qualsiasi altro legislatore competente, i dati personali saranno bloccati o cancellati in modo sistematico e in conformità con le disposizioni di legge.</p>
+
+<h4>Diritti della persona interessata</h4>
+<ul>
+<li><h4>a) Diritto di conferma</h4>
+<p>Ogni interessato ha il diritto di ottenere dal titolare del trattamento la conferma dell\'esistenza o meno di dati personali che lo riguardano. L\'interessato che desideri esercitare tale diritto di conferma può rivolgersi in qualsiasi momento a un dipendente del titolare del trattamento.</p>
+</li>
+<li><h4>b) Diritto all\'informazione</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, concesso dalle Direttive e dai Regolamenti Europei, di ottenere in qualsiasi momento e gratuitamente dal titolare del trattamento informazioni sui dati personali memorizzati in relazione ad essa e una copia degli stessi. Inoltre, la direttiva europea e il regolamento Giver ha concesso all\'interessato l\'accesso alle seguenti informazioni:</p>
+<p>Se l\'interessato desidera esercitare tale diritto di accesso, può rivolgersi in qualsiasi momento a un dipendente del titolare del trattamento.</p>
+</li>
+
+<li><h4>c) Diritto di rettifica</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, concesso dal legislatore europeo, di chiedere l\'immediata rettifica dei dati personali errati che la riguardano. Inoltre, l\'interessato ha il diritto di richiedere la compilazione di dati personali incompleti, anche mediante una dichiarazione complementare, in considerazione delle finalità del trattamento.</p>
+<p>Se l\'interessato desidera esercitare tale diritto di rettifica, può rivolgersi in qualsiasi momento a un membro del personale del titolare del trattamento.</p>
+</li>
+<li>
+<h4>d) Diritto di recesso (diritto all\'oblio)</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, concesso dalle Direttive e dai Regolamenti europei, di ottenere dal titolare del trattamento l\'immediata cancellazione dei dati personali che la riguardano, qualora si verifichi una delle seguenti cause e il trattamento non sia necessario:</p>
+<p>Se l\'interessato desidera esercitare tale diritto di accesso, può rivolgersi in qualsiasi momento a un dipendente del titolare del trattamento.</p>
+</li>
+
+<li><h4>c) Diritto di rettifica</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, concesso dal legislatore europeo, di chiedere l\'immediata rettifica dei dati personali errati che la riguardano. Inoltre, l\'interessato ha il diritto di richiedere la compilazione di dati personali incompleti, anche mediante una dichiarazione complementare, in considerazione delle finalità del trattamento.</p>
+<p>Se l\'interessato desidera esercitare tale diritto di rettifica, può rivolgersi in qualsiasi momento a un membro del personale del titolare del trattamento.</p>
+</li>
+<li>
+<h4>d) Diritto di recesso (diritto all\'oblio)</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, concesso dalle Direttive e dai Regolamenti europei, di ottenere dal titolare del trattamento l\'immediata cancellazione dei dati personali che la riguardano, qualora si verifichi una delle seguenti cause e il trattamento non sia necessario:</p>
+<p>Se l\'interessato desidera esercitare tale diritto di accesso, può rivolgersi in qualsiasi momento a un dipendente del titolare del trattamento.</p>
+</li>
+<li><h4>c) Diritto di rettifica</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, concesso dal legislatore europeo, di chiedere l\'immediata rettifica dei dati personali errati che la riguardano. Inoltre, l\'interessato ha il diritto di richiedere la compilazione di dati personali incompleti, anche mediante una dichiarazione complementare, in considerazione delle finalità del trattamento.</p>
+<p>Se l\'interessato desidera esercitare tale diritto di rettifica, può rivolgersi in qualsiasi momento a un membro del personale del titolare del trattamento.</p>
+</li>
+<li>
+<h4>d) Diritto di recesso (diritto all\'oblio)</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, concesso dalle Direttive e dai Regolamenti europei, di ottenere dal titolare del trattamento l\'immediata cancellazione dei dati personali che la riguardano, qualora si verifichi una delle seguenti cause e il trattamento non sia necessario:</p>
+<ul>
+<li>I dati personali sono stati raccolti o comunque trattati per scopi per i quali non sono più necessari.</li>
+<li>L\'interessato revoca il consenso su cui si basava il trattamento ai sensi dell\'articolo 6, paragrafo 1, lettera a), dell\'LPD o dell\'articolo 9, paragrafo 2, lettera a), dell\'LPD e non esiste un\'altra base giuridica per il trattamento.</li>
+<li>L\'interessato solleva un\'obiezione al trattamento ai sensi dell\'articolo 21, paragrafo 1, del regolamento di esenzione per categoria e non vi sono motivi imperativi legittimi per il trattamento, oppure l\'interessato solleva un\'obiezione al trattamento ai sensi dell\'articolo 21, paragrafo 2, del regolamento di esenzione per categoria.</li>
+<li>I dati personali sono stati trattati in modo illecito.</li>
+<li>La cancellazione dei dati personali è necessaria per adempiere a un obbligo legale ai sensi del diritto dell\'Unione o della legislazione degli Stati membri a cui il responsabile del trattamento è soggetto.</li>
+<li>I dati personali sono stati raccolti in relazione ai servizi della società dell\'informazione offerti ai sensi dell\'art. 8 comma 1 del DS-GVO.</li>
+</ul>
+<p>Se si applica uno dei motivi di cui sopra e l\'interessato desidera che i dati personali memorizzati vengano cancellati, può rivolgersi in qualsiasi momento a un dipendente del titolare del trattamento. Il dipendente si assicurerà che la richiesta di cancellazione sia soddisfatta immediatamente.</p>
+<p>Se i dati personali sono stati resi pubblici e se la nostra società, in qualità di titolare del trattamento, è obbligata a cancellare i dati personali ai sensi dell\'art. 17 cpv. 1 DS-GVO, adotteremo misure ragionevoli, anche tecniche, tenendo conto della tecnologia disponibile e dei costi di implementazione, per informare gli altri titolari che trattano i dati personali pubblicati che l\'interessato ha richiesto a questi altri titolari di cancellare tutti i link a questi dati personali o copie o repliche di questi dati personali, a meno che il trattamento non sia necessario. In singoli casi, il dipendente prenderà le misure necessarie.</p>
+</li>
+
+<li><h4>e) Diritto di limitare l\'elaborazione</h4>
+<p>Ogni persona interessata al trattamento dei dati personali ha il diritto, concesso dal legislatore europeo, di ottenere dal responsabile del trattamento la limitazione del trattamento se è soddisfatta una delle seguenti condizioni:</p>
+
+<ul>
+<li>L\'esattezza dei dati personali è contestata dall\'interessato, per un periodo di tempo che consente al responsabile del trattamento di verificare l\'esattezza dei dati personali.</li>
+<li>Il trattamento è illecito, l\'interessato si rifiuta di far cancellare i suoi dati personali e chiede invece che l\'uso dei suoi dati personali sia limitato.</li>
+<li>Il titolare del trattamento non necessita più dei dati personali per le finalità del trattamento, ma l\'interessato ne ha bisogno per esercitare o difendere i propri diritti.</li>
+<li>L\'interessato ha presentato un\'obiezione al trattamento ai sensi dell\'articolo 21, paragrafo 1, della LPD e non è ancora chiaro se le ragioni legittime del responsabile del trattamento siano superiori a quelle dell\'interessato.</li>
+
+</ul>
+<p>Se una delle condizioni di cui sopra è soddisfatta e l\'interessato desidera richiedere la limitazione dei dati personali memorizzati, può contattare in qualsiasi momento un dipendente del responsabile del trattamento. Il dipendente inizierà la restrizione dell\'elaborazione.</p>
+</li>
+<li><h4>f) Diritto alla trasferibilità dei dati</h4>
+<p>Ogni interessato al trattamento dei dati personali ha il diritto, riconosciuto dalle direttive e dai regolamenti europei, di ricevere i dati personali che lo riguardano e che sono stati messi a disposizione di un responsabile del trattamento dall\'interessato in un formato strutturato, comune e leggibile a macchina. Ha inoltre il diritto di ottenere che tali dati siano comunicati ad un altro responsabile del trattamento senza che vi siano ostacoli da parte del responsabile del trattamento al quale i dati personali sono stati messi a disposizione, a condizione che il trattamento sia basato sul consenso ai sensi dell\'art. 6 comma 1 lett. a LPD o dell\'art. 9 comma 2 lett. a LPD o su un contratto ai sensi dell\'art. 6 comma 1 lett. b LPD, e che il trattamento sia effettuato con l\'ausilio di procedure automatizzate, a meno che il trattamento sia necessario per l\'esecuzione di un compito di interesse pubblico o per l\'esercizio di pubblici poteri attribuiti al responsabile del trattamento.</p>
+<p>Inoltre, nell\'esercizio del diritto alla trasmissione dei dati ai sensi dell\'art. 20 cpv. 1 della DS-GVO, l\'interessato ha il diritto di ottenere che i dati personali siano trasferiti direttamente da un responsabile ad un altro, nella misura in cui ciò sia tecnicamente possibile e a condizione che ciò non leda i diritti e le libertà di altre persone.</p>
+<p>Per far valere il diritto alla trasferibilità dei dati, l\'interessato può contattarci in qualsiasi momento.</p>
+</li>
+
+
+<li>
+<h4>(g) Diritto di ricorso</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, riconosciuto dal legislatore europeo, di opporsi in qualsiasi momento, per motivi derivanti dalla sua particolare situazione, al trattamento dei dati personali che la riguardano effettuato ai sensi dell\'articolo 6, paragrafo 1, lettere e) o f), dell\'LPD. Ciò vale anche per la profilazione basata su queste disposizioni.</p>
+<p>In caso di contestazione, non tratteremo più i dati personali a meno che non possiamo dimostrare motivi legittimi e convincenti per un trattamento che superi gli interessi, i diritti e le libertà della persona interessata, o a meno che il trattamento non serva a far valere, esercitare o difendere rivendicazioni legali.</p>
+<p>Nel caso in cui trattiamo i dati personali a scopo di marketing diretto, l\'interessato ha il diritto di opporsi in qualsiasi momento al trattamento dei dati personali ai fini di tale marketing. Ciò vale anche per la profilazione, nella misura in cui è collegata a tale marketing diretto. Se l\'interessato si oppone al trattamento per finalità di marketing diretto, non tratteremo più i dati personali per tali finalità.</p>
+<p>Inoltre, l\'interessato ha il diritto di opporsi, per motivi connessi alla sua particolare situazione, al trattamento di dati personali che lo riguardano effettuato a fini di ricerca scientifica o storica o a fini statistici, ai sensi dell\'articolo 89, paragrafo 1, dell\'LPD, salvo che tale trattamento sia necessario per l\'esecuzione di un compito di interesse pubblico.</p>
+<p>Per esercitare il diritto di opposizione, l\'interessato può rivolgersi direttamente a qualsiasi dipendente. L\'interessato è inoltre libero di esercitare il proprio diritto di opposizione in relazione all\'utilizzo dei servizi della società dell\'informazione, nonostante la direttiva 2002/58/CE, mediante procedure automatizzate che comportano specifiche tecniche.</p>
+</li>
+<li><h4>h) Decisioni automatizzate in singoli casi, compresa la profilazione</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto, come concesso dalle direttive e dai regolamenti europei, di non essere soggetta a una decisione basata esclusivamente su un trattamento automatizzato, inclusa la profilazione, che produce effetti giuridici che la riguardano o che la riguardano in modo significativo in modo analogo, a condizione che la decisione (1) non sia necessaria per la conclusione o l\'esecuzione di un contratto tra l\'interessato e il responsabile del trattamento, o (2) sia autorizzata dalla legislazione dell\'Unione o nazionale cui è soggetto il responsabile del trattamento e che tale legislazione preveda adeguate garanzie dei diritti e delle libertà e dei legittimi interessi dell\'interessato, o (3) sia adottata con il consenso esplicito dell\'interessato. </p>
+<p>Se la decisione è (1) necessaria per la conclusione o l\'esecuzione di un contratto tra l\'interessato e il responsabile del trattamento o (2) con il consenso esplicito dell\'interessato, adotteremo misure ragionevoli per salvaguardare i diritti e le libertà e gli interessi legittimi dell\'interessato, compreso almeno il diritto di ottenere l\'intervento del responsabile del trattamento, di esprimere il suo punto di vista e di impugnare la decisione.</p>
+<p>Se l\'interessato desidera esercitare i diritti relativi alle decisioni automatizzate, può rivolgersi in qualsiasi momento a un dipendente del titolare del trattamento.</p>
+</li>
+<li><h4>i) Diritto di revoca del consenso alla protezione dei dati personali</h4>
+<p>Ogni persona interessata dal trattamento dei dati personali ha il diritto di revocare il proprio consenso al trattamento dei dati personali in qualsiasi momento, come concesso dalla direttiva europea e dal regolamento Giver.</p>
+<p>Se l\'interessato desidera esercitare il diritto di revocare il proprio consenso, può rivolgersi in qualsiasi momento a un dipendente del titolare del trattamento.</p>
+</li>
+
+</ul>
+<h4>Base legale di elaborazione</h4>
+<p>Art. 6 Ilit. a DS-GVO serve alla nostra azienda come base legale per le operazioni di elaborazione per le quali otteniamo il consenso per uno specifico scopo di elaborazione. Se il trattamento dei dati personali è necessario per l\'esecuzione di un contratto di cui l\'interessato è parte, come ad esempio nel caso di operazioni di trattamento necessarie per la consegna della merce o per la fornitura di un altro servizio o corrispettivo, il trattamento si basa sull\'art. 6 Ilit. b DS-GVO. Lo stesso vale per le operazioni di elaborazione necessarie per l\'attuazione di misure precontrattuali, ad esempio in caso di richieste di informazioni sui nostri prodotti o servizi. Se la nostra azienda è soggetta ad un obbligo legale che rende necessario il trattamento dei dati personali, ad esempio per adempiere ad obblighi fiscali, il trattamento si basa sull\'art. 6 Ilit. c DS-GVO. In rari casi, il trattamento dei dati personali può essere necessario per tutelare gli interessi vitali della persona interessata o di un\'altra persona fisica. Questo accadrebbe, ad esempio, se un visitatore della nostra azienda fosse ferito e il suo nome, l\'età, i dati dell\'assicurazione sanitaria o altre informazioni vitali dovessero essere trasmessi a un medico, a un ospedale o a terzi. In questo caso, il trattamento si baserebbe sull\'art. 6 Ilit. d DS-GVO.
+Infine, le operazioni di elaborazione potrebbero essere basate sull\'art. 6 lett. f DS-GVO. Le operazioni di trattamento che non rientrano in nessuna delle suddette basi legali si basano su questa base legale se il trattamento è necessario per salvaguardare un interesse legittimo della nostra società o di terzi, a condizione che non prevalgano gli interessi, i diritti e le libertà fondamentali dell\'interessato. Siamo autorizzati ad effettuare tali operazioni di trattamento, in particolare perché sono state specificamente menzionate dal legislatore europeo. A tale riguardo, ha ritenuto che si possa presumere un interesse legittimo se la persona interessata è un cliente del responsabile del trattamento (considerando 47 frase 2 DS-GVO).
+</p>
+
+<p>interessi legittimi nel trattamento perseguito dal titolare o da un terzo.
+Se il trattamento dei dati personali si basa sull\'articolo 6 Ilit. f DS-GVO, il nostro legittimo interesse è quello di svolgere le nostre attività commerciali a beneficio del benessere di tutti i nostri dipendenti e dei nostri azionisti.
+</p>
+<h4> Durata di conservazione dei dati personali</h4>
+<p>Il criterio per la durata della conservazione dei dati personali è il rispettivo periodo di conservazione legale. Alla scadenza di questo periodo, i dati corrispondenti vengono regolarmente cancellati, a condizione che non siano più necessari per l\'adempimento del contratto o per l\'avvio di un contratto.</p>
+
+<p>Prescrizioni legali o contrattuali sul conferimento dei dati personali; necessità per la conclusione del contratto; obbligo dell\'interessato di fornire i dati personali; possibili conseguenze del mancato conferimento dei dati.
+Vi informiamo che il conferimento dei dati personali è in parte obbligatorio per legge (ad es. norme fiscali) o può anche derivare da norme contrattuali (ad es. informazioni sul partner contrattuale).
+A volte può essere necessario per la conclusione di un contratto che un interessato ci fornisca dati personali, che devono essere successivamente trattati da noi. Ad esempio, l\'interessato è obbligato a fornirci i dati personali se la nostra società stipula un contratto con lui/lei. Il mancato conferimento dei dati personali comporterebbe l\'impossibilità di concludere il contratto con l\'interessato.
+Prima che l\'interessato renda disponibili i dati personali, deve contattare uno dei nostri dipendenti. Il nostro collaboratore informerà di volta in volta l\'interessato se il conferimento dei dati personali è obbligatorio per legge o per contratto o è necessario per la conclusione del contratto, se vi è un obbligo di fornire i dati personali e quali sarebbero le conseguenze in caso di mancato conferimento dei dati personali.
+</p>
+
+<h4>Esistenza di un processo decisionale automatizzato</h4>
+<p>In qualità di azienda responsabile non utilizziamo il processo decisionale automatico o la profilazione.</p>
+';
+/**
+$policy_demo_text_it = '
+
+
+
+
+
+</ul>
+<h4>Base legale di elaborazione</h4
+<p>Art. 6 Ilit. a DS-GVO serve alla nostra azienda come base legale per le operazioni di elaborazione per le quali otteniamo il consenso per uno specifico scopo di elaborazione. Se il trattamento dei dati personali è necessario per l\'esecuzione di un contratto di cui l\'interessato è parte, come ad esempio nel caso di operazioni di trattamento necessarie per la consegna della merce o per la fornitura di un altro servizio o corrispettivo, il trattamento si basa sull\'art. 6 Ilit. b DS-GVO. Lo stesso vale per le operazioni di elaborazione necessarie per l\'attuazione di misure precontrattuali, ad esempio in caso di richieste di informazioni sui nostri prodotti o servizi. Se la nostra azienda è soggetta ad un obbligo legale che rende necessario il trattamento dei dati personali, ad esempio per adempiere ad obblighi fiscali, il trattamento si basa sull\'art. 6 Ilit. c DS-GVO. In rari casi, il trattamento dei dati personali può essere necessario per tutelare gli interessi vitali della persona interessata o di un\'altra persona fisica. Questo accadrebbe, ad esempio, se un visitatore della nostra azienda fosse ferito e il suo nome, l\'età, i dati dell\'assicurazione sanitaria o altre informazioni vitali dovessero essere trasmessi a un medico, a un ospedale o a terzi. In questo caso, il trattamento si baserebbe sull\'art. 6 Ilit. d DS-GVO.
+Infine, le operazioni di elaborazione potrebbero essere basate sull\'art. 6 lett. f DS-GVO. Le operazioni di trattamento che non rientrano in nessuna delle suddette basi legali si basano su questa base legale se il trattamento è necessario per salvaguardare un interesse legittimo della nostra società o di terzi, a condizione che non prevalgano gli interessi, i diritti e le libertà fondamentali dell\'interessato. Siamo autorizzati ad effettuare tali operazioni di trattamento, in particolare perché sono state specificamente menzionate dal legislatore europeo. A tale riguardo, ha ritenuto che si possa presumere un interesse legittimo se la persona interessata è un cliente del responsabile del trattamento (considerando 47 frase 2 DS-GVO).
+</p>
+
+<p>interessi legittimi nel trattamento perseguito dal titolare o da un terzo.
+Se il trattamento dei dati personali si basa sull\'articolo 6 Ilit. f DS-GVO, il nostro legittimo interesse è quello di svolgere le nostre attività commerciali a beneficio del benessere di tutti i nostri dipendenti e dei nostri azionisti.</p>
+
+<h4> Durata di conservazione dei dati personali</h4
+<p>Il criterio per la durata della conservazione dei dati personali è il rispettivo periodo di conservazione legale. Alla scadenza di questo periodo, i dati corrispondenti vengono regolarmente cancellati, a condizione che non siano più necessari per l\'adempimento del contratto o per l\'avvio di un contratto.</p>.
+
+<p>Prescrizioni legali o contrattuali sul conferimento dei dati personali; necessità per la conclusione del contratto; obbligo dell\'interessato di fornire i dati personali; possibili conseguenze del mancato conferimento dei dati
+Vi informiamo che il conferimento dei dati personali è in parte obbligatorio per legge (ad es. norme fiscali) o può anche derivare da norme contrattuali (ad es. informazioni sul partner contrattuale).
+A volte può essere necessario per la conclusione di un contratto che un interessato ci fornisca dati personali, che devono essere successivamente trattati da noi. Ad esempio, l\'interessato è obbligato a fornirci i dati personali se la nostra società stipula un contratto con lui/lei. Il mancato conferimento dei dati personali comporterebbe l\'impossibilità di concludere il contratto con l\'interessato.
+Prima che l\'interessato renda disponibili i dati personali, deve contattare uno dei nostri dipendenti. Il nostro collaboratore informerà di volta in volta l\'interessato se il conferimento dei dati personali è obbligatorio per legge o per contratto o è necessario per la conclusione del contratto, se vi è un obbligo di fornire i dati personali e quali sarebbero le conseguenze in caso di mancato conferimento dei dati personali.
+</p>
+
+<h4>Esistenza di un processo decisionale automatizzato</h4>
+<p>In qualità di azienda responsabile non utilizziamo il processo decisionale automatico o la profilazione.</p>
+
+
+';
+
+**/
+
+
+$wordpress_policy_sample_it = '
+<h3>Cookies generici</h3>
+<b>Cookies da WordPress</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Scopo</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>wordpress_test_cookie</td>
+    <td>Questo cookie determina se l\'uso dei cookie è stato disabilitato nel browser. Durata della memorizzazione: Fino alla fine della sessione del browser (verrà cancellato alla chiusura del browser).</td>
+    <td>Sessione</td>
+  </tr>
+   <tr>
+    <td>PHPSESSID</td>
+    <td>Questo cookie memorizza la vostra sessione corrente rispetto alle applicazioni PHP, assicurando che tutte le funzionalità di questo sito web basate sul linguaggio di programmazione PHP siano completamente visualizzate. Durata della memorizzazione: Fino alla fine della sessione del browser (verrà cancellato alla chiusura del browser).</td>
+    <td>Sessione</td>
+  </tr> 
+   <tr>
+    <td>wordpress_akm_mobile</td>
+    <td>Questi cookie vengono utilizzati solo per l\'area di amministrazione di WordPress.</td>
+    <td>1 Year</td>
+  </tr>   
+   <tr>
+    <td>wordpress_logged_in_akm_mobile</td>
+    <td>These cookies are only used for the administration area of ​​WordPress and do not apply to other site visitors.</td>
+    <td>Sessione</td>
+  </tr>   
+   <tr>
+    <td>wp-settings-akm_mobile</td>
+    <td>Questi cookie vengono utilizzati solo per l\'area di amministrazione di WordPress e non si applicano agli altri visitatori del sito.</td>
+    <td>Sessione</td>
+  </tr>   
+   <tr>
+    <td>wp-settings-time-akm_mobile</td>
+    <td>Questi cookie vengono utilizzati solo per l\'area di amministrazione di WordPress e non si applicano agli altri visitatori del sito.</td>
+    <td>Sessione</td>
+  </tr>     
+   <tr>
+    <td>ab</td>
+    <td>Viene utilizzato per il test A/B delle nuove caratteristiche.</td>
+    <td>Sessione</tds>
+  </tr>      
+   <tr>
+    <td>akm_mobile</td>
+    <td>salva se il visitatore vuole vedere la versione mobile di un sito web.</td>
+    <td>1 giorno</td>
+  </tr>     
+</table>
+[dsgvoaio_plugins]
+';
+
+$gtagmanager_policy_sample_it = '
+<h3 >Google Tag Manager</h3>
+<p>Questo sito web utilizza Google Tag Manager (Google LLC. 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Google Tag Manager consente di gestire i tag dei siti web commercializzati tramite un\'interfaccia. Lo stesso strumento Tag Manager (che implementa i tag) è un dominio senza cookie e non registra dati personali. Lo strumento fa sì che vengano attivati altri tag che possono, dal canto loro, registrare dati in determinate circostanze. Google Tag Manager non accede a queste informazioni. Se la registrazione è stata disattivata a livello di dominio o di cookie, questa impostazione rimane valida per tutti i tag di tracciamento implementati con Google Tag Manager.</p>.
+';
+
+$ga_policy_sample_it = '
+<h3>Google Analytics</h3>
+<p>Questo sito web utilizza vari servizi forniti da Google Ireland Limited, Gordon House, Barrow Street, Dublino 4, Irlanda. L\'utilizzo di questi singoli servizi è descritto più dettagliatamente qui di seguito.</p>
+<p>Il nostro utilizzo dei seguenti servizi e la relativa raccolta di dati personali (in particolare gli indirizzi IP) si basa generalmente sul nostro legittimo interesse ad analizzare, migliorare e far apparire attraente il contenuto del nostro sito web, nonché sul nostro legittimo interesse ad adattare qualsiasi pubblicità alle vostre esigenze (articolo 6 (1) f GDPR).</p>
+<p>Google Analytics utilizza i cookie (vedi anche 3.1 "Cookies"). I cookie vengono memorizzati sul vostro computer e consentono a Google di analizzare il modo in cui utilizzate questo sito web. Le informazioni generate dal cookie sull\'utilizzo di questo sito web vengono generalmente trasmesse e memorizzate su un server di Google negli USA.</p>.
+<p> <strong>Anonimizzazione IP</strong> </p>
+<p>Abbiamo attivato l\'anonimizzazione IP sul nostro sito web. Ciò significa che Google accorcerà il vostro indirizzo IP prima di trasmetterlo agli Stati Uniti, a condizione che l\'indirizzo IP provenga da uno Stato membro dell\'Unione Europea o da uno Stato che è parte dell\'Accordo sullo Spazio Economico Europeo. Il gestore di questo sito web commissiona a Google l\'utilizzo di queste informazioni per valutare il vostro utilizzo del sito web, per creare report sulle attività del sito web e per fornire altri servizi relativi all\'utilizzo del sito web e di internet. L\'indirizzo IP trasmesso dal vostro browser durante il processo di Google Analytics non è collegato ad altri dati posseduti da Google.</p>.
+<p> <strong>Il vostro diritto di opporvi alla raccolta dei vostri dati</strong> </p>
+<p>È possibile bloccare la memorizzazione dei cookie modificando di conseguenza le impostazioni del browser; si prega di notare, tuttavia, che in questi casi potrebbe non essere possibile utilizzare tutte le funzioni disponibili su questo sito web. Potete anche impedire a Google di raccogliere ed elaborare i dati generati dal cookie sull\'utilizzo del sito web (compreso il vostro indirizzo IP) scaricando e installando il plugin del browser disponibile al seguente link:&nbsp; <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank" rel="nofollow noopener">https://tools.google.com/dlpage/gaoptout?hl=en</a>.</p>.
+<p>Per ulteriori informazioni sul trattamento dei dati da parte di Google Analytics consultare l\'informativa sulla privacy di Google:&nbsp; <a href="https://support.google.com/analytics/answer/6004245?hl=en" target="_blank" rel="nofollow noopener">https://support.google.com/analytics/answer/6004245?hl=en</a>.</p>.
+<p> <strong>Il trattamento dei dati per nostro conto</strong> </p>
+<p>Abbiamo stipulato un contratto di elaborazione dei dati per il nostro utilizzo di Google Analytics e rispettiamo pienamente le severe disposizioni delle autorità tedesche per la protezione dei dati nell\'utilizzo di questo servizio.</p>
+<p> <strong>Raccolta di dati demografici da Google Analytics</strong> </p>.
+<p>Questo sito web utilizza la funzione Demographics di Google Analytics. Questa funzione consente di creare report che contengono dichiarazioni sull\'età, il sesso e gli interessi dei visitatori di questo sito. Questi dati vengono raccolti dalla pubblicità personalizzata di Google e dai dati dei visitatori di fornitori terzi. Questi dati non possono essere attribuiti ad individui specifici. È possibile disattivare questa funzione in qualsiasi momento modificando le impostazioni degli annunci nel proprio account Google, oppure è possibile vietare la raccolta generale dei propri dati da parte di Google Analytics seguendo la procedura descritta sopra.</p>.
+<b>Cookies di Google Analytics</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Scopo</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>_ga</td>
+    <td>Differenziazione dei visitatori del sito web.</td>
+    <td>2 Ore</td>
+  </tr>
+  <tr>
+    <td>_gid</td>
+    <td>Differenziazione dei visitatori del sito web.</td>
+    <td>24 ore</td>
+  </tr>
+  <tr>
+    <td>_gat_gat_gtag_UA_<property-id></td></td>
+    <td>Usato per strozzare il tasso di richiesta. Se Google Analytics viene fornito tramite Google Tag Manager, questo cookie sarà denominato _dc_gtm_ <property-id>.</td>.
+    <td>1 Verbale</td>
+  </tr>
+  <tr>
+    <td>_dc_gtm_gtm_</td>
+    <td>Utilizzato per monitorare il numero di richieste del server di Google Analytics.</td>
+    <td>1 Verbale</td>
+  </tr>
+   <tr>
+    <td>AMP_TOKEN</td>
+    <td>Contiene un codice token che viene utilizzato per leggere l\'ID cliente dal servizio AMP Client ID Service. Abbinando questo ID con quello di Google Analytics, gli utenti possono essere abbinati quando si passa da contenuti AMP a contenuti non AMP.</td>.
+    <td>30 secondi fino a 1 anno</td>
+  </tr>
+   <tr>
+    <td>_gat</td>
+    <td>Utilizzato per monitorare il numero di richieste del server di Google Analytics quando si utilizza Google Tag Manager.</td>.
+    <td>1 minuto</td>
+  </tr>   
+   <tr>
+    <td>_gac_</td>
+    <td>Contiene informazioni relative alle campagne di marketing dell\'utente. Queste sono condivise con Google AdWords / Google Ads quando gli account Google Ads e Google Analytics sono collegati tra loro.</td>
+    <td>90 giorni</td>
+  </tr>     
+   <tr>
+    <td>__utma</td>
+    <td>ID utilizzato per identificare gli utenti e le sessioni.</td>
+    <td>2 anni</td>
+  </tr>  
+   <tr>
+    <td>__utmt</td>
+    <td>Utilizzato per monitorare il numero di richieste del server di Google Analytics.</td>
+    <td>10 Minuti</td>
+  </tr>   
+   <tr>
+    <td>__utmb</td>
+    <td>Usato per distinguere le nuove sessioni e le nuove visite. Questo cookie viene impostato quando la libreria javascript GA.js viene caricata e non esiste un cookie __utmb esistente. Il cookie viene aggiornato ogni volta che i dati vengono inviati al server di Google Analytics.</td>.
+    <td>30 Minuti</td>
+  </tr>   
+   <tr>
+    <td>__utmc</td>
+    <td>Utilizzato solo con le vecchie versioni Urchin di Google Analytics e non con GA.js. È stato utilizzato per distinguere tra le nuove sessioni e le visite alla fine di una sessione.</td>
+    <td>Sessione</td>
+  </tr>   
+   <tr>
+    <td>__utmz</td>
+    <td>Contiene informazioni sulla fonte di traffico o sulla campagna che ha indirizzato l\'utente verso il sito web. Il cookie viene impostato quando il GA.js javascript viene caricato e aggiornato quando i dati vengono inviati al server di Google Anaytics.</td>.
+    <td>6 mesi</td>
+  </tr>   
+   <tr>
+    <td>__utmv</td>
+    <td>Contiene informazioni personalizzate impostate dallo sviluppatore web con il metodo _setCustomVar in Google Analytics. Questo cookie viene aggiornato ogni volta che nuovi dati vengono inviati al server di Google Analytics.</td>.
+    <td>2 anni</td>
+  </tr>   
+    <tr>
+    <td>__utmx</td>
+    <td>Utilizzato per determinare se un utente è incluso in un test A / B o Multivariata.</td
+    <td>18 Mesi</td>
+  </tr>   
+    <tr>
+    <td>__utmxx</td>
+    <td>Utilizzato per determinare quando termina il test A / B o Multivariata a cui l\'utente partecipa.</td>
+    <td>18 Mesi</td>
+  </tr>    
+</table>
+';
+
+
+$twitter_policy_sample_it = '
+<h3>Twitter</h3>
+<p>Su questo sito web, il controllore ha integrato componenti di Twitter. Twitter è un servizio di microblogging multilingue e accessibile al pubblico, sul quale gli utenti possono pubblicare e diffondere i cosiddetti "tweet", ad es. messaggi brevi, limitati a 280 caratteri. Questi brevi messaggi sono disponibili per tutti, anche per coloro che non sono collegati a Twitter. I tweet vengono visualizzati anche ai cosiddetti follower del rispettivo utente. I follower sono altri utenti di Twitter che seguono i tweet di un utente. Inoltre, Twitter consente di rivolgersi a un vasto pubblico tramite hashtag, link o retweet.</p>
+<p>La società operativa di Twitter è Twitter International Company, One Cumberland Place, Fenian Street Dublin 2, D02 AX07, Irlanda.
+<p>Con ogni richiamo a una delle singole pagine di questo sito Internet, che è gestito dal controller e sul quale è stato integrato un componente Twitter (pulsante Twitter), il browser Internet del sistema informatico dell\'interessato viene automaticamente invitato a scaricare una visualizzazione del corrispondente componente Twitter di Twitter. Ulteriori informazioni sui pulsanti di Twitter sono disponibili sotto <a href="https://about.twitter.com/en/resources/buttons" target="blank">https://about.twitter.com/en/resources/buttons</a>. Nel corso di questa procedura tecnica, Twitter viene a conoscenza di quale sotto-pagina specifica del nostro sito web è stata visitata dall\'interessato. Lo scopo dell\'integrazione della componente Twitter è una ritrasmissione dei contenuti di questo sito web per consentire ai nostri utenti di introdurre questa pagina web nel mondo digitale e aumentare il numero di visitatori.</p>
+<p>Se l\'interessato viene registrato contemporaneamente su Twitter, Twitter rileva ad ogni chiamata al nostro sito web da parte dell\'interessato e per tutta la durata della sua permanenza sul nostro sito internet quale sotto-pagina specifica della nostra pagina internet è stata visitata dall\'interessato. Queste informazioni vengono raccolte attraverso la componente Twitter e associate al rispettivo account Twitter dell\'interessato. Se l\'interessato clicca su uno dei pulsanti di Twitter integrati nel nostro sito Internet, Twitter assegna queste informazioni all\'account utente Twitter personale dell\'interessato e memorizza i dati personali.</p>
+<p>Twitter riceve tramite la componente Twitter l\'informazione che l\'interessato ha visitato il nostro sito web, a condizione che l\'interessato abbia effettuato il login su Twitter al momento della chiamata al nostro sito web. Ciò avviene indipendentemente dal fatto che la persona clicchi o meno sul componente Twitter. Se una tale trasmissione di informazioni a Twitter non è auspicabile per l\'interessato, questi può impedirlo disconnettendosi dal proprio account Twitter prima di effettuare una chiamata al nostro sito web.</p>.
+<p>Le disposizioni vigenti in materia di protezione dei dati di Twitter sono accessibili sotto <a href="https://twitter.com/privacy?lang=en" target="blank">https://twitter.com/privacy?lang=en</a>.</p>.
+<b>Cookies da Twitter</b>
+<table style="width:100%"> 
+<tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>external_referer</td>
+    <td>Raccoglie dati anonimi come il numero di visite, il tempo medio trascorso sul sito e quali pagine sono state visualizzate. Scopo della personalizzazione e del miglioramento del servizio Twitter.
+    <td>6 giorni</td>
+  </tr>
+  <tr>
+    <td>_twitter_sess</td>
+    <tdSession ID per l\'identificazione se l\'utente è connesso a Twitter.</td>
+    <td>Sessione</td>
+  </tr>
+   <tr>
+    <td>guest_id</td>
+    <td>ID di sessione per l\'identificazione se l\'utente non è connesso a Twitter.</td>
+    <td>2 anni</td>
+  </tr> 
+  <tr>
+    <td>personalization_id</td>
+    <td>Serve a scopo di personalizzazione degli annunci.</td>
+    <td>2 anni</td>
+  </tr> 
+  <tr>
+    <td>ct0</td>
+    <td>Questi cookie ci permettono di tracciare l\'attività dei visitatori dai nostri annunci Twitter sul nostro sito web, e anche di permettere agli utenti di condividere i contenuti dei nostri siti web. I cookie non ci forniscono informazioni riservate relative al vostro account.</td>
+    <td>2 anni</td>
+  </tr>    
+</table>
+';
+
+$facebook_policy_sample_it = '
+<h3>Facebook Like/Commenti</h3>
+<p>Su questo sito web, il controllore ha integrato i componenti dell\'impresa Facebook. Facebook è un social network.</p>
+<p>Un social network è un luogo di incontri sociali su Internet, una comunità online, che di solito permette agli utenti di comunicare tra loro e di interagire in uno spazio virtuale. Un social network può fungere da piattaforma per lo scambio di opinioni ed esperienze o consentire alla comunità di Internet di fornire informazioni personali o commerciali. Facebook consente agli utenti dei social network di includere la creazione di profili privati, l\'upload di foto e la creazione di una rete attraverso richieste di amicizia.</p>
+<p>La società operativa di Facebook è Facebook, Inc., 1 Hacker Way, Menlo Park, CA 94025, Stati Uniti. Se una persona vive al di fuori degli Stati Uniti o del Canada, il controller è Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublino 2, Irlanda.</p>
+<p>Ad ogni richiamo di una delle singole pagine di questo sito Internet, gestito dal controller e nel quale è stato integrato un componente Facebook (plug-in Facebook), il browser web del sistema informatico dell\'interessato viene automaticamente invitato a scaricare la visualizzazione del corrispondente componente Facebook da Facebook attraverso il componente Facebook. Una panoramica di tutti i plug-in di Facebook è accessibile sotto <a href="https://facebook.com/about/privacy/" target="blank">https://developers.facebook.com/docs/plugins/</a>. Nel corso di questa procedura tecnica, Facebook viene messo a conoscenza di quale sotto-sito specifico del nostro sito web è stato visitato dall\'interessato.</p>
+<p>Se l\'interessato viene registrato contemporaneamente su Facebook, Facebook riconosce ad ogni chiamata al nostro sito web da parte dell\'interessato - e per tutta la durata della sua permanenza sul nostro sito Internet - quale sotto-sito specifico della nostra pagina Internet è stato visitato dall\'interessato. Queste informazioni vengono raccolte attraverso il componente Facebook e associate al rispettivo account Facebook dell\'interessato. Se l\'interessato clicca su uno dei pulsanti di Facebook integrati nel nostro sito web, ad esempio il pulsante "Mi piace", o se l\'interessato invia un commento, allora Facebook abbina queste informazioni con l\'account utente personale di Facebook dell\'interessato e memorizza i dati personali.</p>
+<p>Facebook riceve sempre, attraverso il componente Facebook, informazioni sulla visita al nostro sito web da parte dell\'interessato, ogni volta che l\'interessato viene registrato contemporaneamente su Facebook durante la chiamata al nostro sito web. Ciò avviene indipendentemente dal fatto che l\'interessato clicchi o meno sul componente Facebook. Se una tale trasmissione di informazioni a Facebook non è auspicabile per l\'interessato, questi può impedirlo disconnettendosi dal proprio account Facebook prima di effettuare una chiamata al nostro sito web.</p>.
+<p>La direttiva sulla protezione dei dati pubblicata da Facebook, disponibile all\'indirizzo <a href="https://facebook.com/about/privacy/" target="blank">https://facebook.com/about/privacy/</a>, fornisce informazioni sulla raccolta, l\'elaborazione e l\'utilizzo dei dati personali da parte di Facebook. Inoltre, viene spiegato quali sono le possibilità di impostazione offerte da Facebook per proteggere la privacy della persona interessata. Inoltre, sono disponibili diverse opzioni di configurazione per consentire l\'eliminazione della trasmissione dei dati a Facebook. Queste applicazioni possono essere utilizzate dall\'interessato per eliminare una trasmissione di dati a Facebook.
+<b>Cookies da Facebook</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>_fbp</td>
+    <td>Questo cookie è utilizzato da Facebook per fornire una serie di prodotti promozionali come le offerte di terzi in tempo reale.</td>
+    <td>3 mesi</td>
+  </tr>   
+ </table>
+';
+
+$fbpixel_policy_sample_it = '
+<h3>Facebook-Pixel</h3>
+<p>Il nostro sito web misura le conversioni utilizzando i pixel di azione dei visitatori di Facebook, Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA ("Facebook").
+<p>Questi permettono di tracciare il comportamento dei visitatori del sito dopo aver cliccato su un annuncio su Facebook per raggiungere il sito web del provider. Questo permette un\'analisi dell\'efficacia degli annunci di Facebook a fini statistici e di ricerca di mercato e la loro futura ottimizzazione.</p>
+<p>I dati raccolti sono anonimi per noi in qualità di operatori di questo sito web e non possiamo utilizzarli per trarre conclusioni sull\'identità dei nostri utenti. Tuttavia, i dati vengono memorizzati ed elaborati da Facebook, che può stabilire un collegamento con il vostro profilo Facebook e che può utilizzare i dati per i propri scopi pubblicitari, come stabilito nella <a href="https://www.facebook.com/about/privacy/" target="_blank">Privacy policy di Facebook</a>. Ciò consentirà a Facebook di visualizzare annunci pubblicitari sia su Facebook che su siti di terze parti. Non abbiamo alcun controllo sull\'utilizzo di questi dati.</p>
+<p>Verifica l\'informativa sulla privacy di Facebook per saperne di più sulla tutela della tua privacy: <a href="https://www.facebook.com/about/privacy/" target="_blank">https://www.facebook.com/about/privacy/</a>.</p>
+<p>P>Puoi anche disattivare la funzione di remarketing personalizzato del pubblico nella sezione Ads Settings a <a href="https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen" target="_blank">https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen</a>. Dovrete prima effettuare il login su Facebook.</p>
+<b>Cookies da Facebook Pixel</b>
+<table style="width:100%">
+<tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>act, c_user, datr, fr, pl, presence, sd, wd, xs</td>
+    <td>Facebook utilizza diversi cookie per la sessione di identificazione e analisi. Questi sono utilizzati per rilevare se si è connessi come utente su Facebook, per scopi di tracciamento e da quale URL viene utilizzata la funzione Condividi / Mi piace.</td>.
+    <td>variabile</td>
+  </tr>   
+ </table>
+';
+
+
+$linkedin_policy_sample_it = '
+<h3>LinkedIn</h3>
+<p>Funzioni e contenuti di LinkedIn possono essere integrati nella nostra offerta online, offerta da LinkedIn AG, Dammtorstraße 29-32, 20354 Amburgo, Germania. Questo può includere contenuti come immagini, video o testi e pulsanti che gli utenti utilizzano per esprimere i loro favori sul contenuto, o il contenuto o i nostri post sottoscrivono. Se gli utenti sono membri della piattaforma LinkedIn, LinkedIn può ad es. assegnare contenuti e funzioni ai profili degli utenti. Dichiarazione sulla privacy di LinkedIn: <a href="https://www.linkedin.com/legal/privacy-policy"> https://www.linkedin.com/legal/privacy-policy. </a>. LinkedIn è certificato ai sensi del Privacy Shield Agreement e ha la garanzia di rispettare la legislazione europea sulla privacy (<a href="https://www.privacyshield.gov/participant?id=a2zt0000000L0UZAA0&amp;status=Attivo">https://www.privacyshield.gov/participant?id=a2zt0000000L0UZAA0&amp;status=Attivo</a>).<br /> Informativa sulla privacy: <a href="https://twitter.com/privacy">https://twitter.com/privacy</a>, opt-out: <a href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out"> https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out </a>. </p>
+<b>Cookies da LinkedIn</b>
+<table style="width:100%">
+ <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>lidc</td>
+    <td>Utilizzato dal servizio di social network LinkedIn per il tracciamento dell\'utilizzo dei servizi embedded.</td>
+    <td>Sessione</td>
+  </tr>
+  <tr>
+    <td>bcookie</td>
+    <td>Utilizzato dal servizio di social network LinkedIn per il tracciamento dell\'utilizzo dei servizi embedded.</td>
+    <td>2 anni</td>
+  </tr>  
+  <tr>
+    <td>bscookie</td>
+    <td>Utilizzato dal servizio di social network LinkedIn per il tracciamento dell\'utilizzo dei servizi embedded.</td>
+    <td>2 anni</td>
+  </tr>
+  <tr>
+    <td>BizoID</td>
+    <td>LinkedIn ad analytics.</td>
+    <td>179 giorni</td>
+  </tr>
+  <tr>
+    <td>UserMatchHistory</td>
+    <td>LinkedIn ad analytics.</td>
+    <td>179 giorni</td>
+  </tr>  
+  <tr>
+    <td>trkCode</td>
+    <td>Questo cookie è utilizzato da LinkedIn per supportare la funzionalità di aggiunta di un pannello di invito con l\'etichetta \'Follow Us\'</td>.
+    <td>1 anno</td>
+  </tr>    
+  <tr>
+    <td>trkInfo</td>
+    <td>Questo cookie è utilizzato da LinkedIn per supportare la funzionalità di aggiunta di un pannello di invito con l\'etichetta \'Follow Us\'</td>.
+    <td>1 anno</td>
+  </tr>   
+  <tr>
+    <td>li_oatml</td>
+    <td>Raccoglie informazioni sull\'utilizzo del nostro sito da parte dei visitatori.</td>
+    <td>30 giorni</td>
+  </tr>  
+  <tr>
+    <td>liap</td>
+    <td>Cookie utilizzato per l\'accesso con Linkedin e/o per consentire la funzione Linkedin follow.</td>.
+    <td>90 giorni</td>
+  </tr>   
+  <tr>
+    <td>lissc</td>
+    <td>Cookie utilizzato per l\'accesso con Linkedin e/o per consentire la funzione Linkedin follow.</td>.
+    <td>1 anno</td>
+  </tr>    
+  <tr>
+    <td>spectroscopyId</td>
+    <td>Questi cookie sono impostati da LinkedIn per scopi pubblicitari, tra cui: tracciare i visitatori in modo che possano essere presentati annunci più rilevanti, consentendo agli utenti di utilizzare le funzioni \'Applica con LinkedIn\' o \'Accedi con LinkedIn\', raccogliendo informazioni su come i visitatori utilizzano il sito, ecc.</td>.
+    <td>Sessione</td>
+  </tr>     
+</table>
+';
+
+
+$shareaholic_policy_sample_it = '
+<h3>Shareaholic</h3>
+<p>Questo sito web contiene plugin shareaholic che consentono di impostare i segnalibri o di condividere contenuti interessanti del sito web. Shareaholic utilizza i cookie. I dati generati (come il tempo di utilizzo, la lingua del browser e l\'indirizzo IP) saranno trasmessi a Shareaholic Inc., Dogpatch Labs 1, Cambridge Center, Suite 600, Cambridge, MA 02142, e ai server negli Stati Uniti e in altri paesi elaborati. Si prega di consultare <a href="http://www.shareaholic.com/privacy" target="blank">http://www.shareaholic.com/privacy/</a> per ulteriori informazioni sul trattamento dei dati e sulle pratiche sulla privacy di Shareaholic Inc. In particolare, questo sito web contiene informazioni sul tipo di dati trattati e sul loro scopo. Il trattamento dei dati interessati da parte del gestore di questo sito non ha luogo. Utilizzando il pulsante Shareaholic, l\'utente accetta il trattamento dei dati forniti da Shareaholic Inc., al livello indicato sul sito web <a href="http://www.shareaholic.com/privacy" target="blank">http://www.shareaholic.com/privacy/</a>. L\'utente può opporsi all\'utilizzo dei dati in qualsiasi momento utilizzando un cookie opt-out all\'indirizzo <a href="http://www.shareaholic.com/privacy/choices" target="blank">http://www.shareaholic.com/privacy/choices</a>. Ulteriori dettagli sono disponibili sul sito web di Shareaholic Inc. </p>
+<b>Cookies da Shareaholic</b>
+<table style="width:100%">
+<tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>XSRF-TOKEN</td>
+    <td>Gettone CSRF - Serve la sicurezza della richiesta di falsificazione in un sito web.</td>
+    <td>Sessione</td>
+  </tr>
+  <tr>  
+    <td>DFTT_END_END_USER_PREV_BOOTSTRAPPED</td>
+    <td>Valore booleano che indica che l\'utente ha scartato il messaggio di benvenuto.</td>
+    <td>2 anni</td>
+  </tr>
+  <tr>
+    <td>__hssc</td>
+    <td>Questo cookie viene utilizzato su siti web creati sulla piattaforma HubSpot. Viene utilizzato per l\'analisi del sito web.</td>
+    <td>30 Minuti</td>
+  </tr>
+  <tr>
+    <td>__hssrc</td>
+    <td>Questo cookie viene utilizzato su siti web creati sulla piattaforma HubSpot. Viene utilizzato per l\'analisi del sito web.</td>
+    <td>Sessione</td>
+  </tr>  
+  <tr>
+    <td>__hstc</td>
+    <td>Questo cookie viene utilizzato su siti web creati sulla piattaforma HubSpot. Viene utilizzato per l\'analisi del sito web.</td>
+    <td>2 anni</td>
+  </tr>    
+  <tr>
+    <td>__qca</td>
+    <td>Shareaholic.com utilizza questo cookie su tutte le pagine.</td>
+    <td>2,5 anni</td>
+  </tr>    
+  <tr>  
+    <td>__d_hsutk</td>
+    <td>Valore booleano di integrazione che indica che l\'HubSpot UTK è stato validato (se l\'integrazione è abilitata).</td>
+    <td>30 Minuti</td>
+  </tr>      
+  <tr>
+    <td>__cfduid</td>
+    <td>Utilizzato per identificare i singoli client dietro un indirizzo IP condiviso e per applicare individualmente le impostazioni di sicurezza per ogni client.</td
+    <td>Sessione</td>
+  </tr>      
+  <tr>
+    <td>hsfirstvisit</td>
+    <td>Shareaholic.com utilizza questo cookie su tutte le pagine. Viene utilizzato per salvare il tempo della prima chiamata.</td>.
+    <td>10 anni</td>
+  </tr>      
+  <tr>
+    <td>hubspotutk</td>
+    <td>Valore booleano di integrazione che indica che l\'HubSpot UTK è stato validato (se l\'integrazione è abilitata).</td>
+    <td>10 anni</td>
+  </tr>      
+  <tr>  
+    <td>SnapABugVisit</td>
+    <td>Questo cookie è collegato al software di live chat SnapEngage. Identifica una nuova sessione utente.</td>
+    <td>Sessione</td>
+  </tr> 
+  <tr>
+    <td>SnapABugHistory</td>
+    <td>Questo cookie è collegato al software di live chat SnapEngage. Identifica un visitatore per consentire la registrazione di una cronologia.</td>
+    <td>1 anno</td>
+  </tr> 
+  <tr>
+    <td>SnapABugRef</td>
+    <td>Questo cookie è collegato al software di live chat SnapEngage. Registra la pagina di destinazione e l\'origine di un visitatore.</td>
+    <td>1 anno</td>
+  </tr> 
+  <tr>
+    <td>_ga</td>
+    <td>Questo cookie utilizza LinkedIn, la piattaforma per le reti aziendali. Questo cookie è per Google Analytics.</td>
+    <td>1 Giorno</td>
+  </tr>   
+  <tr>
+    <td>_gid</td>
+    <td>Questo cookie utilizza LinkedIn, la piattaforma per le reti aziendali. Questo cookie è per Google Analytics.</td>
+    <td>1 Giorno</td>
+  </tr>   
+  <tr>  
+  <tr>
+    <td>__utma</td>
+    <td>Questo cookie utilizza LinkedIn, la piattaforma per le reti aziendali. Questo cookie è per Google Analytics.</td>
+    <td>2 anni</td>
+  </tr>   
+  <tr>
+    <td>__utmb</td>
+    <td>Questo cookie utilizza LinkedIn, la piattaforma per le reti aziendali. Questo cookie è per Google Analytics.</td>
+    <td>1 Ora e 8 minuti</td>
+  </tr> 
+  <tr>
+    <td>__utmc</td>
+    <td>Questo cookie utilizza LinkedIn, la piattaforma per le reti aziendali. Questo cookie è per Google Analytics.</td>
+    <td>Sessione</td>
+  </tr>   
+  <tr>
+    <td>__utmz</td>
+    <td>Questo cookie utilizza LinkedIn, la piattaforma per le reti aziendali. Questo cookie è per Google Analytics.</td>
+    <td>6 Mese e 11 Ore</td>
+  </tr>     
+  <tr>
+    <td>_shareaholic_session</td>
+    <td>Shareaholic.com utilizza questo cookie su tutte le pagine. C\'è una sessione unica ID.</td> di sessione
+    <td>1 mese</td>
+  </tr> 
+  <tr>
+    <td>c_id</td>
+    <td>Shareaholic.com utilizza questo cookie su tutte le pagine.</td>
+    <td>1 anno</td>
+  </tr>
+</table>
+';
+
+$koko_policy_sample_it = '
+<h3>Koko Analyics</h3>
+<p>Utilizziamo un plug-in sul nostro sito web per contare i visitatori e le pagine viste - Koko-Analytics.<br>
+Quando la pagina viene chiamata, vengono contate solo le chiamate alla pagina.<br>
+La base giuridica è l\'interesse legittimo ai sensi dell\'Art. 6 cpv. 1 lett. f) DSGVO. Il nostro interesse legittimo è quello di sapere senza dubbio se il nostro sito viene visitato e se il plug-in funziona correttamente.</p>
+<b>Cookies di Koko Analyics</b>
+<table style="width:100%">
+<tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>_koko_analytics_pages_viewed</td>
+    <td>Utilizzato per determinare il numero di pagine visualizzate.</td
+    <td>6 Ore</td>
+  </tr>
+</table>
+';
+
+$vgwort_policy_sample_it = '
+<h3>VG Wort</h3>
+<p>Usiamo i "Session Cookies" di VG Wort, Monaco di Baviera, per misurare l\'accesso ai testi al fine di registrare la probabilità di copia. I "Session Cookies" sono piccoli pezzi di informazione che memorizzano un provider nella memoria del computer del visitatore. In un cookie di sessione viene memorizzato un numero identificativo univoco generato in modo casuale, il cosiddetto ID di sessione. Inoltre, un cookie contiene informazioni sulla sua origine e sul periodo di conservazione. I cookie di sessione non possono salvare altri dati. Queste misurazioni vengono effettuate da Kantar Deutschland GmbH secondo il metodo di misurazione centrale scalabile (SZM). Esse aiutano a determinare la probabilità di copia dei singoli testi. Non raccogliamo informazioni personali sui cookie. </p>
+<p> Molti dei nostri siti sono dotati di JavaScript che utilizziamo per segnalare il traffico e la società di gestione collettiva Wort (VG Wort). [CONTROLLARE se questo è il caso con il vostro editore!] § 53 UrhG warrant</p>
+<p> L\'utilizzo delle nostre offerte è possibile anche senza cookie. La maggior parte dei browser è impostata per accettare automaticamente i cookie. Tuttavia, è possibile disattivare la memorizzazione dei cookie o impostare il browser in modo che sia necessario quando i cookie vengono inviati. Informativa sulla privacy per l\'utilizzo del sistema di misurazione centrale scalabile. </p>
+<b> Offerte web </b>
+<p> Il nostro sito web e il nostro sito web mobile utilizzano il "Metodo di misura centrale scalabile" (SZM) della Kantar Deutschland GmbH per la determinazione dei parametri statistici per la determinazione della probabilità di copia dei testi. </p>
+Vengono effettuate misurazioni anonime. La misurazione dell\'accesso viene eseguita per riconoscere i sistemi informatici in alternativa con un cookie di sessione o una firma che viene creata a partire da varie informazioni trasmesse automaticamente dal vostro browser. Gli indirizzi IP vengono elaborati solo in forma anonima. La procedura è stata sviluppata nel rispetto della protezione dei dati. L\'unico obiettivo della procedura è quello di determinare la probabilità di copia di singoli testi. </p>
+<p> In nessun momento i singoli utenti saranno identificati. La vostra identità rimane sempre protetta. Non riceverete pubblicità attraverso il sistema. </p>
+<b>Cookies da VG Wort Pixel</b>
+<table style="width:100%">
+<tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>srp</td>
+    <td>Il cookie di VG Wort aiuta a determinare la probabilità di copia dei nostri testi e garantisce la remunerazione delle rivendicazioni legali degli autori e degli editori. Gli indirizzi IP sono trattati solo in forma anonima.</td>
+    <td>Sessione</td>
+  </tr>
+</table>
+';
+
+$matomo_policy_sample_it = '
+<h3>Matomo (formale Piwik)</h3>
+<p> Questo sito web utilizza il servizio di analisi web Matomo (ex Piwik) per analizzare e migliorare regolarmente l\'uso del nostro sito web. Il servizio viene utilizzato per la nostra pagina di login per il portale clienti "Portale AGURS". Con le statistiche possiamo migliorare la nostra offerta e renderla più interessante per voi come utente. La base legale per l\'utilizzo di Matomo è l\'Art. 6 comma 1 f DSGVO. </p>
+<p> I cookie sono memorizzati sul vostro computer per questa valutazione. È possibile regolare la valutazione eliminando i cookie esistenti e impedendo la memorizzazione dei cookie. Se impedite la memorizzazione dei cookie, vi segnaliamo che potreste non essere in grado di utilizzare questo sito web nella sua interezza. Impedire la memorizzazione dei cookie è possibile impostando il vostro browser. </p>
+<p> Questo sito web utilizza Matomo con l\'estensione "AnonymizeIP". In questo modo gli indirizzi IP vengono elaborati abbreviati e si può quindi escludere una relazione diretta con la persona. L\'indirizzo IP trasmesso da Matomo dal vostro browser non verrà unito ad altre informazioni da noi raccolte. </p>
+<p> Il programma Matomo è un progetto open source. Le informazioni sulla privacy di terzi sono disponibili all\'indirizzo <a href="https://matomo.org/privacy/"> https://matomo.org/privacy/ </a> </p>.
+<b>Cookies da Matomo</b>
+<table style="width:100%">
+<tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>_pk_id</td>
+    <td> ID visitatore usato da Matomo per riconoscere i visitatori che ritornano.</td>
+    <td>13 Mesi</td>
+  </tr>
+  <tr>
+    <td>_pk_ref</td>
+    <td>Contiene informazioni sui referenti del visitatore.
+    <td>6 mesi</td>
+  </tr>
+  <tr>
+    <td>_pk_ses, _pk_cvar, _pk_hsr</td>
+    <td>Il cookie di sessione mantiene lo stato \"attivo\" per 30 minuti dopo l\'ultima azione tracciata dall\'utente. Dopo 30 minuti, la visita è considerata completata.</td>
+    <td>30 Minuti</td>
+  </tr>
+  <tr>
+    <td>piwik_ignore</td>
+    <td>Cookie è impostato quando un utente vieta l\'uso di Matomo per il tracciamento. Una volta impostato il cookie, nessun dato dell\'utente viene inviato al server Matomo.</td>.
+    <td>2 anni</td>
+  </tr>  
+   <tr>
+    <td>_pk_testcookie</td>
+    <td>Cookie viene creato e deve essere poi direttamente cancellato (utilizzato per verificare se il browser del visitatore supporta i cookie).
+    <td>Sessione</td>
+  </tr>  
+   <tr>
+    <td>mtm_consent</td>
+    <td>Cookie viene creato senza data di scadenza per ricordare per sempre che il consenso è stato dato dall\'utente.
+    <td>Per sempre</td>
+  </tr>   
+</table>
+';
+
+
+$woocommerce_policy_text_it = '
+<b>Cookies di WooCommerce</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>woocommerce_cart_hash</td>
+    <td>Questo cookie è necessario per memorizzare gli articoli nel carrello per il processo di ordinazione.</td>
+    <td>Sessione</td>
+  </tr>
+   <tr>
+    <td>woocommerce_items_items_in_cart</td>
+    <td>Aiuta WooCommerce a determinare quando il contenuto del carrello / dati cambia.</td>
+    <td>Sessione</td>
+  </tr> 
+   <tr>
+    <td>tk_ai</td>
+    <td>Salva un ID anonimo generato in modo casuale. Questo viene utilizzato solo all\'interno dell\'area del cruscotto (/ wp-admin) e, se abilitato, viene utilizzato per il controllo dell\'utilizzo.</td>
+    <td>Sessione</td>
+  </tr> 
+	<tr>
+    <td>wp_woocommerce_session_<uniqeid></td></td>
+    <td>Contiene un codice univoco per ogni cliente, in modo che sappia dove trovare i dati del carrello nel database per ogni cliente.</td>
+    <td>2 giorni</td>
+  </tr>  
+   <tr>
+    <td>wc_fragments_<uniqeid></td></td>
+    <td>Salva un ID anonimo generato in modo casuale. Questo viene utilizzato solo all\'interno dell\'area del cruscotto (/ wp-admin) e, se abilitato, viene utilizzato per il controllo dell\'utilizzo.</td>
+    <td>Sessione</td>
+  </tr>   
+   <tr>
+    <td>wc_cart_hash<uniqeid></td></td>
+    <td>Salva un ID anonimo generato in modo casuale. Questo viene utilizzato solo all\'interno dell\'area del cruscotto (/ wp-admin) e, se abilitato, viene utilizzato per il controllo dell\'utilizzo.</td>
+    <td>Sessione</td>
+  </tr>      
+</table>
+';
+
+
+$wpml_policy_text_it = '
+<b>Cookies da WPML</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>_icl_current_language</td>
+    <td>Salva la lingua selezionata dall\'utente.</td>
+    <td>1 anno</td>
+  </tr>
+  <tr>
+    <td>_icl_visitor_lang_js</td>
+    <td>Salva la lingua reindirizzata quando si cambia la lingua.</td>
+    <td>1 anno</td>
+  </tr>
+  <tr>
+    <td>wpml_browser_redirect_test</td>
+    <td>Questo cookie determina se l\'uso dei cookie è stato disabilitato nel browser.</td>
+    <td>1 anno</td>
+  </tr>  
+   <tr>
+    <td>wpml_referer_url</td>
+    <td>Salva l\'ultimo URL richiesto nel frontend.</td>.
+    <td>1 anno</td>
+  </tr>    
+ </table>
+';
+
+
+
+$dsgvoaio_policy_it = '
+<b>Cookies di DSGVO AIO per WordPress</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>dsgvoaio</td>
+    <td>Questa chiave LocalStorage / valore memorizza i servizi che l\'utente ha accettato o meno.</td>
+    <td>variabile</td>
+  </tr>
+  <tr>
+    <td>_uniqueuid</td>
+    <td>Questa chiave / valore di LocalStorage memorizza un ID generato in modo che le azioni di opt-in / opt-out dell\'utente possano essere documentate. L\'ID è memorizzato in forma anonima.</td>
+    <td>variabile</td>
+  </tr>  
+   <tr>
+    <td>dsgvoaio_create</td>
+    <td>Questa chiave / valore di LocalStorage memorizza il tempo in cui _uniqueuid è stato generato.</td>
+    <td>variabile</td>
+  </tr>  
+   <tr>
+    <td>dsgvoaio_vgwort_disable</td></td>
+    <td>Questa chiave / valore di LocalStorage memorizza se il servizio VG word standard è consentito o meno (impostazione dell\'operatore della pagina).</td>
+    <td>variabile</td>
+  </tr>   
+   <tr>
+    <td>dsgvoaio_ga_disable</td>
+    <td>Questa chiave / valore LocalStorage memorizza se il servizio Google Analytics Standard è consentito o meno (Assumere il gestore del sito).
+    <td>variabile</td>
+  </tr>    
+ </table>
+';
+
+
+$wordpress_policy_sample_it = '
+<h3>Biscotti generali</h3>
+<b>Cookies da WordPress</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>wordpress_test_cookie</td>
+    <td>Questo cookie determina se l\'uso dei cookie è stato disabilitato nel browser. Durata della memorizzazione: Fino alla fine della sessione del browser (verrà cancellato alla chiusura del browser).</td>
+    <td>Sessione</td>
+  </tr>
+   <tr>
+    <td>PHPSESSID</td>
+    <td>Questo cookie memorizza la vostra attuale sessione rispetto alle applicazioni PHP, assicurando che tutte le funzionalità di questo sito web basate sul linguaggio di programmazione PHP siano completamente visualizzate. Durata della memorizzazione: Fino alla fine della sessione del browser (verrà cancellato alla chiusura del browser internet).</td>
+    <td>Sessione</td>
+  </tr> 
+   <tr>
+    <td>wordpress_akm_mobile</td>
+    <td>Questi cookie vengono utilizzati solo per l\'area di amministrazione di WordPress.</td>.
+    <td>1 anno</td>
+  </tr>   
+   <tr>
+    <td>wordpress_logged_in_akm_mobile</td>
+    <td>Questi cookie sono utilizzati solo per l\'area di amministrazione di WordPress e non si applicano agli altri visitatori del sito.</td>
+    <td>Sessione</td>
+  </tr>   
+   <tr>
+    <td>wp-settings-akm_mobile</td>
+    <td>Questi cookie sono utilizzati solo per l\'area di amministrazione di WordPress e non si applicano agli altri visitatori del sito.</td>
+    <td>Sessione</td>
+  </tr>   
+   <tr>
+    <td>wp-settings-time-akm_mobile</td>
+    <td>Questi cookie sono utilizzati solo per l\'area di amministrazione di WordPress e non si applicano agli altri visitatori del sito.</td>
+    <td>Sessione</td>
+  </tr>     
+   <tr>
+    <td>ab</td>
+    <td>È utilizzato per il test A / B delle nuove funzionalità.</td>
+    <td>Sessione</tds
+  </tr>      
+   <tr>
+    <td>akm_mobile</td>
+    <td>salva se il visitatore vuole vedere la versione mobile di un sito web.</td>
+    <td>1 Giorno</td>
+  </tr>     
+</table>
+[dsgvoaio_plugins]
+';
+
+
+
+$polylang_policy_text_it = '
+<b>Cookies da Polylang</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>pll_language</td>
+    <td>Questo cookie memorizza la scelta della lingua e la provenienza geografica dell\'utente.</td>
+    <td>1 Jahr</td>
+  </tr>
+ </table>
+';
+
+
+$youtube_policy_sample = '
+<h3>YouTube</h3>
+<p>Wir verwenden auf dieser Seite des Videodienstes YouTube, der Firma YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA.</p>
+<p>Durch das Aufrufen von Seiten unserer Webseite, die YouTube Videos integriert haben, werden Daten an YouTube übertragen, gespeichert und ausgewertet.<br />
+Sollten Sie ein YouTube-Konto haben und angemeldet sein, werden diese Daten Ihrem persönlichen Konto und den darin gespeicherten Daten zugeordnet.</p>
+<p>Welche Daten von Google erfasst werden und wofür diese Daten verwendet werden, können Sie auf <a href="https://www.google.com/intl/de/policies/privacy/" class="external" rel="nofollow">https://www.google.com/intl/de/policies/privacy/</a> nachlesen.</p>
+<b>Cookies von Youtube</b>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Zweck</th>
+    <th>Gültigkeit</th>
+  </tr>
+  <tr>
+    <td>SID</td>
+    <td>Google verwendet Cookies wie das NID- und das SID-Cookie, um Werbung in Google-Produkten wie der Google-Suche individuell anzupassen. Mithilfe solcher Cookies erfasst Google zum Beispiel Ihre neuesten Suchanfragen, Ihre bisherigen Interaktionen mit den Anzeigen eines Werbetreibenden oder den Suchergebnissen und Ihre Besuche auf der Website eines Werbetreibenden. Auf diese Weise kann Google individuell zugeschnittene Werbung auf Google anzeigen. Andere Google-Produkte wie YouTube oder Doubleclick nutzen diese Cookies ebenfalls zur Auswahl relevanterer Werbung.</td>
+    <td>1 Jahr</td>
+  </tr>
+  <tr>
+    <td>VISITOR_INFO1_LIVE</td>
+    <td>Hierbei handelt es sich um ein Cookie, das YouTube setzt, um die Bandbreite des Nutzers zu berechnen. Anhand dieser Information wird bestimmt, ob der Nutzer die neue oder alte Benutzeroberfläche des Players verwenden sollte.</td>
+    <td>bis zu 365 Tage</td>
+  </tr>
+  <tr>
+    <td>PREF</td>
+    <td>Mit diesem Cookie werden die Präferenzen und sonstige Informationen des Nutzers gespeichert. Dazu zählen insbesondere die bevorzugte Sprache, die Anzahl der auf der Seite anzuzeigenden Suchergebnisse sowie die Entscheidung, ob der Filter SafeSearch von Google aktiviert werden soll oder nicht.</td>
+    <td>5 Jahre</td>
+  </tr>  
+  <tr>
+    <td>APISID</td>
+    <td>YouTube ist eine Plattform zur Bereitstellung und Veröffentlichung von Videos und gehört zu Google. YouTube sammelt Benutzerdaten über in Websites eingebettete Videos, die mit Profildaten aus anderen Google-Diensten zusammengeführt werden. So kann Website-Besuchern gezielte Werbung über eine breite Palette eigener und fremder Websites angezeigt werden.</td>
+    <td>10 Jahre</td>
+  </tr>   
+  <tr>
+    <td>YSC</td>
+    <td>Dieses Cookie wird vom Videodienst YouTube auf Webseiten mit eingebetteten YouTube-Videos gesetzt.</td>
+    <td>1 Jahr</td>
+  </tr>  
+  <tr>
+    <td>GPS</td>
+    <td>YouTube ist eine Plattform zur Bereitstellung und Veröffentlichung von Videos und gehört zu Google. YouTube sammelt Benutzerdaten über in Websites eingebettete Videos, die mit Profildaten aus anderen Google-Diensten zusammengeführt werden. So kann Website-Besuchern gezielte Werbung über eine breite Palette eigener und fremder Websites angezeigt werden.</td>
+    <td>1 Tag</td>
+  </tr>    
+    <tr>
+    <td>SSID</td>
+    <td>Quelle: OneTrust. YouTube ist eine Plattform zur Bereitstellung und Veröffentlichung von Videos und gehört zu Google. YouTube sammelt Benutzerdaten über in Websites eingebettete Videos, die mit Profildaten aus anderen Google-Diensten zusammengeführt werden. So kann Website-Besuchern gezielte Werbung über eine breite Palette eigener und fremder Websites angezeigt werden.</td>
+    <td>1 Jahr</td>
+  </tr>    
+    <tr>
+    <td>LOGIN_INFO</td>
+    <td>YouTube ist eine Plattform zur Bereitstellung und Veröffentlichung von Videos und gehört zu Google. YouTube sammelt Benutzerdaten über in Websites eingebettete Videos, die mit Profildaten aus anderen Google-Diensten zusammengeführt werden. So kann Website-Besuchern gezielte Werbung über eine breite Palette eigener und fremder Websites angezeigt werden.</td>
+    <td>2 Jahre</td>
+  </tr>    
+    <tr>
+    <td>SAPISID</td>
+    <td>Diese Domain ist Eigentum der Google Inc. Google ist zwar in erster Linie als Suchmaschine bekannt, allerdings bietet das Unternehmen eine breite Palette von Produkten und Dienstleistungen an. Haupteinnahmequelle ist jedoch die Werbung. Google verfolgt die Bewegungen der Nutzer umfassend – sowohl über eigene Produkte und Websites als auch mit Hilfe der weltweit in Millionen von Websites integrierten vielfältigen Technologien.</td>
+    <td>1 Jahr</td>
+  </tr>   
+     <tr>
+    <td>HSID</td>
+    <td>Wird von Google in Verbindung mit SID verwendet, um das Google-Benutzerkonto und die letzte Anmeldezeit zu überprüfen https://policies.google.com/technologies/types?hl=de</td>
+    <td>1 Jahr</td>
+  </tr>    
+</table>
+';
+
+$youtube_policy_sample_it = '
+<h3>YouTube</h3>
+<p> In questa pagina di servizio video, utilizziamo YouTube, la società YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. </p>
+<p> Accedendo alle pagine del nostro sito web che hanno integrato i video di YouTube, i dati saranno trasmessi a YouTube, memorizzati e valutati. <br />
+Se hai un account YouTube e hai effettuato l\'accesso, queste informazioni saranno associate al tuo account personale e ai dati in esso memorizzati. </p>
+<p> Quali dati raccoglie Google e a cosa servono questi dati si possono trovare su <a href="https://www.google.com/intl/en/policies/privacy/" leggere class="external" rel="nofollow"> https://www.google.com/intl/en/policies/privacy/ </a>. </p>
+<b>Cookies da Youtube</b>
+<table style="width:100%">
+  <tr>
+    <th>Nome</th>
+    <th>Purpose</th>
+    <th>Validità</th>
+  </tr>
+  <tr>
+    <td>SID</td>
+    <td>Google utilizza cookie come i cookie NID e SID per personalizzare la pubblicità nei prodotti Google, come ad esempio la ricerca Google. Utilizzando tali cookie, Google registra, ad esempio, le vostre ultime ricerche, le vostre precedenti interazioni con gli annunci o i risultati di ricerca di un inserzionista e le vostre visite al sito web di un inserzionista. In questo modo, Google può visualizzare la pubblicità personalizzata su Google. Anche altri prodotti Google, come YouTube o Doubleclick, utilizzano questi cookie per selezionare pubblicità più rilevanti.</td>.
+    <td>1 anno</td>
+  </tr>
+  <tr>
+    <td>VISITOR_INFO1_LIVE</td>
+    <td>Si tratta di un cookie che YouTube imposta per calcolare la larghezza di banda dell\'utente. Questa informazione viene utilizzata per determinare se l\'utente deve utilizzare la nuova o la vecchia interfaccia utente del lettore.</td>.
+    <td>0-365 giorni</td>
+  </tr>
+  <tr>
+    <td>PREF</td>
+    <td>Questo cookie memorizza le preferenze dell\'utente e altre informazioni. Ciò include in particolare la lingua preferita, il numero di risultati di ricerca da visualizzare sulla pagina e la decisione se il filtro SafeSearch debba essere attivato o meno da Google.</td>
+    <td>5 anni</td>
+  </tr>  
+  <tr>
+    <td>APISID</td>
+    <td>YouTube è una piattaforma per la fornitura e la pubblicazione di video e fa parte di Google. YouTube raccoglie i dati degli utenti attraverso i video incorporati nei siti web, che vengono uniti ai dati del profilo di altri servizi di Google. In questo modo è possibile mostrare ai visitatori del sito web pubblicità mirata attraverso una vasta gamma di siti web propri e di terzi.</td>.
+    <td>10 anni</td>
+  </tr>   
+  <tr>
+    <td>YSC</td>
+    <td>Questo cookie è impostato dal servizio video YouTube su siti web con video YouTube integrati.</td>
+    <td>1 anno</td>
+  </tr>  
+  <tr>
+    <td>GPS</td>
+    <td>YouTube è una piattaforma per la fornitura e la pubblicazione di video e fa parte di Google. YouTube raccoglie i dati degli utenti attraverso i video incorporati nei siti web, che vengono uniti ai dati del profilo di altri servizi di Google. In questo modo è possibile mostrare ai visitatori del sito web pubblicità mirata attraverso una vasta gamma di siti web propri e di terzi.</td>.
+    <td>1 Giorno</td>
+  </tr>    
+    <tr>
+    <td>SSID</td>
+    <td>YouTube è una piattaforma per la fornitura e la pubblicazione di video e fa parte di Google. YouTube raccoglie i dati degli utenti attraverso i video incorporati nei siti web, che vengono uniti ai dati del profilo di altri servizi di Google. In questo modo è possibile mostrare ai visitatori del sito web pubblicità mirata attraverso una vasta gamma di siti web propri e di terzi.</td>.
+    <td>1 anno</td>
+  </tr>    
+    <tr>
+    <td>LOGIN_INFO</td>
+    <td>YouTube è una piattaforma per la fornitura e la pubblicazione di video e fa parte di Google. YouTube raccoglie i dati degli utenti attraverso i video incorporati nei siti web, che vengono uniti ai dati del profilo di altri servizi di Google. In questo modo è possibile mostrare ai visitatori del sito web pubblicità mirata attraverso una vasta gamma di siti web propri e di terzi.</td>.
+    <td>2 anni</td>
+  </tr>    
+    <tr>
+    <td>SAPISID</td>
+    <td>Questo dominio è di proprietà di Google Inc. Google è conosciuto principalmente come motore di ricerca, ma l\'azienda offre una vasta gamma di prodotti e servizi. La principale fonte di reddito è la pubblicità. Google segue ampiamente i movimenti degli utenti - sia attraverso i propri prodotti e siti web, sia con l\'aiuto delle diverse tecnologie integrate in milioni di siti web in tutto il mondo.</td>
+    <td>1 anno</td>
+  </tr>   
+     <tr>
+    <td>HSID</td>
+    <td>Usato da Google in connessione con SID per controllare l\'account utente di Google e l\'ultima volta che ha effettuato il login https://policies.google.com/technologies/types?hl=de</td>
+    <td>1 anno</td>
+  </tr>    
+</table>
+';
+
+
+$youtube_policy_sample_en = '
+<h3>YouTube</h3>
+<p> On this video service page, we use YouTube, the company YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. </p>
+<p> By accessing pages on our website that have integrated YouTube videos, data will be transmitted to YouTube, stored and evaluated. <br />
+If you have a YouTube account and you\'re signed in, that information will be associated with your personal account and the data stored in it. </p>
+<p> What data Google collects and what this data is used for can be found on <a href="https://www.google.com/intl/en/policies/privacy/" read class="external" rel="nofollow"> https://www.google.com/intl/en/policies/privacy/ </a>. </p>
+<b>Cookies from Youtube</b>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Purpose</th>
+    <th>Validity</th>
+  </tr>
+  <tr>
+    <td>SID</td>
+    <td>Google uses cookies such as the NID and SID cookies to customize advertising in Google products such as Google search. Using such cookies, Google records, for example, your latest searches, your previous interactions with an advertiser\'s ads or search results, and your visits to an advertiser\'s website. In this way, Google can display customized advertising on Google. Other Google products such as YouTube or Doubleclick also use these cookies to select more relevant advertising.</td>
+    <td>1 Year</td>
+  </tr>
+  <tr>
+    <td>VISITOR_INFO1_LIVE</td>
+    <td>This is a cookie that YouTube sets to calculate the bandwidth of the user. This information is used to determine whether the user should use the player\'s new or old user interface.</td>
+    <td>0-365 Days</td>
+  </tr>
+  <tr>
+    <td>PREF</td>
+    <td>This cookie stores the user\'s preferences and other information. This includes in particular the preferred language, the number of search results to be displayed on the page and the decision whether the SafeSearch filter should be activated by Google or not.</td>
+    <td>5 Years</td>
+  </tr>  
+  <tr>
+    <td>APISID</td>
+    <td>YouTube is a platform for the provision and publication of videos and is part of Google. YouTube collects user data via videos embedded in websites, which are merged with profile data from other Google services. In this way, website visitors can be shown targeted advertising via a wide range of their own and third-party websites.</td>
+    <td>10 Years</td>
+  </tr>   
+  <tr>
+    <td>YSC</td>
+    <td>This cookie is set by the video service YouTube on websites with embedded YouTube videos.</td>
+    <td>1 Year</td>
+  </tr>  
+  <tr>
+    <td>GPS</td>
+    <td>YouTube is a platform for the provision and publication of videos and is part of Google. YouTube collects user data via videos embedded in websites, which are merged with profile data from other Google services. In this way, website visitors can be shown targeted advertising via a wide range of their own and third-party websites.</td>
+    <td>1 Day</td>
+  </tr>    
+    <tr>
+    <td>SSID</td>
+    <td>YouTube is a platform for the provision and publication of videos and is part of Google. YouTube collects user data via videos embedded in websites, which are merged with profile data from other Google services. In this way, website visitors can be shown targeted advertising via a wide range of their own and third-party websites.</td>
+    <td>1 Year</td>
+  </tr>    
+    <tr>
+    <td>LOGIN_INFO</td>
+    <td>YouTube is a platform for the provision and publication of videos and is part of Google. YouTube collects user data via videos embedded in websites, which are merged with profile data from other Google services. In this way, website visitors can be shown targeted advertising via a wide range of their own and third-party websites.</td>
+    <td>2 Years</td>
+  </tr>    
+    <tr>
+    <td>SAPISID</td>
+    <td>This domain is owned by Google Inc. Google is primarily known as a search engine, but the company offers a wide range of products and services. The main source of income is advertising. Google tracks user movements extensively - both through its own products and websites and with the help of the diverse technologies integrated into millions of websites worldwide.</td>
+    <td>1 Year</td>
+  </tr>   
+     <tr>
+    <td>HSID</td>
+    <td>Used by Google in connection with SID to check the Google user account and the last login time https://policies.google.com/technologies/types?hl=de</td>
+    <td>1 Year</td>
+  </tr>    
+</table>
+';
+
+
+$shareaholic_layer_sample = "
+<p>Für die Nutzung von Shareaholic (Shareaholic Inc., Dogpatch Labs 1, Cambridge Center, Suite 600, Cambridge, MA 02142) benötigen wir laut DSGVO Ihre Zustimmung.</p>
+<p>Es werden seitens Shareaholic personenbezogene Daten erhoben, verarbeitet und gespeichert. Welche Daten genau entnehmen Sie bitte den Datenschutzbedingungen.</p>
+";
+
+$shareaholic_layer_sample_en = "
+<p>For the use of Shareaholic (Shareaholic Inc., Dogpatch Labs 1, Cambridge Center, Suite 600, Cambridge, MA 02142) we need your consent according to DSGVO.</p>
+<p>Shareaholic collects, processes and stores personal data. Which data exactly you take from the data protection conditions.
+";
+
+$shareaholic_layer_sample_it = "
+<p>Per l'utilizzo di Shareaholic (Shareaholic Inc., Dogpatch Labs 1, Cambridge Center, Suite 600, Cambridge, MA 02142) abbiamo bisogno del vostro consenso secondo DSGVO.</p>
+<p>Shareaholic raccoglie, elabora e memorizza i dati personali. Quali dati esattamente si prendono dalle condizioni di protezione dei dati per favore.</p>
+";
+
+
+$vgwort_layer_sample = "
+<p>Für die Nutzung von VG Wort (VG WORT, Untere Weidenstraße 5, 81543 München) benötigen wir laut DSGVO Ihre Zustimmung.</p>
+<p>Es werden seitens VG Wort personenbezogene Daten erhoben, verarbeitet und gespeichert. Welche Daten genau entnehmen Sie bitte den Datenschutzbedingungen.</p>
+";
+
+$vgwort_layer_sample_en = "
+<p>For the use of VG Wort (VG WORT, Untere Weidenstraße 5, 81543 München) we need your consent according to DSGVO.</p>
+<p>VG Wort collects, processes and stores personal data. Which data exactly you take from the data protection conditions.
+";
+
+$vgwort_layer_sample_it = "
+<p>Per l'utilizzo di VG Wort (VG WORT, Untere Weidenstraße 5, 81543 München) abbiamo bisogno del vostro consenso secondo DSGVO.</p>
+<p>VG Wort raccoglie, elabora e memorizza i dati personali. Quali dati esattamente si prendono dalle condizioni di protezione dei dati per favore.</p>
+";
+
+
+$youtube_layer_sample = "
+<p>Für die Nutzung von YouTube (YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA) benötigen wir laut DSGVO Ihre Zustimmung.</p>
+<p>Es werden seitens YouTube personenbezogene Daten erhoben, verarbeitet und gespeichert. Welche Daten genau entnehmen Sie bitte den Datenschutzbedingungen.</p>
+";
+
+$youtube_layer_sample_en = "
+<p>For the use of YouTube (YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA) we need your consent according to DSGVO.</p>
+<p>YouTube collects, processes and stores personal data. Which data exactly you take from the data protection conditions.
+";
+
+$youtube_layer_sample_it = "
+<p>Per l'utilizzo di YouTube (YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA) abbiamo bisogno del vostro consenso secondo DSGVO.</p>
+<p>YouTube raccoglie, elabora e memorizza i dati personali. Quali dati esattamente si prendono dalle condizioni di protezione dei dati per favore.</p>
+";
+
+$linkedin_layer_sample = "
+<p>Für die Nutzung von LinkedIn (LinkedIn AG, Dammtorstraße 29-32, 20354 Hamburg, Germany) benötigen wir laut DSGVO Ihre Zustimmung.</p>
+<p>Es werden seitens LinkedIn personenbezogene Daten erhoben, verarbeitet und gespeichert. Welche Daten genau entnehmen Sie bitte den Datenschutzbedingungen.</p>
+";
+
+$linkedin_layer_sample_en = "
+<p>For the use of LinkedIn (LinkedIn AG, Dammtorstraße 29-32, 20354 Hamburg, Germany) we need your consent according to DSGVO.</p>
+<p>LinkedIn collects, processes and stores personal data. Which data exactly you take from the data protection conditions.
+";
+
+$linkedin_layer_sample_it = "
+<p>Per l'utilizzo di LinkedIn (LinkedIn AG, Dammtorstraße 29-32, 20354 Hamburg, Germany) abbiamo bisogno del vostro consenso secondo DSGVO.</p>
+<p>LinkedIn raccoglie, elabora e memorizza i dati personali. Quali dati esattamente si prendono dalle condizioni di protezione dei dati per favore.</p>
+";

@@ -35,7 +35,7 @@ if (isset($_POST['delete_user_data'])) {
 		//double check "privilegs"
 		if ( is_user_logged_in() ) {
 			wp_delete_user( $current_user->ID );
-			$output .= __("Ihr Benutzerkonto inklusive aller Daten wurde erfolgreich unwiederruflich gelöscht. Sie können jederzeit ein neues Konto erstellen.", "dsgvo-all-in-one-for-wp"); 
+			$output .= __("Your user account including all data was successfully and irrevocably deleted. You can create a new account at any time.", "dsgvo-all-in-one-for-wp"); 
 
 			//header(get_home_url());
 		}
@@ -45,37 +45,41 @@ if (isset($_POST['delete_user_data'])) {
 if (!isset($language)) $language = wf_get_language();
 
 if ($language == "de") {	
-
 	if (get_option('dsgvo_deleteaccounttext'))	{
 		$dsgvo_deleteaccounttext = html_entity_decode(get_option('dsgvo_deleteaccounttext'));
 	} else {
 		$dsgvo_deleteaccounttext = "<b>Achtung:</b> Mit dem Klick auf den Button \"Benutzerkonto löschen\" werden alle Ihre Daten aus unserer Datenbank gelöscht.<br />Ihre Daten können nicht wiederhergestellt werden nach der Löschung.";
 	}	
-
-} else {
-	
+} else if ($language == "en") {
 	if (get_option('dsgvo_deleteaccounttext_en'))	{
 		$dsgvo_deleteaccounttext = html_entity_decode(get_option('dsgvo_deleteaccounttext_en'));
 	} else {
 		$dsgvo_deleteaccounttext = "<b> Attention: </ b> By clicking on the button \"Delete user account\" all your data will be deleted from our database. <br /> Your data can not be recovered after deletion.";
 	}	
+} else if ($language == "it") {
+	if (get_option('dsgvo_deleteaccounttext_it'))	{
+		$dsgvo_deleteaccounttext = html_entity_decode(get_option('dsgvo_deleteaccounttext_it'));
+	} else {
+		$dsgvo_deleteaccounttext = "<b>Attenzione:</b> Cliccando sul pulsante \"Cancella account utente\" tutti i vostri dati saranno cancellati dal nostro database.<br />I vostri dati non possono essere ripristinati dopo la cancellazione.";
+	}		
+} else {
 	
 }
 	
 $output .='
-	<h2>'.__("Benutzerkonto löschen", "dsgvo-all-in-one-for-wp").'</h2>
+	<h2>'.__("Delete User Account", "dsgvo-all-in-one-for-wp").'</h2>
 	<div class="dsgvoaio_notice_info">
 		<span class="dashicons dashicons-info"></span>'.$dsgvo_deleteaccounttext.'
 	</div>
-	<p style="margin-bottom: 0px;"><b>'.__("Auszug Ihrer Daten", "dsgvo-all-in-one-for-wp").'</b></p>
+	<p style="margin-bottom: 0px;"><b>'.__("Extract of your Data", "dsgvo-all-in-one-for-wp").'</b></p>
 	<form action="" method="POST" class="dsgvoaio_removeform">
 	<table>
 		<tr style="display: none;">
-			<td>'.__("Benutzer ID", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("User ID", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.get_current_user_id().'" readonly/></td>
 		</tr>
 		<tr>
-			<td>'.__("Benutzername", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("Username", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$user_info->nickname.'" readonly/></td>
 		</tr>			
 		';
@@ -84,14 +88,14 @@ $output .='
 		if($user_info->first_name) { 
 		$output .= '
 		<tr>
-			<td>'.__("Vorname", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("Fistname", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$user_info->first_name.'" readonly/></td>
 		</tr>';
 		 } 
 		if($user_info->last_name) { 
 		$output .= '
 		<tr>
-			<td>'.__("Nachname", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("Lastname", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$user_info->last_name.'" readonly/></td>
 		</tr>
 		';
@@ -99,7 +103,7 @@ $output .='
 		
 		$output .= '
 		<tr>
-			<td>'.__("Email Adresse", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("E-mail Adress", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$user_info->user_email.'" readonly/></td>
 		</tr>		
 		';
@@ -107,14 +111,14 @@ $output .='
 		if($adress) {
 		$output .= '
 		<tr>
-			<td class="dsgvoaio_td_full" colspan="2"><label><b>'.__("Rechnungsadresse", "dsgvo-all-in-one-for-wp").'</b></label></td>
+			<td class="dsgvoaio_td_full" colspan="2"><label><b>'.__("Billing Adress", "dsgvo-all-in-one-for-wp").'</b></label></td>
 		</tr>
 		';
 		}
 		if($billig_first_name) {
 		$output .= '
 		<tr>
-			<td>'.__("Vorname", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("Fistname", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$billig_first_name.'" readonly/></td>
 		</tr>
 		';
@@ -122,7 +126,7 @@ $output .='
 		if($billig_last_name) {
 		$output .= '
 		<tr>
-			<td>'.__("Nachname", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("Lastname", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$billig_last_name.'" readonly/></td>
 		</tr>
 		';
@@ -130,7 +134,7 @@ $output .='
 		if($adress) {
 		$output .= '
 		<tr>
-			<td>'.__("Straße", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("Street", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$adress.'" readonly/></td>
 		</tr>
 		';
@@ -138,7 +142,7 @@ $output .='
 		if($city) {
 		$output .= '
 		<tr>
-			<td>'.__("Ort", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("City", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$city.'" readonly/></td>
 		</tr>
 		';
@@ -146,7 +150,7 @@ $output .='
 		if($zip_code) {
 		$output .= '
 		<tr>
-			<td>'.__("PLZ", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("Zip", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$zip_code.'" readonly/></td>
 		</tr>
 		';
@@ -154,7 +158,7 @@ $output .='
 		if (get_user_meta( $user_info->ID, 'billing_country', true )) {
 		$output .= '
 		<tr>
-			<td>'.__("Land", "dsgvo-all-in-one-for-wp").':
+			<td>'.__("Country", "dsgvo-all-in-one-for-wp").':
 			<td><input type="text" value="'.get_user_meta( $user_info->ID, 'billing_country', true ).'" readonly/>
 		</tr>
 		';		
@@ -162,7 +166,7 @@ $output .='
 		if($billing_email) {
 		$output .= '
 		<tr>
-			<td>'.__("Email Adresse", "dsgvo-all-in-one-for-wp").':</td>
+			<td>'.__("E-mail Adress", "dsgvo-all-in-one-for-wp").':</td>
 			<td><input type="text" value="'.$billing_email.'" readonly/></td>
 		</tr>
 		';
@@ -186,7 +190,7 @@ $output .='
 
 						$output .= "<tr>";
 
-						$output .= "<td>".__("Gespeicherte IP Adresse", "dsgvo-all-in-one-for-wp")."</td>";
+						$output .= "<td>".__("Saved IP Adress", "dsgvo-all-in-one-for-wp")."</td>";
 
 						$output .= '<td><input type="text" value="'.$userip.'" readonly/></td>';
 
@@ -204,15 +208,15 @@ $output .='
 					
 		if(current_user_can('administrator')) { $output .= "disabled"; }
 					
-		$output .= "><span class='dashicons dashicons-trash'></span>".__("Benutzerkonto l&ouml;schen", "dsgvo-all-in-one-for-wp")."</button>";
+		$output .= "><span class='dashicons dashicons-trash'></span>".__("Delete User Account", "dsgvo-all-in-one-for-wp")."</button>";
 		$output .= "</td></tr>";
 		
 		if(current_user_can('administrator')) {
 
-			$output .= "<tr style='color: red;'><td class='dsgvoaio_td_full' colspan='2'>".__("Da Sie ein Administrator sind k&ouml;nnen Sie hier&uuml;ber Ihr Konto nicht l&ouml;schen und der Button ist daher deaktiviert", "dsgvo-all-in-one-for-wp").".</td></tr>";
+			$output .= "<tr style='color: red;'><td class='dsgvoaio_td_full' colspan='2'>".__("Since you are an administrator, you cannot delete your account here and the button is disabled", "dsgvo-all-in-one-for-wp").".</td></tr>";
 		}
 		
-		$output .= '<tr style="color: red;"><td class="dsgvoaio_td_full"  colspan="2"><u>'.__("Beim klick auf den Button \"Benutzerkonto löschen\" werden Ihre Daten unwiederruflich gelöscht", "dsgvo-all-in-one-for-wp").'!</u></td></tr></table></form>';
+		$output .= '<tr style="color: red;"><td class="dsgvoaio_td_full"  colspan="2"><u>'.__("By clicking on the button \"Delete user account\" your data will be irrevocably deleted", "dsgvo-all-in-one-for-wp").'!</u></td></tr></table></form>';
 	
 	
 }

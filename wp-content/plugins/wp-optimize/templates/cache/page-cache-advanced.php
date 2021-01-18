@@ -13,6 +13,8 @@
 		<?php _e('Use the wildcard * to exclude child URLs.', 'wp-optimize'); ?> <?php printf(_x('e.g. %s or %s', '%s are examples of path using the wildcard *', 'wp-optimize'), '<code>'._x('/shop/*', 'an example path with the wildcard (*)', 'wp-optimize').'</code>', '<code>'._x('*sample-path*', 'a second example path using the wildcard (*) twice', 'wp-optimize').'</code>'); ?>
 	</span>
 
+	<?php do_action('wpo_after_cache_exception_urls'); ?>
+
 </div>
 
 <h3 class="wpo-first-child"><?php _e('Cookies which, if present, will prevent caching (one per line)', 'wp-optimize'); ?></h3>
@@ -36,6 +38,8 @@
 
 	<span><?php _e('If any of the above strings is found in the User-Agent HTTP header, then the requested page will not be cached.', 'wp-optimize'); ?> </span>
 </div>
+
+<?php do_action('wpo_page_cache_advanced_settings', $wpo_cache_options); ?>
 
 <input id="wp-optimize-save-cache-advanced-rules" class="button button-primary" type="submit" name="wp-optimize-save-cache-advanced-rules" value="Save changes">
 

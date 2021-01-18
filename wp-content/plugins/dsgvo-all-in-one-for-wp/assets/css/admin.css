@@ -1,4 +1,74 @@
-﻿.dsdvo_options {
+﻿.layertextsdsgvoaio .reset_layertext_service, .layertextsdsgvoaio .load_layer_policy {
+    text-decoration: none !important;
+}
+
+.layertextsdsgvoaio .load_layer_policy, .layertextsdsgvoaio .reset_layertext_service {
+    float: right;
+}
+
+.outgoingnoticewrap {
+	width: 100%;
+}
+
+.dsgvoaio_changlog_accordion dt a {
+	text-decoration: none;
+}
+
+.dsgvoaio_lang_info.scnd {
+	display: block;
+    width: 98.5%;
+}
+
+.layertextsdsgvoaio .dsgvoaio_lang_info.scnd {
+    background-color: #ffffff;
+}
+
+.dsgvoaio_layer_text {
+    display: none;
+    width: 100%;
+    float: left;
+    padding-bottom: 1em;
+    background: white;
+    border: 1px dotted #dddddd;
+    border-top: none;
+}
+
+.dsgvoaio_changlog_accordion {
+ 
+}
+.dsgvoaio_changlog_accordion dt, .dsgvoaio_changlog_accordion dd {
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom: 0;
+    background: #23282d;
+}
+.dsgvoaio_changlog_accordion dt:last-of-type, .dsgvoaio_changlog_accordion dd:last-of-type {
+  border-bottom: 1px solid black;
+}
+.dsgvoaio_changlog_accordion dt a, .dsgvoaio_changlog_accordion dd a {
+  display: block;
+  color: white;
+  font-weight: bold;
+}
+.dsgvoaio_changlog_accordion dt a:focus, .dsgvoaio_changlog_accordion dd a:focus,  .dsgvoaio_changlog_accordion dt a:active, .dsgvoaio_changlog_accordion dd a:active{
+outline: none;
+
+}
+.dsgvoaio_changlog_accordion dd {
+  border-top: 0;
+  font-size: 12px;
+  margin: 0px;
+  display: none;
+      background: white;
+}
+.dsgvoaio_changlog_accordion dd:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+ 
+}
+
+.dsdvo_options {
     background-color: #ffffff;
     padding: 10px;
     float: left;
@@ -275,7 +345,9 @@ box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
 
 .dsgvooptionsinner {
 	display: none;
-	    width: 100%;
+	width: 100%;
+    float: left;
+	padding-bottom: 1em;	
 }
 
 .dsgvoaio_export_log_uid_form, .dsgvoaio_delete_log_form{

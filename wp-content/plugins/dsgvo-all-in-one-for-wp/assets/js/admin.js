@@ -233,6 +233,14 @@ if(jQuery('input[name="legalform_needregister"]:checked').val()) {
 					} else {
 						jQuery(".showonnoticeon").hide(300);
 					}
+				}		
+
+				if (this.name == "show_outgoing_notice") {
+					if(jQuery(this).is(":checked"))  {  
+						jQuery(".outgoingnoticewrap").show(300);
+					} else {
+						jQuery(".outgoingnoticewrap").hide(300);
+					}
 				}					
 				
 				if (this.name == "use_facebookcomments") {
@@ -333,6 +341,14 @@ if(jQuery('input[name="legalform_needregister"]:checked').val()) {
 								} else {
 									jQuery(".vgwortwrap").hide(300);
 								}
+							}	
+
+							if (this.name == "use_koko") {
+								if(jQuery(this).is(":checked"))  {
+									jQuery(".kokowrap").show(300);
+								} else {
+									jQuery(".kokowrap").hide(300);
+								}
 							}							
 							
 							if (this.name == "use_twitter") {
@@ -380,6 +396,51 @@ if(jQuery('input[name="legalform_needregister"]:checked').val()) {
 										  console.log(msg);
 											 alert( msg.response );
 									 });
-							});					  
+							});		
+
+							(function($) {
+								
+							  var allPanels = $('.dsgvoaio_changlog_accordion > dd').hide();
+								
+							  $('.dsgvoaio_changlog_accordion > dt > a').click(function() {
+								allPanels.slideUp();
+								$(this).parent().next().slideDown();
+								return false;
+							  });
+
+							})(jQuery);							
+						
+						
+						
+ jQuery("#dsgvoaio_select_style").change(function() {
+        if (jQuery(this).val() == 2 || jQuery(this).val() == 3){ 
+            jQuery('#dsgvoaio_closebtn_wrap').show(300);   
+        } else {
+            jQuery('#dsgvoaio_closebtn_wrap').hide(300); 
+        }
+    });						
+
+
+    var allPanels_layertext = jQuery('.dsgvoaio_inner_tab').hide();
+
+    var allPanelsTogLayerText = jQuery('.load_layer_policy');
+
+    jQuery('.load_layer_policy').click(function() {
+
+        var state = jQuery(this).parent().next().css('display');
+
+        if (state == "none") {
+            allPanels_layertext.slideUp();
+            allPanelsTogLayerText.removeClass('dsgvoaio_toggled');
+            jQuery(this).parent().next().slideDown();
+            jQuery(this).addClass('dsgvoaio_toggled');
+        } else {
+            allPanels_layertext.slideUp();
+            allPanelsTogLayerText.removeClass('dsgvoaio_toggled');
+        }
+
+        return false;
+
+    });						
 						
 					});	

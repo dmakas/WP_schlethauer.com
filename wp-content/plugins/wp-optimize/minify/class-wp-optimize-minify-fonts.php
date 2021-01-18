@@ -9,7 +9,7 @@ class WP_Optimize_Minify_Fonts {
 	 */
 	public static function get_google_fonts() {
 		// https://www.googleapis.com/webfonts/v1/webfonts?sort=alpha
-		$google_fonts_file = WPO_PLUGIN_MAIN_PATH.'/google-fonts.json';
+		$google_fonts_file = WPO_PLUGIN_MAIN_PATH.'google-fonts.json';
 		if (is_file($google_fonts_file) && is_readable($google_fonts_file)) {
 			return json_decode(file_get_contents($google_fonts_file), true);
 		}
@@ -86,12 +86,13 @@ class WP_Optimize_Minify_Fonts {
 			if (count($subsets) > 0) {
 				$merge.= '&subset='.implode(',', array_unique($subsets));
 			}
+			$config = wp_optimize_minify_config();
 			/**
 			 * Filters wether to add display=swap to Google fonts urls
 			 *
 			 * @param boolean $display - Default to true
 			 */
-			if (apply_filters('wpo_minify_gfont_display_swap', true)) {
+			if (apply_filters('wpo_minify_gfont_display_swap', $config->get('enable_display_swap'))) {
 				/**
 				 * Filters the value of the display parameter.
 				 *
